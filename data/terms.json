@@ -1,0 +1,1985 @@
+[
+  {
+    "id": "kadima",
+    "pack": "commands",
+    "translit": "kadima",
+    "hebrew": "קָדִימָה",
+    "english": "Forward",
+    "estonian": "Edasi",
+    "notes": "Direction or encouragement.",
+    "example": {
+      "translit": "Tza'ad kadima.",
+      "english": "A step forward."
+    }
+  },
+  {
+    "id": "achora",
+    "pack": "commands",
+    "translit": "achora",
+    "hebrew": "אָחוֹרָה",
+    "english": "Backward",
+    "estonian": "Tagasi",
+    "notes": "Direction.",
+    "example": {
+      "translit": "Tza'ad achora.",
+      "english": "A step backward."
+    }
+  },
+  {
+    "id": "smol",
+    "pack": "commands",
+    "translit": "smol",
+    "hebrew": "שְׂמֹאל",
+    "english": "Left",
+    "estonian": "Vasakule",
+    "notes": "Side cue. Smola means “to the left”.",
+    "example": {
+      "translit": "Smol, bevakasha.",
+      "english": "Left, please."
+    }
+  },
+  {
+    "id": "yamin",
+    "pack": "commands",
+    "translit": "yamin",
+    "hebrew": "יָמִין",
+    "english": "Right",
+    "estonian": "Paremale",
+    "notes": "Side cue. Yamina means “to the right”.",
+    "example": {
+      "translit": "Yamin, bevakasha.",
+      "english": "Right, please."
+    }
+  },
+  {
+    "id": "atzor",
+    "pack": "commands",
+    "translit": "atzor",
+    "hebrew": "עֲצוֹר",
+    "english": "Stop",
+    "estonian": "Peatu",
+    "notes": "Masculine singular command. For a group, itzru.",
+    "example": {
+      "translit": "Atzor rega.",
+      "english": "Stop for a moment."
+    }
+  },
+  {
+    "id": "zuz",
+    "pack": "commands",
+    "translit": "zuz",
+    "hebrew": "זוּז",
+    "english": "Move",
+    "estonian": "Liigu",
+    "notes": "Masculine singular command. For a group, zuzu.",
+    "example": {
+      "translit": "Zuz ktsat.",
+      "english": "Move a little."
+    }
+  },
+  {
+    "id": "kum",
+    "pack": "commands",
+    "translit": "kum",
+    "hebrew": "קוּם",
+    "english": "Get up",
+    "estonian": "Tõuse püsti",
+    "notes": "Masculine singular command. To a woman, kumi.",
+    "example": {
+      "translit": "Kum, bevakasha.",
+      "english": "Get up, please."
+    }
+  },
+  {
+    "id": "od-paam",
+    "pack": "commands",
+    "translit": "od pa'am",
+    "hebrew": "עוֹד פַּעַם",
+    "english": "Do it again",
+    "estonian": "Tee uuesti",
+    "notes": "Literally “one more time”.",
+    "example": {
+      "translit": "Od pa'am, bevakasha.",
+      "english": "One more time, please."
+    }
+  },
+  {
+    "id": "kida",
+    "pack": "commands",
+    "translit": "kida",
+    "hebrew": "קִידָה",
+    "english": "Bow",
+    "estonian": "Kummarda",
+    "notes": "Feminine noun used here as a cue. Confirm how your instructors cue a bow.",
+    "example": {
+      "translit": "Kida lifnei ha-shi'ur.",
+      "english": "A bow before class."
+    },
+    "verify": true
+  },
+  {
+    "id": "shura",
+    "pack": "commands",
+    "translit": "shura",
+    "hebrew": "שׁוּרָה",
+    "english": "Form a line",
+    "estonian": "Rivistu",
+    "notes": "Literally “a line” or “a row”. Histadru be-shura is the full group cue. Confirm whether your instructors shorten it to shura.",
+    "example": {
+      "translit": "Histadru be-shura, bevakasha.",
+      "english": "Line up, please."
+    },
+    "verify": true
+  },
+  {
+    "id": "yalla",
+    "pack": "commands",
+    "translit": "yalla",
+    "hebrew": "יַאלְלָה",
+    "english": "Come on, let's go",
+    "estonian": "No nii, läksime",
+    "notes": "Informal encouragement, borrowed from Arabic.",
+    "example": {
+      "translit": "Yalla, matchilim.",
+      "english": "Come on, we're starting."
+    }
+  },
+  {
+    "id": "shev",
+    "pack": "commands",
+    "translit": "shev",
+    "hebrew": "שֵׁב",
+    "english": "Sit down",
+    "estonian": "Istu",
+    "notes": "Masculine singular command. To a woman, shvi.",
+    "example": {
+      "translit": "Shev po, bevakasha.",
+      "english": "Sit here, please."
+    }
+  },
+  {
+    "id": "chake",
+    "pack": "commands",
+    "translit": "chake",
+    "hebrew": "חַכֵּה",
+    "english": "Wait",
+    "estonian": "Oota",
+    "notes": "Masculine singular command. For a group, chaku.",
+    "example": {
+      "translit": "Chake rega.",
+      "english": "Wait a moment."
+    }
+  },
+  {
+    "id": "takshivu",
+    "pack": "commands",
+    "translit": "takshivu",
+    "hebrew": "תַּקְשִׁיבוּ",
+    "english": "Listen",
+    "estonian": "Kuulake",
+    "notes": "Colloquial group cue using the future form.",
+    "example": {
+      "translit": "Takshivu le-madrich.",
+      "english": "Listen to the instructor."
+    }
+  },
+  {
+    "id": "tistaklu",
+    "pack": "commands",
+    "translit": "tistaklu",
+    "hebrew": "תִּסְתַּכְּלוּ",
+    "english": "Look",
+    "estonian": "Vaadake",
+    "notes": "Colloquial group cue using the future form.",
+    "example": {
+      "translit": "Tistaklu al ze.",
+      "english": "Look at this."
+    }
+  },
+  {
+    "id": "leat",
+    "pack": "commands",
+    "translit": "le'at",
+    "hebrew": "לְאַט",
+    "english": "Slowly",
+    "estonian": "Aeglaselt",
+    "notes": "Adverb, same form for everyone.",
+    "example": {
+      "translit": "Le'at, bevakasha.",
+      "english": "Slowly, please."
+    }
+  },
+  {
+    "id": "maher",
+    "pack": "commands",
+    "translit": "maher",
+    "hebrew": "מַהֵר",
+    "english": "Quickly",
+    "estonian": "Kiiresti",
+    "notes": "Adverb, same form for everyone.",
+    "example": {
+      "translit": "Yoter maher.",
+      "english": "Faster."
+    }
+  },
+  {
+    "id": "lemala",
+    "pack": "commands",
+    "translit": "lema'la",
+    "hebrew": "לְמַעְלָה",
+    "english": "Up",
+    "estonian": "Üles",
+    "notes": "Direction or position.",
+    "example": {
+      "translit": "Tistaklu lema'la.",
+      "english": "Look up."
+    }
+  },
+  {
+    "id": "lemata",
+    "pack": "commands",
+    "translit": "lemata",
+    "hebrew": "לְמַטָּה",
+    "english": "Down",
+    "estonian": "Alla",
+    "notes": "Direction or position.",
+    "example": {
+      "translit": "Tistaklu lemata.",
+      "english": "Look down."
+    }
+  },
+  {
+    "id": "beyachad",
+    "pack": "commands",
+    "translit": "beyachad",
+    "hebrew": "בְּיַחַד",
+    "english": "Together",
+    "estonian": "Koos",
+    "notes": "Adverb. Often heard simply as yachad.",
+    "example": {
+      "translit": "Kulam beyachad.",
+      "english": "Everyone together."
+    }
+  },
+  {
+    "id": "bezugot",
+    "pack": "commands",
+    "translit": "bezugot",
+    "hebrew": "בְּזוּגוֹת",
+    "english": "In pairs",
+    "estonian": "Paarides",
+    "notes": "Zug means “pair”.",
+    "example": {
+      "translit": "Ovdim bezugot.",
+      "english": "Work in pairs."
+    }
+  },
+  {
+    "id": "tistovevu",
+    "pack": "commands",
+    "translit": "tistovevu",
+    "hebrew": "תִּסְתּוֹבְבוּ",
+    "english": "Turn around",
+    "estonian": "Pöörake ümber",
+    "notes": "Colloquial group cue using the future form.",
+    "example": {
+      "translit": "Tistovevu, bevakasha.",
+      "english": "Turn around, please."
+    }
+  },
+  {
+    "id": "muchanim",
+    "pack": "commands",
+    "translit": "muchanim?",
+    "hebrew": "מוּכָנִים?",
+    "english": "Ready?",
+    "estonian": "Valmis?",
+    "notes": "Question to a man-only or mixed group. To a man: muchan? To a woman: muchana?",
+    "example": {
+      "translit": "Kulam muchanim?",
+      "english": "Is everyone ready?"
+    }
+  },
+  {
+    "id": "linshom",
+    "pack": "commands",
+    "translit": "linshom",
+    "hebrew": "לִנְשֹׁם",
+    "english": "Breathe",
+    "estonian": "Hinga",
+    "notes": "Literally “to breathe”. The infinitive can serve as a group cue.",
+    "example": {
+      "translit": "Linshom le'at.",
+      "english": "Breathe slowly."
+    }
+  },
+  {
+    "id": "sheket",
+    "pack": "commands",
+    "translit": "sheket",
+    "hebrew": "שֶׁקֶט",
+    "english": "Quiet",
+    "estonian": "Vaikust",
+    "notes": "Literally “quiet” as a noun, used as a cue.",
+    "example": {
+      "translit": "Sheket, bevakasha.",
+      "english": "Quiet, please."
+    }
+  },
+  {
+    "id": "hafsaka",
+    "pack": "commands",
+    "translit": "hafsaka",
+    "hebrew": "הַפְסָקָה",
+    "english": "Take a break",
+    "estonian": "Tehke paus",
+    "notes": "Literally “a break”, used as a cue.",
+    "example": {
+      "translit": "Hafsaka ktsara.",
+      "english": "A short break."
+    }
+  },
+  {
+    "id": "one-f",
+    "pack": "numbers",
+    "translit": "achat",
+    "hebrew": "אַחַת",
+    "english": "One (feminine)",
+    "estonian": "Üks (naissoo vorm)",
+    "notes": "Usually follows a feminine noun. Also used in plain counting.",
+    "example": {
+      "translit": "Daka achat.",
+      "english": "One minute."
+    }
+  },
+  {
+    "id": "one-m",
+    "pack": "numbers",
+    "translit": "echad",
+    "hebrew": "אֶחָד",
+    "english": "One (masculine)",
+    "estonian": "Üks (meessoo vorm)",
+    "notes": "Usually follows a masculine noun.",
+    "example": {
+      "translit": "Yom echad.",
+      "english": "One day."
+    }
+  },
+  {
+    "id": "two-f",
+    "pack": "numbers",
+    "translit": "shtayim",
+    "hebrew": "שְׁתַּיִם",
+    "english": "Two (feminine, by itself)",
+    "estonian": "Kaks (naissoo eraldiseisev vorm)",
+    "notes": "Before a noun, use shtei.",
+    "example": {
+      "translit": "Achat, shtayim, shalosh.",
+      "english": "One, two, three."
+    }
+  },
+  {
+    "id": "two-m",
+    "pack": "numbers",
+    "translit": "shnayim",
+    "hebrew": "שְׁנַיִם",
+    "english": "Two (masculine, by itself)",
+    "estonian": "Kaks (meessoo eraldiseisev vorm)",
+    "notes": "Before a noun, use shnei.",
+    "example": {
+      "translit": "Anachnu shnayim.",
+      "english": "There are two of us."
+    }
+  },
+  {
+    "id": "two-f-before",
+    "pack": "numbers",
+    "translit": "shtei",
+    "hebrew": "שְׁתֵּי",
+    "english": "Two (before a feminine noun)",
+    "estonian": "Kaks (naissoost nimisõna ees)",
+    "notes": "Use shtayim when the number stands alone.",
+    "example": {
+      "translit": "Shtei dakot.",
+      "english": "Two minutes."
+    }
+  },
+  {
+    "id": "two-m-before",
+    "pack": "numbers",
+    "translit": "shnei",
+    "hebrew": "שְׁנֵי",
+    "english": "Two (before a masculine noun)",
+    "estonian": "Kaks (meessoost nimisõna ees)",
+    "notes": "Use shnayim when the number stands alone.",
+    "example": {
+      "translit": "Shnei yamim.",
+      "english": "Two days."
+    }
+  },
+  {
+    "id": "three-f",
+    "pack": "numbers",
+    "translit": "shalosh",
+    "hebrew": "שָׁלוֹשׁ",
+    "english": "Three (feminine)",
+    "estonian": "Kolm (naissoo vorm)",
+    "notes": "Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Shalosh dakot.",
+      "english": "Three minutes."
+    }
+  },
+  {
+    "id": "three-m",
+    "pack": "numbers",
+    "translit": "shlosha",
+    "hebrew": "שְׁלוֹשָׁה",
+    "english": "Three (masculine)",
+    "estonian": "Kolm (meessoo vorm)",
+    "notes": "Use with masculine nouns.",
+    "example": {
+      "translit": "Shlosha yamim.",
+      "english": "Three days."
+    }
+  },
+  {
+    "id": "four-f",
+    "pack": "numbers",
+    "translit": "arba",
+    "hebrew": "אַרְבַּע",
+    "english": "Four (feminine)",
+    "estonian": "Neli (naissoo vorm)",
+    "notes": "Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Arba dakot.",
+      "english": "Four minutes."
+    }
+  },
+  {
+    "id": "four-m",
+    "pack": "numbers",
+    "translit": "arba'a",
+    "hebrew": "אַרְבָּעָה",
+    "english": "Four (masculine)",
+    "estonian": "Neli (meessoo vorm)",
+    "notes": "Use with masculine nouns.",
+    "example": {
+      "translit": "Arba'a yamim.",
+      "english": "Four days."
+    }
+  },
+  {
+    "id": "five-f",
+    "pack": "numbers",
+    "translit": "chamesh",
+    "hebrew": "חָמֵשׁ",
+    "english": "Five (feminine)",
+    "estonian": "Viis (naissoo vorm)",
+    "notes": "Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Chamesh dakot.",
+      "english": "Five minutes."
+    }
+  },
+  {
+    "id": "five-m",
+    "pack": "numbers",
+    "translit": "chamisha",
+    "hebrew": "חֲמִשָּׁה",
+    "english": "Five (masculine)",
+    "estonian": "Viis (meessoo vorm)",
+    "notes": "Use with masculine nouns.",
+    "example": {
+      "translit": "Chamisha yamim.",
+      "english": "Five days."
+    }
+  },
+  {
+    "id": "six-f",
+    "pack": "numbers",
+    "translit": "shesh",
+    "hebrew": "שֵׁשׁ",
+    "english": "Six (feminine)",
+    "estonian": "Kuus (naissoo vorm)",
+    "notes": "Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Shesh dakot.",
+      "english": "Six minutes."
+    }
+  },
+  {
+    "id": "six-m",
+    "pack": "numbers",
+    "translit": "shisha",
+    "hebrew": "שִׁשָּׁה",
+    "english": "Six (masculine)",
+    "estonian": "Kuus (meessoo vorm)",
+    "notes": "Use with masculine nouns.",
+    "example": {
+      "translit": "Shisha yamim.",
+      "english": "Six days."
+    }
+  },
+  {
+    "id": "seven-f",
+    "pack": "numbers",
+    "translit": "sheva",
+    "hebrew": "שֶׁבַע",
+    "english": "Seven (feminine)",
+    "estonian": "Seitse (naissoo vorm)",
+    "notes": "Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Sheva dakot.",
+      "english": "Seven minutes."
+    }
+  },
+  {
+    "id": "seven-m",
+    "pack": "numbers",
+    "translit": "shiv'a",
+    "hebrew": "שִׁבְעָה",
+    "english": "Seven (masculine)",
+    "estonian": "Seitse (meessoo vorm)",
+    "notes": "Use with masculine nouns.",
+    "example": {
+      "translit": "Shiv'a yamim.",
+      "english": "Seven days."
+    }
+  },
+  {
+    "id": "eight-f",
+    "pack": "numbers",
+    "translit": "shmone",
+    "hebrew": "שְׁמוֹנֶה",
+    "english": "Eight (feminine)",
+    "estonian": "Kaheksa (naissoo vorm)",
+    "notes": "Ends in e. Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Shmone dakot.",
+      "english": "Eight minutes."
+    }
+  },
+  {
+    "id": "eight-m",
+    "pack": "numbers",
+    "translit": "shmona",
+    "hebrew": "שְׁמוֹנָה",
+    "english": "Eight (masculine)",
+    "estonian": "Kaheksa (meessoo vorm)",
+    "notes": "Ends in a. Use with masculine nouns.",
+    "example": {
+      "translit": "Shmona yamim.",
+      "english": "Eight days."
+    }
+  },
+  {
+    "id": "nine-f",
+    "pack": "numbers",
+    "translit": "tesha",
+    "hebrew": "תֵּשַׁע",
+    "english": "Nine (feminine)",
+    "estonian": "Üheksa (naissoo vorm)",
+    "notes": "Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Tesha dakot.",
+      "english": "Nine minutes."
+    }
+  },
+  {
+    "id": "nine-m",
+    "pack": "numbers",
+    "translit": "tish'a",
+    "hebrew": "תִּשְׁעָה",
+    "english": "Nine (masculine)",
+    "estonian": "Üheksa (meessoo vorm)",
+    "notes": "Use with masculine nouns.",
+    "example": {
+      "translit": "Tish'a yamim.",
+      "english": "Nine days."
+    }
+  },
+  {
+    "id": "ten-f",
+    "pack": "numbers",
+    "translit": "eser",
+    "hebrew": "עֶשֶׂר",
+    "english": "Ten (feminine)",
+    "estonian": "Kümme (naissoo vorm)",
+    "notes": "Also used when counting aloud without a noun.",
+    "example": {
+      "translit": "Eser dakot.",
+      "english": "Ten minutes."
+    }
+  },
+  {
+    "id": "ten-m",
+    "pack": "numbers",
+    "translit": "asara",
+    "hebrew": "עֲשָׂרָה",
+    "english": "Ten (masculine)",
+    "estonian": "Kümme (meessoo vorm)",
+    "notes": "Use with masculine nouns.",
+    "example": {
+      "translit": "Asara yamim.",
+      "english": "Ten days."
+    }
+  },
+  {
+    "id": "rosh",
+    "pack": "body",
+    "translit": "rosh",
+    "hebrew": "רֹאשׁ",
+    "english": "Head",
+    "estonian": "Pea",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-rosh sheli ko'ev.",
+      "english": "My head hurts."
+    }
+  },
+  {
+    "id": "panim",
+    "pack": "body",
+    "translit": "panim",
+    "hebrew": "פָּנִים",
+    "english": "Face",
+    "estonian": "Nägu",
+    "notes": "Feminine plural form, also used for a single face.",
+    "example": {
+      "translit": "Panim mucharot.",
+      "english": "A familiar face."
+    }
+  },
+  {
+    "id": "ayin",
+    "pack": "body",
+    "translit": "ayin",
+    "hebrew": "עַיִן",
+    "english": "Eye",
+    "estonian": "Silm",
+    "notes": "Feminine noun. Two eyes: einayim.",
+    "example": {
+      "translit": "Ayin achat.",
+      "english": "One eye."
+    }
+  },
+  {
+    "id": "ozen",
+    "pack": "body",
+    "translit": "ozen",
+    "hebrew": "אֹזֶן",
+    "english": "Ear",
+    "estonian": "Kõrv",
+    "notes": "Feminine noun. Two ears: oznayim.",
+    "example": {
+      "translit": "Ozen smolit.",
+      "english": "Left ear."
+    }
+  },
+  {
+    "id": "af",
+    "pack": "body",
+    "translit": "af",
+    "hebrew": "אַף",
+    "english": "Nose",
+    "estonian": "Nina",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-af sheli satum.",
+      "english": "My nose is blocked."
+    }
+  },
+  {
+    "id": "pe",
+    "pack": "body",
+    "translit": "pe",
+    "hebrew": "פֶּה",
+    "english": "Mouth",
+    "estonian": "Suu",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Pe patu'ach.",
+      "english": "An open mouth."
+    }
+  },
+  {
+    "id": "lashon",
+    "pack": "body",
+    "translit": "lashon",
+    "hebrew": "לָשׁוֹן",
+    "english": "Tongue",
+    "estonian": "Keel",
+    "notes": "Usually feminine in Modern Hebrew. Also means “language”.",
+    "example": {
+      "translit": "Ze al ktse ha-lashon.",
+      "english": "It's on the tip of my tongue."
+    }
+  },
+  {
+    "id": "shen",
+    "pack": "body",
+    "translit": "shen",
+    "hebrew": "שֵׁן",
+    "english": "Tooth",
+    "estonian": "Hammas",
+    "notes": "Feminine noun. Plural: shinayim.",
+    "example": {
+      "translit": "Shen achat.",
+      "english": "One tooth."
+    }
+  },
+  {
+    "id": "sear",
+    "pack": "body",
+    "translit": "se'ar",
+    "hebrew": "שֵׂעָר",
+    "english": "Hair",
+    "estonian": "Juuksed",
+    "notes": "Masculine mass noun.",
+    "example": {
+      "translit": "Se'ar katsar.",
+      "english": "Short hair."
+    }
+  },
+  {
+    "id": "tsavar",
+    "pack": "body",
+    "translit": "tsavar",
+    "hebrew": "צַוָּאר",
+    "english": "Neck",
+    "estonian": "Kael",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-tsavar sheli ko'ev.",
+      "english": "My neck hurts."
+    }
+  },
+  {
+    "id": "katef",
+    "pack": "body",
+    "translit": "katef",
+    "hebrew": "כָּתֵף",
+    "english": "Shoulder",
+    "estonian": "Õlg",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Katef yemanit.",
+      "english": "Right shoulder."
+    }
+  },
+  {
+    "id": "zroa",
+    "pack": "body",
+    "translit": "zro'a",
+    "hebrew": "זְרוֹעַ",
+    "english": "Arm",
+    "estonian": "Käsivars",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Zro'a smolit.",
+      "english": "Left arm."
+    }
+  },
+  {
+    "id": "ama",
+    "pack": "body",
+    "translit": "ama",
+    "hebrew": "אַמָּה",
+    "english": "Forearm",
+    "estonian": "Küünarvars",
+    "notes": "Feminine noun. The same word can also mean “cubit”.",
+    "example": {
+      "translit": "Ha-ama ha-yemanit.",
+      "english": "The right forearm."
+    }
+  },
+  {
+    "id": "mifrak",
+    "pack": "body",
+    "translit": "mifrak",
+    "hebrew": "מִפְרָק",
+    "english": "Joint",
+    "estonian": "Liiges",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ke'ev ba-mifrak.",
+      "english": "Pain in the joint."
+    }
+  },
+  {
+    "id": "yad",
+    "pack": "body",
+    "translit": "yad",
+    "hebrew": "יָד",
+    "english": "Hand",
+    "estonian": "Käsi",
+    "notes": "Feminine noun. Can also refer to the whole arm in everyday speech.",
+    "example": {
+      "translit": "Yad smolit.",
+      "english": "Left hand."
+    }
+  },
+  {
+    "id": "kaf-yad",
+    "pack": "body",
+    "translit": "kaf yad",
+    "hebrew": "כַּף יָד",
+    "english": "Palm of the hand",
+    "estonian": "Peopesa",
+    "notes": "Feminine noun phrase.",
+    "example": {
+      "translit": "Kaf ha-yad sheli.",
+      "english": "The palm of my hand."
+    }
+  },
+  {
+    "id": "etsba",
+    "pack": "body",
+    "translit": "etsba",
+    "hebrew": "אֶצְבַּע",
+    "english": "Finger",
+    "estonian": "Sõrm",
+    "notes": "Feminine noun. Also used for a toe with context.",
+    "example": {
+      "translit": "Etsba achat.",
+      "english": "One finger."
+    }
+  },
+  {
+    "id": "agudal",
+    "pack": "body",
+    "translit": "agudal",
+    "hebrew": "אֲגוּדָל",
+    "english": "Thumb",
+    "estonian": "Pöial",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-agudal sheli.",
+      "english": "My thumb."
+    }
+  },
+  {
+    "id": "chaze",
+    "pack": "body",
+    "translit": "chaze",
+    "hebrew": "חָזֶה",
+    "english": "Chest",
+    "estonian": "Rindkere",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ke'ev ba-chaze.",
+      "english": "Chest pain."
+    }
+  },
+  {
+    "id": "gav",
+    "pack": "body",
+    "translit": "gav",
+    "hebrew": "גַּב",
+    "english": "Back",
+    "estonian": "Selg",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-gav sheli ko'ev.",
+      "english": "My back hurts."
+    }
+  },
+  {
+    "id": "beten",
+    "pack": "body",
+    "translit": "beten",
+    "hebrew": "בֶּטֶן",
+    "english": "Belly",
+    "estonian": "Kõht",
+    "notes": "Feminine noun. Everyday word.",
+    "example": {
+      "translit": "Ha-beten sheli ko'evet.",
+      "english": "My belly hurts."
+    }
+  },
+  {
+    "id": "regel",
+    "pack": "body",
+    "translit": "regel",
+    "hebrew": "רֶגֶל",
+    "english": "Leg",
+    "estonian": "Jalg",
+    "notes": "Feminine noun. It can mean “foot” in everyday speech.",
+    "example": {
+      "translit": "Regel smolit.",
+      "english": "Left leg."
+    }
+  },
+  {
+    "id": "yarech",
+    "pack": "body",
+    "translit": "yarech",
+    "hebrew": "יָרֵךְ",
+    "english": "Thigh",
+    "estonian": "Reis",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Ha-yarech ha-smolit.",
+      "english": "The left thigh."
+    }
+  },
+  {
+    "id": "karsol",
+    "pack": "body",
+    "translit": "karsol",
+    "hebrew": "קַרְסֹל",
+    "english": "Ankle",
+    "estonian": "Hüppeliiges",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-karsol sheli ko'ev.",
+      "english": "My ankle hurts."
+    }
+  },
+  {
+    "id": "kaf-regel",
+    "pack": "body",
+    "translit": "kaf regel",
+    "hebrew": "כַּף רֶגֶל",
+    "english": "Foot",
+    "estonian": "Jalalaba",
+    "notes": "Feminine noun phrase for the foot itself.",
+    "example": {
+      "translit": "Kaf ha-regel sheli.",
+      "english": "My foot."
+    }
+  },
+  {
+    "id": "akev",
+    "pack": "body",
+    "translit": "akev",
+    "hebrew": "עָקֵב",
+    "english": "Heel",
+    "estonian": "Kand",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-akev sheli.",
+      "english": "My heel."
+    }
+  },
+  {
+    "id": "egrof",
+    "pack": "strikes",
+    "translit": "egrof",
+    "hebrew": "אֶגְרוֹף",
+    "english": "Fist",
+    "estonian": "Rusikas",
+    "notes": "Masculine noun. Confirm when your instructors also use it as shorthand for “punch”.",
+    "example": {
+      "translit": "Egrof hu mila be-Ivrit.",
+      "english": "Egrof is a Hebrew word."
+    },
+    "verify": true
+  },
+  {
+    "id": "beita",
+    "pack": "strikes",
+    "translit": "be'ita",
+    "hebrew": "בְּעִיטָה",
+    "english": "Kick",
+    "estonian": "Jalalöök",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Mila chadasha: be'ita.",
+      "english": "A new word: kick."
+    }
+  },
+  {
+    "id": "marpek",
+    "pack": "strikes",
+    "translit": "marpek",
+    "hebrew": "מַרְפֵּק",
+    "english": "Elbow",
+    "estonian": "Küünarnukk",
+    "notes": "Masculine body-part noun.",
+    "example": {
+      "translit": "Marpek yemani.",
+      "english": "Right elbow."
+    }
+  },
+  {
+    "id": "berech",
+    "pack": "strikes",
+    "translit": "berech",
+    "hebrew": "בֶּרֶךְ",
+    "english": "Knee",
+    "estonian": "Põlv",
+    "notes": "Feminine body-part noun.",
+    "example": {
+      "translit": "Berech smolit.",
+      "english": "Left knee."
+    }
+  },
+  {
+    "id": "hagana",
+    "pack": "strikes",
+    "translit": "hagana",
+    "hebrew": "הֲגָנָה",
+    "english": "Defence",
+    "estonian": "Kaitse",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Ma ze hagana?",
+      "english": "What does hagana mean?"
+    }
+  },
+  {
+    "id": "retzev",
+    "pack": "strikes",
+    "translit": "retzev",
+    "hebrew": "רֶצֶף",
+    "english": "Sequence",
+    "estonian": "Jada",
+    "notes": "Masculine noun. Confirm whether your class gives it a narrower meaning.",
+    "example": {
+      "translit": "Retzev shel milim.",
+      "english": "A sequence of words."
+    },
+    "verify": true
+  },
+  {
+    "id": "tefisa",
+    "pack": "strikes",
+    "translit": "tefisa",
+    "hebrew": "תְּפִיסָה",
+    "english": "Grab",
+    "estonian": "Haaramine",
+    "notes": "Feminine noun. Also “catching” or “perception” in other contexts. Confirm preferred classroom wording.",
+    "example": {
+      "translit": "Shamati et ha-mila tefisa.",
+      "english": "I heard the word tefisa."
+    },
+    "verify": true
+  },
+  {
+    "id": "gilgul",
+    "pack": "strikes",
+    "translit": "gilgul",
+    "hebrew": "גִּלְגּוּל",
+    "english": "Roll",
+    "estonian": "Rullumine",
+    "notes": "Masculine noun. This entry uses the general movement sense.",
+    "example": {
+      "translit": "Ma ze gilgul?",
+      "english": "What does gilgul mean?"
+    }
+  },
+  {
+    "id": "tnua",
+    "pack": "strikes",
+    "translit": "tnu'a",
+    "hebrew": "תְּנוּעָה",
+    "english": "Movement",
+    "estonian": "Liikumine",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Tnu'a itit.",
+      "english": "Slow movement."
+    }
+  },
+  {
+    "id": "ketsev",
+    "pack": "strikes",
+    "translit": "ketsev",
+    "hebrew": "קֶצֶב",
+    "english": "Pace",
+    "estonian": "Tempo",
+    "notes": "Masculine noun. Also means “rhythm”.",
+    "example": {
+      "translit": "Be-ketsev iti.",
+      "english": "At a slow pace."
+    }
+  },
+  {
+    "id": "shivui-mishkal",
+    "pack": "strikes",
+    "translit": "shivui mishkal",
+    "hebrew": "שִׁוּוּי מִשְׁקָל",
+    "english": "Balance",
+    "estonian": "Tasakaal",
+    "notes": "Masculine noun phrase.",
+    "example": {
+      "translit": "Targil shivui mishkal.",
+      "english": "A balance exercise."
+    }
+  },
+  {
+    "id": "shlita",
+    "pack": "strikes",
+    "translit": "shlita",
+    "hebrew": "שְׁלִיטָה",
+    "english": "Control",
+    "estonian": "Kontroll",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Shlita ba-ketsev.",
+      "english": "Control over the pace."
+    }
+  },
+  {
+    "id": "neshek",
+    "pack": "weapons",
+    "translit": "neshek",
+    "hebrew": "נֶשֶׁק",
+    "english": "Weapon",
+    "estonian": "Relv",
+    "notes": "Masculine noun. Can also mean “weapons” collectively.",
+    "example": {
+      "translit": "Ha-mila neshek.",
+      "english": "The word neshek."
+    }
+  },
+  {
+    "id": "sakin",
+    "pack": "weapons",
+    "translit": "sakin",
+    "hebrew": "סַכִּין",
+    "english": "Knife",
+    "estonian": "Nuga",
+    "notes": "Usually feminine in standard usage. Both genders are attested.",
+    "example": {
+      "translit": "Sakin matbach.",
+      "english": "A kitchen knife."
+    }
+  },
+  {
+    "id": "makel",
+    "pack": "weapons",
+    "translit": "makel",
+    "hebrew": "מַקֵּל",
+    "english": "Stick",
+    "estonian": "Kepp",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Makel halicha.",
+      "english": "A walking stick."
+    }
+  },
+  {
+    "id": "ekdach",
+    "pack": "weapons",
+    "translit": "ekdach",
+    "hebrew": "אֶקְדָּח",
+    "english": "Pistol",
+    "estonian": "Püstol",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "T'muna shel ekdach.",
+      "english": "A picture of a pistol."
+    }
+  },
+  {
+    "id": "degem",
+    "pack": "weapons",
+    "translit": "degem",
+    "hebrew": "דֶּגֶם",
+    "english": "Model",
+    "estonian": "Mudel",
+    "notes": "Masculine noun, used here for a representation or replica.",
+    "example": {
+      "translit": "Degem mi-plastik.",
+      "english": "A plastic model."
+    }
+  },
+  {
+    "id": "gumi",
+    "pack": "weapons",
+    "translit": "gumi",
+    "hebrew": "גּוּמִי",
+    "english": "Rubber",
+    "estonian": "Kumm",
+    "notes": "Masculine material noun.",
+    "example": {
+      "translit": "Kadur gumi.",
+      "english": "A rubber ball."
+    }
+  },
+  {
+    "id": "plastik",
+    "pack": "weapons",
+    "translit": "plastik",
+    "hebrew": "פְּלַסְטִיק",
+    "english": "Plastic",
+    "estonian": "Plast",
+    "notes": "Masculine material noun in everyday speech.",
+    "example": {
+      "translit": "Bakbuk plastik.",
+      "english": "A plastic bottle."
+    }
+  },
+  {
+    "id": "tmuna",
+    "pack": "weapons",
+    "translit": "t'muna",
+    "hebrew": "תְּמוּנָה",
+    "english": "Picture",
+    "estonian": "Pilt",
+    "notes": "Feminine noun. Also “photo” or “image”.",
+    "example": {
+      "translit": "T'muna ba-sefer.",
+      "english": "A picture in the book."
+    }
+  },
+  {
+    "id": "madrich",
+    "pack": "dojo",
+    "translit": "madrich",
+    "hebrew": "מַדְרִיךְ",
+    "english": "Instructor (man)",
+    "estonian": "Juhendaja (mees)",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ha-madrich po.",
+      "english": "The instructor is here."
+    }
+  },
+  {
+    "id": "madricha",
+    "pack": "dojo",
+    "translit": "madricha",
+    "hebrew": "מַדְרִיכָה",
+    "english": "Instructor (woman)",
+    "estonian": "Juhendaja (naine)",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Ha-madricha po.",
+      "english": "The instructor is here."
+    }
+  },
+  {
+    "id": "talmid",
+    "pack": "dojo",
+    "translit": "talmid",
+    "hebrew": "תַּלְמִיד",
+    "english": "Student (man)",
+    "estonian": "Õpilane (mees)",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ani talmid chadash.",
+      "english": "I'm a new student."
+    }
+  },
+  {
+    "id": "talmida",
+    "pack": "dojo",
+    "translit": "talmida",
+    "hebrew": "תַּלְמִידָה",
+    "english": "Student (woman)",
+    "estonian": "Õpilane (naine)",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Ani talmida chadasha.",
+      "english": "I'm a new student."
+    }
+  },
+  {
+    "id": "chaver",
+    "pack": "dojo",
+    "translit": "chaver",
+    "hebrew": "חָבֵר",
+    "english": "Friend (man)",
+    "estonian": "Sõber (mees)",
+    "notes": "Masculine noun. Context can give it the meaning “member” or “boyfriend”.",
+    "example": {
+      "translit": "Chaver me-ha-imun.",
+      "english": "A friend from training."
+    }
+  },
+  {
+    "id": "chavera",
+    "pack": "dojo",
+    "translit": "chavera",
+    "hebrew": "חֲבֵרָה",
+    "english": "Friend (woman)",
+    "estonian": "Sõber (naine)",
+    "notes": "Feminine noun. Context can give it the meaning “girlfriend”.",
+    "example": {
+      "translit": "Chavera me-ha-imun.",
+      "english": "A friend from training."
+    }
+  },
+  {
+    "id": "imun",
+    "pack": "dojo",
+    "translit": "imun",
+    "hebrew": "אִמּוּן",
+    "english": "Training session",
+    "estonian": "Treening",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Imun ba-erev.",
+      "english": "An evening training session."
+    }
+  },
+  {
+    "id": "targil",
+    "pack": "dojo",
+    "translit": "targil",
+    "hebrew": "תַּרְגִּיל",
+    "english": "Exercise",
+    "estonian": "Harjutus",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Targil pashut.",
+      "english": "A simple exercise."
+    }
+  },
+  {
+    "id": "shiur",
+    "pack": "dojo",
+    "translit": "shi'ur",
+    "hebrew": "שִׁעוּר",
+    "english": "Lesson",
+    "estonian": "Tund",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Matai ha-shi'ur?",
+      "english": "When is the lesson?"
+    }
+  },
+  {
+    "id": "chimum",
+    "pack": "dojo",
+    "translit": "chimum",
+    "hebrew": "חִמּוּם",
+    "english": "Warm-up",
+    "estonian": "Soojendus",
+    "notes": "Masculine noun. In other settings, also “heating”.",
+    "example": {
+      "translit": "Chimum katsar.",
+      "english": "A short warm-up."
+    }
+  },
+  {
+    "id": "kvutsa",
+    "pack": "dojo",
+    "translit": "kvutsa",
+    "hebrew": "קְבוּצָה",
+    "english": "Group",
+    "estonian": "Rühm",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Kvutsa ktana.",
+      "english": "A small group."
+    }
+  },
+  {
+    "id": "mishtatef",
+    "pack": "dojo",
+    "translit": "mishtatef",
+    "hebrew": "מִשְׁתַּתֵּף",
+    "english": "Participant (man)",
+    "estonian": "Osaleja (mees)",
+    "notes": "Masculine noun. Feminine: mishtatefet.",
+    "example": {
+      "translit": "Mishtatef chadash.",
+      "english": "A new participant."
+    }
+  },
+  {
+    "id": "bat-zug",
+    "pack": "dojo",
+    "translit": "bat zug",
+    "hebrew": "בַּת זוּג",
+    "english": "Female partner",
+    "estonian": "Naispartner",
+    "notes": "Can also mean “romantic partner”. Confirm preferred wording for a training partner at your gym.",
+    "example": {
+      "translit": "Bat zug la-targil.",
+      "english": "A female partner for the exercise."
+    },
+    "verify": true
+  },
+  {
+    "id": "ben-zug",
+    "pack": "dojo",
+    "translit": "ben zug",
+    "hebrew": "בֶּן זוּג",
+    "english": "Male partner",
+    "estonian": "Meespartner",
+    "notes": "Can also mean “romantic partner”. Confirm preferred wording for a training partner at your gym.",
+    "example": {
+      "translit": "Ben zug la-targil.",
+      "english": "A male partner for the exercise."
+    },
+    "verify": true
+  },
+  {
+    "id": "mizran",
+    "pack": "dojo",
+    "translit": "mizran",
+    "hebrew": "מִזְרָן",
+    "english": "Mat",
+    "estonian": "Matt",
+    "notes": "Masculine noun. Also “mattress”.",
+    "example": {
+      "translit": "Mizran imun.",
+      "english": "A training mat."
+    }
+  },
+  {
+    "id": "ulam",
+    "pack": "dojo",
+    "translit": "ulam",
+    "hebrew": "אוּלָם",
+    "english": "Hall",
+    "estonian": "Saal",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Ulam sport.",
+      "english": "A sports hall."
+    }
+  },
+  {
+    "id": "chagora",
+    "pack": "dojo",
+    "translit": "chagora",
+    "hebrew": "חֲגוֹרָה",
+    "english": "Belt",
+    "estonian": "Vöö",
+    "notes": "Feminine noun.",
+    "example": {
+      "translit": "Chagora yeruka.",
+      "english": "A green belt."
+    }
+  },
+  {
+    "id": "darga",
+    "pack": "dojo",
+    "translit": "darga",
+    "hebrew": "דַּרְגָּה",
+    "english": "Rank",
+    "estonian": "Aste",
+    "notes": "Feminine noun. Also “degree” or “grade”.",
+    "example": {
+      "translit": "Eizo darga yesh lecha?",
+      "english": "What rank are you?"
+    }
+  },
+  {
+    "id": "hatzaga",
+    "pack": "dojo",
+    "translit": "hatzaga",
+    "hebrew": "הַצָּגָה",
+    "english": "Presentation",
+    "estonian": "Esitlus",
+    "notes": "Feminine noun. Also a theatrical show.",
+    "example": {
+      "translit": "Hatzaga ktsara.",
+      "english": "A short presentation."
+    }
+  },
+  {
+    "id": "hadgama",
+    "pack": "dojo",
+    "translit": "hadgama",
+    "hebrew": "הַדְגָּמָה",
+    "english": "Demonstration",
+    "estonian": "Demonstratsioon",
+    "notes": "Feminine noun for showing an example.",
+    "example": {
+      "translit": "Hadgama ktsara.",
+      "english": "A short demonstration."
+    }
+  },
+  {
+    "id": "shalom",
+    "pack": "courtesy",
+    "translit": "shalom",
+    "hebrew": "שָׁלוֹם",
+    "english": "Hello",
+    "estonian": "Tere",
+    "notes": "Also means “peace” and can be used to say goodbye.",
+    "example": {
+      "translit": "Shalom, ma nishma?",
+      "english": "Hello, how's it going?"
+    }
+  },
+  {
+    "id": "toda",
+    "pack": "courtesy",
+    "translit": "toda",
+    "hebrew": "תּוֹדָה",
+    "english": "Thank you",
+    "estonian": "Aitäh",
+    "notes": "Use with anyone.",
+    "example": {
+      "translit": "Toda al ha-ezra.",
+      "english": "Thank you for the help."
+    }
+  },
+  {
+    "id": "toda-raba",
+    "pack": "courtesy",
+    "translit": "toda raba",
+    "hebrew": "תּוֹדָה רַבָּה",
+    "english": "Thank you very much",
+    "estonian": "Suur tänu",
+    "notes": "Raba agrees with the feminine noun toda.",
+    "example": {
+      "translit": "Toda raba al ha-shi'ur.",
+      "english": "Thank you very much for the lesson."
+    }
+  },
+  {
+    "id": "bevakasha",
+    "pack": "courtesy",
+    "translit": "bevakasha",
+    "hebrew": "בְּבַקָּשָׁה",
+    "english": "Please / You're welcome",
+    "estonian": "Palun / Pole tänu väärt",
+    "notes": "A request marker or reply to thanks.",
+    "example": {
+      "translit": "Mayim, bevakasha.",
+      "english": "Water, please."
+    }
+  },
+  {
+    "id": "slicha",
+    "pack": "courtesy",
+    "translit": "slicha",
+    "hebrew": "סְלִיחָה",
+    "english": "Excuse me / Sorry",
+    "estonian": "Vabandust",
+    "notes": "Gets someone's attention or apologizes.",
+    "example": {
+      "translit": "Slicha, eifo ha-ulam?",
+      "english": "Excuse me, where is the hall?"
+    }
+  },
+  {
+    "id": "ken",
+    "pack": "courtesy",
+    "translit": "ken",
+    "hebrew": "כֵּן",
+    "english": "Yes",
+    "estonian": "Jah",
+    "notes": "Use with anyone.",
+    "example": {
+      "translit": "Ken, be-seder.",
+      "english": "Yes, okay."
+    }
+  },
+  {
+    "id": "lo",
+    "pack": "courtesy",
+    "translit": "lo",
+    "hebrew": "לֹא",
+    "english": "No",
+    "estonian": "Ei",
+    "notes": "Also negates a verb or adjective.",
+    "example": {
+      "translit": "Lo, toda.",
+      "english": "No, thank you."
+    }
+  },
+  {
+    "id": "ma-shlomcha",
+    "pack": "courtesy",
+    "translit": "ma shlomcha?",
+    "hebrew": "מַה שְׁלוֹמְךָ?",
+    "english": "How are you? (to a man)",
+    "estonian": "Kuidas läheb? (mehele)",
+    "notes": "Addressing one man.",
+    "example": {
+      "translit": "Shalom, ma shlomcha?",
+      "english": "Hello, how are you?"
+    }
+  },
+  {
+    "id": "ma-shlomech",
+    "pack": "courtesy",
+    "translit": "ma shlomech?",
+    "hebrew": "מַה שְׁלוֹמֵךְ?",
+    "english": "How are you? (to a woman)",
+    "estonian": "Kuidas läheb? (naisele)",
+    "notes": "Addressing one woman.",
+    "example": {
+      "translit": "Shalom, ma shlomech?",
+      "english": "Hello, how are you?"
+    }
+  },
+  {
+    "id": "beseder",
+    "pack": "courtesy",
+    "translit": "be-seder",
+    "hebrew": "בְּסֵדֶר",
+    "english": "Okay / Fine",
+    "estonian": "Olgu / Korras",
+    "notes": "Useful both as a reply and for agreement.",
+    "example": {
+      "translit": "Ani be-seder.",
+      "english": "I'm fine."
+    }
+  },
+  {
+    "id": "naim-meod",
+    "pack": "courtesy",
+    "translit": "na'im me'od",
+    "hebrew": "נָעִים מְאוֹד",
+    "english": "Nice to meet you",
+    "estonian": "Meeldiv tutvuda",
+    "notes": "Literally “very pleasant”.",
+    "example": {
+      "translit": "Shalom, na'im me'od.",
+      "english": "Hello, nice to meet you."
+    }
+  },
+  {
+    "id": "boker-tov",
+    "pack": "courtesy",
+    "translit": "boker tov",
+    "hebrew": "בֹּקֶר טוֹב",
+    "english": "Good morning",
+    "estonian": "Tere hommikust",
+    "notes": "Boker means “morning”.",
+    "example": {
+      "translit": "Boker tov le-kulam.",
+      "english": "Good morning, everyone."
+    }
+  },
+  {
+    "id": "erev-tov",
+    "pack": "courtesy",
+    "translit": "erev tov",
+    "hebrew": "עֶרֶב טוֹב",
+    "english": "Good evening",
+    "estonian": "Tere õhtust",
+    "notes": "Erev means “evening”.",
+    "example": {
+      "translit": "Erev tov le-kulam.",
+      "english": "Good evening, everyone."
+    }
+  },
+  {
+    "id": "laila-tov",
+    "pack": "courtesy",
+    "translit": "laila tov",
+    "hebrew": "לַיְלָה טוֹב",
+    "english": "Good night",
+    "estonian": "Head ööd",
+    "notes": "Usually said when parting at night or going to bed.",
+    "example": {
+      "translit": "Laila tov, ve-nitra'e machar.",
+      "english": "Good night, and see you tomorrow."
+    }
+  },
+  {
+    "id": "lehitraot",
+    "pack": "courtesy",
+    "translit": "lehitra'ot",
+    "hebrew": "לְהִתְרָאוֹת",
+    "english": "Goodbye / See you",
+    "estonian": "Head aega / Nägemist",
+    "notes": "Common spoken farewell.",
+    "example": {
+      "translit": "Toda, lehitra'ot.",
+      "english": "Thanks, goodbye."
+    }
+  },
+  {
+    "id": "besimcha",
+    "pack": "courtesy",
+    "translit": "be-simcha",
+    "hebrew": "בְּשִׂמְחָה",
+    "english": "With pleasure",
+    "estonian": "Hea meelega",
+    "notes": "Can also be a warm response to thanks.",
+    "example": {
+      "translit": "Ken, be-simcha.",
+      "english": "Yes, with pleasure."
+    }
+  },
+  {
+    "id": "lo-mevin",
+    "pack": "everyday",
+    "translit": "ani lo mevin",
+    "hebrew": "אֲנִי לֹא מֵבִין",
+    "english": "I don't understand (man speaking)",
+    "estonian": "Ma ei saa aru (ütleb mees)",
+    "notes": "Male speaker form.",
+    "example": {
+      "translit": "Slicha, ani lo mevin.",
+      "english": "Sorry, I don't understand."
+    }
+  },
+  {
+    "id": "lo-mevina",
+    "pack": "everyday",
+    "translit": "ani lo mevina",
+    "hebrew": "אֲנִי לֹא מְבִינָה",
+    "english": "I don't understand (woman speaking)",
+    "estonian": "Ma ei saa aru (ütleb naine)",
+    "notes": "Female speaker form.",
+    "example": {
+      "translit": "Slicha, ani lo mevina.",
+      "english": "Sorry, I don't understand."
+    }
+  },
+  {
+    "id": "od-paam-leat",
+    "pack": "everyday",
+    "translit": "od pa'am le'at",
+    "hebrew": "עוֹד פַּעַם לְאַט",
+    "english": "Once more, slowly",
+    "estonian": "Veel kord, aeglaselt",
+    "notes": "Add bevakasha to make a polite request.",
+    "example": {
+      "translit": "Od pa'am le'at, bevakasha.",
+      "english": "Once more, slowly, please."
+    }
+  },
+  {
+    "id": "ma-ze",
+    "pack": "everyday",
+    "translit": "ma ze?",
+    "hebrew": "מַה זֶּה?",
+    "english": "What is this?",
+    "estonian": "Mis see on?",
+    "notes": "Useful for a word, an object, or something unfamiliar.",
+    "example": {
+      "translit": "Slicha, ma ze?",
+      "english": "Excuse me, what is this?"
+    }
+  },
+  {
+    "id": "eifo",
+    "pack": "everyday",
+    "translit": "eifo?",
+    "hebrew": "אֵיפֹה?",
+    "english": "Where?",
+    "estonian": "Kus?",
+    "notes": "Put the place right after eifo.",
+    "example": {
+      "translit": "Eifo ha-ulam?",
+      "english": "Where is the hall?"
+    }
+  },
+  {
+    "id": "ani-rofe",
+    "pack": "everyday",
+    "translit": "ani rofe",
+    "hebrew": "אֲנִי רוֹפֵא",
+    "english": "I'm a doctor (man speaking)",
+    "estonian": "Olen arst (ütleb mees)",
+    "notes": "Male speaker form. Rofe mishpacha means “family doctor”.",
+    "example": {
+      "translit": "Ani rofe mishpacha.",
+      "english": "I'm a family doctor."
+    }
+  },
+  {
+    "id": "ani-rofa",
+    "pack": "everyday",
+    "translit": "ani rofa",
+    "hebrew": "אֲנִי רוֹפְאָה",
+    "english": "I'm a doctor (woman speaking)",
+    "estonian": "Olen arst (ütleb naine)",
+    "notes": "Female speaker form. Rofa can also be transliterated rof'a.",
+    "example": {
+      "translit": "Ani rofa mishpacha.",
+      "english": "I'm a family doctor."
+    }
+  },
+  {
+    "id": "ani-mi-estonia",
+    "pack": "everyday",
+    "translit": "ani mi-Estonia",
+    "hebrew": "אֲנִי מֵאֶסְטוֹנְיָה",
+    "english": "I'm from Estonia",
+    "estonian": "Olen Eestist",
+    "notes": "Same form for all speakers. Mi- means “from”.",
+    "example": {
+      "translit": "Shalom, ani mi-Estonia.",
+      "english": "Hello, I'm from Estonia."
+    }
+  },
+  {
+    "id": "ani-lomed",
+    "pack": "everyday",
+    "translit": "ani lomed Ivrit",
+    "hebrew": "אֲנִי לוֹמֵד עִבְרִית",
+    "english": "I'm learning Hebrew (man speaking)",
+    "estonian": "Õpin heebrea keelt (ütleb mees)",
+    "notes": "Male speaker form. For a woman, ani lomedet Ivrit.",
+    "example": {
+      "translit": "Ani lomed Ivrit kol yom.",
+      "english": "I'm learning Hebrew every day."
+    }
+  },
+  {
+    "id": "medaber-anglit",
+    "pack": "everyday",
+    "translit": "ata medaber Anglit?",
+    "hebrew": "אַתָּה מְדַבֵּר אַנְגְּלִית?",
+    "english": "Do you speak English? (to a man)",
+    "estonian": "Kas sa räägid inglise keelt? (mehele)",
+    "notes": "To one woman: at medaberet Anglit?",
+    "example": {
+      "translit": "Slicha, ata medaber Anglit?",
+      "english": "Excuse me, do you speak English?"
+    }
+  },
+  {
+    "id": "ech-omrim",
+    "pack": "everyday",
+    "translit": "ech omrim...?",
+    "hebrew": "אֵיךְ אוֹמְרִים…?",
+    "english": "How do you say …?",
+    "estonian": "Kuidas öeldakse …?",
+    "notes": "The plural omrim is impersonal here.",
+    "example": {
+      "translit": "Ech omrim “aitäh” be-Ivrit?",
+      "english": "How do you say “thank you” in Hebrew?"
+    }
+  },
+  {
+    "id": "ma-ze-omer",
+    "pack": "everyday",
+    "translit": "ma ze omer?",
+    "hebrew": "מַה זֶּה אוֹמֵר?",
+    "english": "What does that mean?",
+    "estonian": "Mida see tähendab?",
+    "notes": "Common way to ask about the meaning of what you just heard.",
+    "example": {
+      "translit": "Slicha, ma ze omer?",
+      "english": "Sorry, what does that mean?"
+    }
+  },
+  {
+    "id": "efshar",
+    "pack": "everyday",
+    "translit": "efshar?",
+    "hebrew": "אֶפְשָׁר?",
+    "english": "May I? / Is it possible?",
+    "estonian": "Kas tohib? / Kas saab?",
+    "notes": "Add an infinitive or the thing you are asking for.",
+    "example": {
+      "translit": "Efshar mayim, bevakasha?",
+      "english": "May I have some water, please?"
+    }
+  },
+  {
+    "id": "mayim",
+    "pack": "everyday",
+    "translit": "mayim",
+    "hebrew": "מַיִם",
+    "english": "Water",
+    "estonian": "Vesi",
+    "notes": "Masculine plural-form noun.",
+    "example": {
+      "translit": "Mayim karim.",
+      "english": "Cold water."
+    }
+  },
+  {
+    "id": "kafe",
+    "pack": "everyday",
+    "translit": "kafe",
+    "hebrew": "קָפֶה",
+    "english": "Coffee",
+    "estonian": "Kohv",
+    "notes": "Masculine noun.",
+    "example": {
+      "translit": "Kafe im chalav.",
+      "english": "Coffee with milk."
+    }
+  },
+  {
+    "id": "kama-ze-ole",
+    "pack": "everyday",
+    "translit": "kama ze ole?",
+    "hebrew": "כַּמָּה זֶה עוֹלֶה?",
+    "english": "How much does it cost?",
+    "estonian": "Kui palju see maksab?",
+    "notes": "Standard price question.",
+    "example": {
+      "translit": "Slicha, kama ze ole?",
+      "english": "Excuse me, how much does it cost?"
+    }
+  },
+  {
+    "id": "eifo-sherutim",
+    "pack": "everyday",
+    "translit": "eifo ha-sherutim?",
+    "hebrew": "אֵיפֹה הַשֵּׁרוּתִים?",
+    "english": "Where is the bathroom?",
+    "estonian": "Kus on tualett?",
+    "notes": "Sherutim is plural in Hebrew.",
+    "example": {
+      "translit": "Slicha, eifo ha-sherutim?",
+      "english": "Excuse me, where is the bathroom?"
+    }
+  },
+  {
+    "id": "matai",
+    "pack": "everyday",
+    "translit": "matai?",
+    "hebrew": "מָתַי?",
+    "english": "When?",
+    "estonian": "Millal?",
+    "notes": "Question word.",
+    "example": {
+      "translit": "Matai ha-imun?",
+      "english": "When is training?"
+    }
+  },
+  {
+    "id": "achshav",
+    "pack": "everyday",
+    "translit": "achshav",
+    "hebrew": "עַכְשָׁו",
+    "english": "Now",
+    "estonian": "Praegu",
+    "notes": "Adverb.",
+    "example": {
+      "translit": "Ani po achshav.",
+      "english": "I'm here now."
+    }
+  },
+  {
+    "id": "hayom",
+    "pack": "everyday",
+    "translit": "hayom",
+    "hebrew": "הַיּוֹם",
+    "english": "Today",
+    "estonian": "Täna",
+    "notes": "Literally “the day”.",
+    "example": {
+      "translit": "Yesh imun hayom.",
+      "english": "There is training today."
+    }
+  },
+  {
+    "id": "machar",
+    "pack": "everyday",
+    "translit": "machar",
+    "hebrew": "מָחָר",
+    "english": "Tomorrow",
+    "estonian": "Homme",
+    "notes": "Adverb.",
+    "example": {
+      "translit": "Nitra'e machar.",
+      "english": "See you tomorrow."
+    }
+  },
+  {
+    "id": "rega",
+    "pack": "everyday",
+    "translit": "rega",
+    "hebrew": "רֶגַע",
+    "english": "A moment",
+    "estonian": "Hetk",
+    "notes": "Masculine noun. By itself it can mean “just a moment”.",
+    "example": {
+      "translit": "Rega echad, bevakasha.",
+      "english": "One moment, please."
+    }
+  }
+]

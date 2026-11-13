@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1243a2">
+  <meta name="description" content="A ten-minute personal Hebrew practice app for Krav Maga classes and everyday conversation.">
+  <title>Krav Ivrit</title>
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="brand" type="button" data-action="home" aria-label="Krav Ivrit home">
+        <img src="./icons/icon.svg" width="40" height="40" alt="">
+        <span>Krav Ivrit<small>HEBREW PRACTICE</small></span>
+      </button>
+      <nav aria-label="Main navigation">
+        <button type="button" data-action="home" aria-current="page">Today</button>
+        <button type="button" data-action="history">History</button>
+        <button type="button" data-action="settings">Settings</button>
+      </nav>
+    </div>
+  </header>
+  <main class="layout">
+    <div class="stats" aria-label="Practice statistics">
+      <div><span class="stat-icon" data-icon="flame" aria-hidden="true"></span><span><strong id="streak">0</strong> <span id="streak-label">day streak</span></span></div>
+      <div><span class="stat-icon" data-icon="layers" aria-hidden="true"></span><span><strong id="due">0</strong> <span>reviews due</span></span></div>
+      <div><span class="stat-icon" data-icon="clock" aria-hidden="true"></span><span><strong id="minutes">0 min</strong> <span>today</span></span></div>
+    </div>
+    <p class="notice hidden" id="storage-status" role="status"></p>
+    <section id="view" aria-busy="true"><p>Loading your practice packs…</p></section>
+    <footer>
+      <span id="offline-status">Preparing offline practice…</span>
+      <span class="footer-divider" aria-hidden="true">·</span>
+      <span>Progress saved on this device</span>
+    </footer>
+  </main>
+  <input id="backup-file" type="file" accept=".json,application/json" hidden>
+  <noscript><p class="layout">Enable JavaScript to use Krav Ivrit.</p></noscript>
+</body>
+</html>

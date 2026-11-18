@@ -29,7 +29,7 @@
         channel.port1.onmessage = event => {
           clearTimeout(timeout);
           channel.port1.close();
-          resolve(event.data?.version >= 4 && event.data.audio === true);
+          resolve(event.data?.version >= 5 && event.data.audio === true);
         };
         worker.postMessage({ type: 'offline-status' }, [channel.port2]);
       });

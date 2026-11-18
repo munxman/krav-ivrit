@@ -1,7 +1,7 @@
 const scope = new URL(self.registration.scope);
 const cachePrefix = `krav-ivrit:${scope.href}:`;
 // Increase after changing any packaged file or recording.
-const cacheName = `${cachePrefix}v4`;
+const cacheName = `${cachePrefix}v5`;
 const shell = new URL('index.html', scope);
 const audioBase = new URL('audio/', scope);
 const files = new Set([
@@ -45,7 +45,7 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('message', event => {
   if (event.data?.type === 'offline-status') {
-    event.ports?.[0]?.postMessage({ version: 4, audio: true });
+    event.ports?.[0]?.postMessage({ version: 5, audio: true });
   }
 });
 

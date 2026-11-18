@@ -188,6 +188,9 @@ footer { display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; marg
 .session-card .kicker { margin-bottom: 11px; }
 .session-card .notice { margin-bottom: 12px; }
 .session-card .listen { margin: 14px 0 12px; min-height: 50px; }
+.heard-word { margin-top: 14px; }
+.heard-translit { font-size: 24px; font-weight: 720; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.heard-word .hebrew { margin: 0; font-size: 24px; color: var(--ink); }
 .choices { display: grid; gap: 9px; margin-top: 14px; }
 .choice {
   min-height: 50px; width: 100%; text-align: left; border: 1px solid #cad8ee; border-radius: 11px;

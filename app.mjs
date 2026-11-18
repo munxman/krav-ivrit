@@ -263,7 +263,7 @@ for (const event of ['online', 'offline']) {
   });
 }
 
-const hebrew = term => state.settings.showHebrew
+const hebrew = (term, always = false) => (always || state.settings.showHebrew)
   ? `<span class="hebrew" lang="he" dir="rtl">${esc(term.hebrew)}</span>` : '';
 const pronunciation = term => term.pronunciation?.et
   ? `<p class="pronunciation"><span class="pronunciation-label">Say it</span> <span lang="et">${esc(term.pronunciation.et)}</span></p>` : '';
@@ -319,7 +319,7 @@ function home() {
     <section class="panel monthly">
       <span class="feature-icon">${icon('target')}</span>
       <h2>Monthly check</h2>
-      <p>20 class commands to test your Hebrew listening.</p>
+      <p>20 class commands with audio and written Hebrew.</p>
       <small>${monthlyStatus}</small>
       <button class="secondary" type="button" data-action="monthly" ${enabled ? '' : 'disabled'}>Start check ${icon('arrow')}</button>
     </section>
@@ -362,7 +362,7 @@ function settingsPage() {
       <label class="setting-row"><span>Daily new items<small>Up to five per session after due reviews.</small></span>
         <input type="number" inputmode="numeric" id="new-limit" min="0" max="50" step="1" required value="${prefs.newLimit}">
       </label>
-      <div class="setting-row"><label for="show-hebrew">Show Hebrew script</label>
+      <div class="setting-row"><label for="show-hebrew">Show Hebrew script<small>Hearing questions always show the written word.</small></label>
         <label class="switch"><input id="show-hebrew" type="checkbox" role="switch" ${prefs.showHebrew ? 'checked' : ''}></label>
       </div>
       <label class="setting-row"><span>Playback speed</span>
@@ -551,7 +551,7 @@ function playCurrent() {
 function feedbackBlock(term, outcome) {
   const result = outcome === undefined ? '' : `<p class="result" data-correct="${outcome}">${outcome ? 'Correct' : 'Answer'}</p>`;
   return `<div class="feedback" role="status">${result}
-    <strong>${esc(term.translit)}</strong>${hebrew(term)}
+    <strong>${esc(term.translit)}</strong>${hebrew(term, session?.card?.mode !== 'recall')}
     ${pronunciation(term)}
     <p>${esc(term.english)} · ${esc(term.estonian)}</p>
     ${term.notes ? `<p>${esc(term.notes)}${term.verify ? ' · Check classroom usage' : ''}</p>` : ''}
@@ -563,7 +563,7 @@ function sessionPage() {
   const { phase, feedback, card } = session;
   const captions = { review: 'Due review', new: 'New item', drill: 'Commands drill', monthly: 'Monthly check', done: 'Practice' };
   const isDrill = phase === 'drill' || phase === 'monthly';
-  const hint = phase === 'monthly' ? `${session.answered + 1} / 20 · ${session.textMode ? 'Text practice' : 'Hebrew listening'}`
+  const hint = phase === 'monthly' ? `${session.answered + 1} / 20 · ${session.textMode ? 'Text practice' : 'Listening & reading'}`
     : card ? `${captions[phase]} · ${PACKS[card.term.pack]}` : captions[phase];
   const caption = phase === 'drill' ? `Commands drill · ${session.correct}/${session.answered} correct` : hint;
   let content;
@@ -587,10 +587,14 @@ function sessionPage() {
       </form>`;
   } else {
     const prompt = card.mode === 'act' ? 'What’s the command?' : 'What did you hear?';
-    content = `${audioNotice()}<h1>${canSpeak() ? prompt : esc(card.term.translit)}</h1>
-      ${canSpeak() ? '' : pronunciation(card.term)}
+    content = `${audioNotice()}<h1>${prompt}</h1>
+      <div class="heard-word">
+        <p class="heard-translit">${esc(card.term.translit)}</p>
+        <p>${hebrew(card.term, true)}</p>
+        ${pronunciation(card.term)}
+      </div>
       ${canSpeak() ? `<button class="secondary listen" type="button" data-action="play">${icon('speaker')} Play Hebrew</button>`
-        : `<p>Choose the matching meaning.${hebrew(card.term)}</p>${state.settings.audioSource === 'clips' ? button('Play Hebrew', 'play', 'secondary listen', 'speaker') : ''}`}
+        : `<p>Choose the matching meaning.</p>${state.settings.audioSource === 'clips' ? button('Play Hebrew', 'play', 'secondary listen', 'speaker') : ''}`}
       <div class="choices">${card.choices.map(choice => `<button class="choice" type="button"
         data-action="choose" data-term="${esc(choice.id)}">${esc(choice.english)}</button>`).join('')}</div>
       ${isDrill ? '' : button('I don’t know', 'unknown', 'quiet')}`;
@@ -874,7 +878,7 @@ async function prepareOffline() {
     channel.port1.onmessage = event => {
       clearTimeout(timeout);
       channel.port1.close();
-      if (event.data?.version >= 4 && event.data.audio) {
+      if (event.data?.version >= 5 && event.data.audio) {
         status.textContent = 'Ready for offline practice';
         status.dataset.ready = 'true';
       }

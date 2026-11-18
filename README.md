@@ -7,8 +7,8 @@ Krav Ivrit is a personal Hebrew study app for class vocabulary and everyday conv
 ## Study and save progress
 
 - Start a daily session to review due cards, learn up to five new items within your remaining daily budget, and finish with a timed commands drill. Two minutes is enough for a short start. You can end a session or use Today, History and Settings at any time. Leaving practice saves completed answers. The session automatically ends at ten minutes.
-- Answer one prompt at a time. On recall cards, say or type the transliteration, reveal the answer, and grade yourself from Again to Easy. The grade sets the next review date. Listening cards use a choice of meanings.
-- The monthly check scores 20 Hebrew listening prompts. Pass with 16 correct answers or more. If playback fails, the prompts become text practice and are recorded as text practice.
+- Answer one prompt at a time. On recall cards, say or type the transliteration, reveal the answer, and grade yourself from Again to Easy. The grade sets the next review date. Listening cards show the written Hebrew, Latin transliteration and pronunciation hint alongside the audio, followed by a choice of meanings. This also applies to commands drills and monthly checks.
+- The monthly check scores 20 commands with audio and written Hebrew. Pass with 16 correct answers or more. If playback fails, the prompts become text practice and are recorded as text practice.
 - In Settings, adjust the daily new-item limit, turn packs and Hebrew script on or off, or change speech speed. Use **Export JSON** to keep a JSON copy of progress and settings. Use **Import JSON** to restore it on another device. Reset clears cards, streak and session history after confirmation.
 - Open the app online and wait for **Ready for offline practice** to cache all eight packs and the included Hebrew recordings. The 152 MP3 files total about 1 MB. On iPhone, open it in Safari and choose **Share → Add to Home Screen** to install it.
 
@@ -22,7 +22,7 @@ Pronunciation hints appear in the study packs and after revealing a card's answe
 
 Playback failures provide a Play Hebrew retry. Once a monthly check has revealed written prompts, it stays recorded as text practice for that session.
 
-To receive this audio update, open the [Krav Ivrit updater](update.html) online. It downloads the current app and recordings, checks that the new offline pack is active, then opens the app. Browser-saved progress uses the same Krav Ivrit storage key across updates.
+To receive the current update, open the [Krav Ivrit updater](update.html?v=5) online. It downloads the current app and recordings, checks that the new offline pack is active, then opens the app. Browser-saved progress uses the same Krav Ivrit storage key across updates.
 
 ## Run locally
 

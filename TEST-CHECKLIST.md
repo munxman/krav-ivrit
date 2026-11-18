@@ -1,5 +1,12 @@
 # Krav Ivrit test checklist
 
+## Written hearing prompts checked on 18 November 2026
+
+- [x] In WebKit with real MP3 playback, hearing questions displayed one written-word block containing the matching Hebrew, Latin transliteration and Estonian pronunciation before an answer was selected. This worked with the general Hebrew script toggle off.
+- [x] Checked review and new hearing cards, the daily commands drill and all 20 unique monthly prompts. Meaning choices stayed unmarked before answering, and a 16/20 monthly result scored correctly.
+- [x] Verified recall concealment until Reveal answer. A media failure retained one written prompt, a replay action and the monthly text-practice label.
+- [x] Upgraded v4 to v5 through the updater with saved progress retained. Inspected the command prompt at 390 px with no horizontal overflow.
+
 ## Built-in Hebrew audio checked on 18 November 2026
 
 - [x] Generated 152 MP3 files, one per term, totaling 1,043,857 bytes. Checked every filename, manifest byte size and SHA-256. All files decoded with finite, non-silent samples and unclipped peaks.

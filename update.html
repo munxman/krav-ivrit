@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1243a2">
+  <title>Update Krav Ivrit</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="layout narrow">
+    <section class="panel session-card">
+      <h1>Updating Krav Ivrit</h1>
+      <p id="update-status" role="status">Downloading the Hebrew recordings for offline practice…</p>
+      <div class="button-group"><button class="primary hidden" id="retry" type="button">Try again</button></div>
+    </section>
+  </main>
+  <script type="module">
+    const status = document.querySelector('#update-status');
+    const retry = document.querySelector('#retry');
+    function audioReady(worker) {
+      if (!worker) return Promise.resolve(false);
+      return new Promise(resolve => {
+        const channel = new MessageChannel();
+        const timeout = setTimeout(() => {
+          channel.port1.close();
+          resolve(false);
+        }, 1200);
+        channel.port1.onmessage = event => {
+          clearTimeout(timeout);
+          channel.port1.close();
+          resolve(event.data?.version >= 4 && event.data.audio === true);
+        };
+        worker.postMessage({ type: 'offline-status' }, [channel.port2]);
+      });
+    }
+    async function update() {
+      retry.classList.add('hidden');
+      status.textContent = 'Downloading the Hebrew recordings for offline practice…';
+      try {
+        if (!('serviceWorker' in navigator)) {
+          location.replace('./');
+          return;
+        }
+        const registration = await navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' });
+        await registration.update();
+        const deadline = Date.now() + 120_000;
+        while (Date.now() < deadline) {
+          if (await audioReady(registration.active)) {
+            location.replace('./');
+            return;
+          }
+          await new Promise(resolve => setTimeout(resolve, 500));
+        }
+        throw new Error('Download timed out');
+      } catch {
+        status.textContent = 'The audio download did not finish. Check your connection and try again.';
+        retry.classList.remove('hidden');
+      }
+    }
+    retry.addEventListener('click', update);
+    update();
+  </script>
+</body>
+</html>

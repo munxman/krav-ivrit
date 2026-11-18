@@ -1273,14 +1273,14 @@
     "hebrew": "רֶצֶף",
     "english": "Sequence",
     "estonian": "Jada",
-    "notes": "Masculine noun. Confirm whether your class gives it a narrower meaning.",
+    "notes": "Masculine noun. Hebrew retsef has a final f sound. The spelling retzev is also used in Krav Maga transliteration. Confirm whether your class gives it a narrower meaning.",
     "example": {
-      "translit": "Retzev shel milim.",
+      "translit": "Retsef shel milim.",
       "english": "A sequence of words."
     },
     "verify": true,
     "pronunciation": {
-      "et": "RE-tsev"
+      "et": "RE-tsef"
     }
   },
   {

@@ -28,6 +28,12 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({
 const view = document.querySelector('#view');
 const storageStatus = document.querySelector('#storage-status');
 const backupFile = document.querySelector('#backup-file');
+const player = document.querySelector('#hebrew-player') || document.createElement('audio');
+player.id = 'hebrew-player';
+player.preload = 'auto';
+player.hidden = true;
+player.setAttribute('playsinline', '');
+if (!player.isConnected) document.body.append(player);
 let synth = null;
 try { synth = window.speechSynthesis; } catch { /* Text practice remains available. */ }
 const MAX_SESSION = 10 * MINUTE;
@@ -42,6 +48,8 @@ let summary;
 let voice = null;
 let audioError = false;
 let audioTest = '';
+let activeClip = null;
+let clipSequence = 0;
 let utterance = null;
 let speechTimeout;
 let settingMessage = '';
@@ -58,7 +66,9 @@ function storageNotice(text) {
 
 function readStorage() {
   const raw = localStorage.getItem(STORAGE_KEY);
-  return raw === null ? fresh() : restore(JSON.parse(raw));
+  const loaded = raw === null ? fresh() : restore(JSON.parse(raw));
+  loaded.settings.audioSource ??= 'clips';
+  return loaded;
 }
 
 function save(update, replace = false) {
@@ -105,19 +115,22 @@ function updateVoice() {
   const next = voices.find(candidate => candidate.localService) || voices[0] || null;
   if (next?.voiceURI === voice?.voiceURI) return;
   voice = next;
-  audioError = false;
+  if (state.settings.audioSource === 'system') audioError = false;
   if (!canSpeak() && session?.kind === 'monthly') session.textMode = true;
   if (terms.length) render();
 }
 
 function canSpeak() {
+  if (state.settings.audioSource === 'clips') return !audioError && Boolean(player.canPlayType('audio/mpeg'));
   return Boolean(synth && typeof window.SpeechSynthesisUtterance === 'function' && !audioError &&
     (state.settings.systemVoiceConfirmed || (voice && (voice.localService || navigator.onLine))));
 }
 
 function audioNotice() {
   if (canSpeak()) return '';
-  const message = audioError ? 'Hebrew audio did not play. Open Settings to retry the audio test. Written pronunciation is available.'
+  const message = state.settings.audioSource === 'clips'
+    ? 'Audio is paused or could not load. Tap Play Hebrew to retry. Written pronunciation is available.'
+    : audioError ? 'Hebrew audio did not play. Open Settings to retry the audio test. Written pronunciation is available.'
     : voice ? 'The Hebrew voice needs a connection. Text practice is available offline.'
     : 'Open Settings → Test Hebrew audio to try your installed Hebrew voice. Written pronunciation is available.';
   return `<p class="notice" role="status">${message}</p>`;
@@ -125,6 +138,9 @@ function audioNotice() {
 
 function stopSpeech() {
   clearTimeout(speechTimeout);
+  activeClip = null;
+  clipSequence++;
+  player.pause();
   audioTest = '';
   const previous = utterance;
   utterance = null;
@@ -134,6 +150,56 @@ function stopSpeech() {
 }
 
 function speak(term, multiplier = 1, test = false) {
+  if (state.settings.audioSource === 'clips') {
+    playClip(term, multiplier, test);
+    return;
+  }
+  speakSystem(term, multiplier, test);
+}
+
+function playClip(term, multiplier, test) {
+  const retrying = audioError;
+  stopSpeech();
+  audioError = false;
+  const sequence = clipSequence;
+  const failed = () => {
+    if (sequence !== clipSequence) return;
+    stopSpeech();
+    audioError = true;
+    if (session?.kind === 'monthly') session.textMode = true;
+    render();
+  };
+  activeClip = { failed, test };
+  if (test) audioTest = 'playing';
+  player.src = new URL(`./audio/${term.id}.mp3`, location.href).href;
+  player.playbackRate = Math.round(state.settings.speed * multiplier * 100) / 100;
+  player.volume = 1;
+  player.muted = false;
+  speechTimeout = setTimeout(failed, 15_000);
+  try {
+    const playback = player.play();
+    playback?.then(() => {
+      if (sequence !== clipSequence) return;
+      clearTimeout(speechTimeout);
+      speechTimeout = setTimeout(failed, 30_000);
+      if (retrying) render();
+    }).catch(failed);
+  } catch { failed(); }
+}
+
+player.addEventListener('error', () => activeClip?.failed());
+player.addEventListener('ended', () => {
+  if (!activeClip) return;
+  const { test } = activeClip;
+  activeClip = null;
+  clearTimeout(speechTimeout);
+  if (test && screen === 'settings') {
+    audioTest = 'played';
+    render();
+  }
+});
+
+function speakSystem(term, multiplier = 1, test = false) {
   if (!test && !canSpeak()) return;
   stopSpeech();
   let current = null;
@@ -233,7 +299,7 @@ function home() {
     record.kind === 'monthly' && record.scored && !record.textMode && record.day.startsWith(currentMonth));
   const monthlyStatus = !enabled ? 'Enable Class commands in Settings to start.'
     : latest ? `This month · ${latest.correct}/20 · ${latest.correct >= PASS ? 'Passed' : 'Keep practicing'}`
-    : canSpeak() ? 'Pass at 16 out of 20.' : 'Text practice is available without a Hebrew voice.';
+    : canSpeak() ? 'Pass at 16 out of 20.' : 'Written practice is available while audio is paused.';
   return `<div class="hero-grid">
     <section class="hero">
       <div class="hero-content">
@@ -281,7 +347,7 @@ function packPage() {
       <div><strong>${esc(term.translit)}</strong>${hebrew(term)}
       ${pronunciation(term)}
       <p>${esc(term.english)} · ${esc(term.estonian)}${term.verify ? ' · Check usage' : ''}</p></div>
-      ${canSpeak() ? `<button type="button" class="secondary" data-action="term-audio" data-term="${esc(term.id)}" aria-label="Play ${esc(term.translit)}">${icon('speaker')}</button>` : ''}
+      ${state.settings.audioSource === 'clips' || canSpeak() ? `<button type="button" class="secondary" data-action="term-audio" data-term="${esc(term.id)}" aria-label="Play ${esc(term.translit)}">${icon('speaker')}</button>` : ''}
     </li>`).join('')}</ul>
   </div>`;
 }
@@ -303,16 +369,23 @@ function settingsPage() {
         <select id="audio-speed"><option value="0.75" ${prefs.speed === 0.75 ? 'selected' : ''}>0.75×</option>
         <option value="1" ${prefs.speed === 1 ? 'selected' : ''}>1×</option></select>
       </label>
+      <label class="setting-row"><span>Hebrew audio</span>
+        <select id="audio-source"><option value="clips" ${prefs.audioSource === 'clips' ? 'selected' : ''}>Built-in recordings</option>
+        <option value="system" ${prefs.audioSource === 'system' ? 'selected' : ''}>Phone voice</option></select>
+      </label>
       ${audioNotice()}
-      ${canSpeak() ? `<p class="audio-status">Hebrew audio enabled${state.settings.systemVoiceConfirmed ? ' · iPhone/system voice' : voice?.name ? ` · ${esc(voice.name)}` : ''}</p>` : ''}
+      ${prefs.audioSource === 'clips' ? `<p class="audio-status">Hebrew recordings for all ${terms.length} terms are included in the offline download.</p>` : canSpeak() ? `<p class="audio-status">Hebrew phone voice enabled${prefs.systemVoiceConfirmed ? '' : voice?.name ? ` · ${esc(voice.name)}` : ''}</p>` : ''}
       <div class="button-group">${button('Test Hebrew audio', 'test-audio', 'secondary', 'speaker')}</div>
       ${audioTest === 'playing' ? '<p class="audio-status" role="status">Playing “shalom” (hello)…</p>' : ''}
+      ${audioTest === 'played' ? '<p class="audio-status" role="status">The shalom recording finished. You can replay it with Test Hebrew audio.</p>' : ''}
       ${audioTest === 'confirm' ? `<div class="feedback" role="status">
         <p>Did you hear “shalom” (hello) spoken in Hebrew?</p>
         <div class="button-group">${button('I heard Hebrew', 'audio-confirm', 'primary')}${button('No sound or wrong language', 'audio-reject')}</div>
       </div>` : ''}
       <details class="reading-guide">
-        <summary>Enable Hebrew audio on iPhone</summary>
+        <summary>If audio is silent on iPhone</summary>
+        <p>Select Built-in recordings, turn up the media volume and tap Test Hebrew audio. Check whether sound is routed to headphones or another device. You can also <a href="./audio/shalom.mp3" target="_blank" rel="noopener noreferrer">open the shalom audio file</a> in Safari’s media player.</p>
+        <p>For the optional Phone voice setting, follow these steps.</p>
         <ol>
           <li>Open iPhone Settings → Accessibility → Read &amp; Speak → Voices. On older iOS versions, look for Spoken Content.</li>
           <li>Choose Hebrew, select a voice and download it if a download button appears.</li>
@@ -321,6 +394,7 @@ function settingsPage() {
         <p>The test asks iPhone to choose its installed Hebrew voice even when Safari leaves it out of the voice list. If the sample is silent, check the media volume and whether audio is routed to headphones or another device, then test again.</p>
         <p><a href="https://support.apple.com/en-ie/guide/iphone/iph96b214f0/ios" target="_blank" rel="noopener noreferrer">Apple’s voice settings guide</a></p>
       </details>
+      <p class="audio-status"><a href="https://github.com/munxman/krav-ivrit/blob/main/audio/README.md" target="_blank" rel="noopener noreferrer">Audio credits</a></p>
       ${pronunciationGuide}
     </section>
     <section class="panel settings-card">
@@ -501,7 +575,7 @@ function sessionPage() {
     content = `<h1>${card.mode === 'recall' ? 'How well did you know it?' : 'Review the answer'}</h1>
       ${card.mode === 'recall' && card.typed.trim() ? `<p>You typed <strong>${esc(card.typed.trim())}</strong></p>` : ''}
       ${feedbackBlock(card.term, feedback.correct)}
-      ${canSpeak() ? button('Play Hebrew', 'term-audio-current', 'secondary', 'speaker') : ''}
+      ${state.settings.audioSource === 'clips' || canSpeak() ? button('Play Hebrew', 'term-audio-current', 'secondary', 'speaker') : ''}
       ${card.mode === 'recall' ? `<div class="grades">${GRADES.map(grade => button(grade, 'grade-' + grade, grade === 'Good' ? 'primary' : 'secondary')).join('')}</div>`
         : `<div class="button-group">${button('Continue', 'next', 'primary full', 'arrow')}</div>`}`;
   } else if (card.mode === 'recall') {
@@ -516,7 +590,7 @@ function sessionPage() {
     content = `${audioNotice()}<h1>${canSpeak() ? prompt : esc(card.term.translit)}</h1>
       ${canSpeak() ? '' : pronunciation(card.term)}
       ${canSpeak() ? `<button class="secondary listen" type="button" data-action="play">${icon('speaker')} Play Hebrew</button>`
-        : `<p>Choose the matching meaning.${hebrew(card.term)}</p>`}
+        : `<p>Choose the matching meaning.${hebrew(card.term)}</p>${state.settings.audioSource === 'clips' ? button('Play Hebrew', 'play', 'secondary listen', 'speaker') : ''}`}
       <div class="choices">${card.choices.map(choice => `<button class="choice" type="button"
         data-action="choose" data-term="${esc(choice.id)}">${esc(choice.english)}</button>`).join('')}</div>
       ${isDrill ? '' : button('I don’t know', 'unknown', 'quiet')}`;
@@ -608,7 +682,7 @@ function summaryPage() {
       : `${summary.correct}/20 · ${summary.correct >= PASS ? 'Passed' : 'Keep practicing'}`
       : `${summary.answered}/20 answered`;
     score = `<div class="summary-score"><strong>${result}</strong>
-      <span>${summary.textMode ? 'A Hebrew voice is needed for a listening result.' : 'Pass threshold · 16/20 (80%)'}</span></div>`;
+      <span>${summary.textMode ? 'Try Test Hebrew audio in Settings before your next listening check.' : 'Pass threshold · 16/20 (80%)'}</span></div>`;
   } else {
     score = `<p class="summary-line">${label(summary.reviews, 'review')} · ${summary.newItems} new</p>
       ${summary.answered ? `<div class="summary-score"><strong>${summary.correct}/${summary.answered} correct</strong><span>Commands drill</span></div>` : ''}`;
@@ -702,14 +776,20 @@ view.addEventListener('change', event => {
     }
     if (input.id === 'show-hebrew') return { ...prefs, showHebrew: input.checked };
     if (input.id === 'audio-speed') return { ...prefs, speed: Number(input.value) };
+    if (input.id === 'audio-source') return { ...prefs, audioSource: input.value };
     const { pack } = input.dataset;
     const disabledPacks = prefs.disabledPacks.filter(id => id !== pack);
     if (!input.checked) disabledPacks.push(pack);
     return { ...prefs, disabledPacks };
   };
-  if (!['new-limit', 'show-hebrew', 'audio-speed'].includes(input.id) && !input.dataset.pack) return;
+  if (!['new-limit', 'show-hebrew', 'audio-speed', 'audio-source'].includes(input.id) && !input.dataset.pack) return;
+  if (input.id === 'audio-source') {
+    stopSpeech();
+    audioError = false;
+  }
   settingMessage = '';
   save(latest => ({ ...latest, settings: patch(latest.settings) }));
+  if (input.id === 'audio-source') render();
   renderStats();
 });
 
@@ -783,11 +863,30 @@ async function prepareOffline() {
     status.textContent = 'Offline caching unavailable';
     return;
   }
+  const check = () => {
+    const controller = navigator.serviceWorker.controller;
+    if (!controller) return;
+    const channel = new MessageChannel();
+    const timeout = setTimeout(() => {
+      channel.port1.close();
+      if (status.dataset.ready !== 'true') status.textContent = 'Updating offline audio…';
+    }, 3000);
+    channel.port1.onmessage = event => {
+      clearTimeout(timeout);
+      channel.port1.close();
+      if (event.data?.version >= 4 && event.data.audio) {
+        status.textContent = 'Ready for offline practice';
+        status.dataset.ready = 'true';
+      }
+    };
+    controller.postMessage({ type: 'offline-status' }, [channel.port2]);
+  };
   try {
+    status.textContent = 'Downloading Hebrew audio for offline use…';
+    navigator.serviceWorker.addEventListener('controllerchange', check);
     await navigator.serviceWorker.register('./sw.js');
     await navigator.serviceWorker.ready;
-    status.textContent = 'Ready for offline practice';
-    status.dataset.ready = 'true';
+    check();
   } catch {
     status.textContent = 'Offline caching unavailable';
   }

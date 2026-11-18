@@ -1,0 +1,1556 @@
+{
+  "version": 1,
+  "voice": {
+    "name": "Noa",
+    "author": "thewh1teagle",
+    "model": "https://huggingface.co/thewh1teagle/piper-he-noa",
+    "revision": "23f8e06909e9a1e562a50f99df63e3785451379a",
+    "modelLastModified": "2026-10-27T13:39:54.000Z",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modelSha256": "83b18c0b8fad6ac00fcea5c5bdf3c1fdbec182f9eadad9f97bc423ab4e22be7d",
+    "generator": "piper-tts 1.8.0",
+    "speakerId": 0,
+    "sourceSampleRate": 22050,
+    "format": "MP3 mono 44100 Hz 64 kbps",
+    "loudness": "-18 LUFS, -2 dBTP",
+    "silenceMarginMs": 80,
+    "synthesis": {
+      "lengthScale": 1.08,
+      "noiseScale": 0.5,
+      "noiseWScale": 0.65
+    },
+    "phonemizer": {
+      "name": "ReNikud",
+      "package": "renikud-onnx 0.1.1",
+      "model": "https://huggingface.co/renikud/renikud",
+      "revision": "a59c632c8cbac0f8c63f298cad77ef3a3a2547c9",
+      "license": "CC-BY-4.0",
+      "modelSha256": "8b881a3a8f00283d86c6d1feea44d37e09c1ea6609a4de7d820d937e7f3dbbca",
+      "reviewedCorrections": 39
+    }
+  },
+  "generatedAt": "2026-11-18T07:50:55.697939+00:00",
+  "clips": {
+    "kadima": {
+      "file": "kadima.mp3",
+      "duration": 0.74,
+      "bytes": 6521,
+      "sha256": "fe41e4ff87e26b903f917d21b62ed4c34c3f00d1355db389ed5a1ac9aadbb14e",
+      "text": "קָדִימָה",
+      "phonemes": "kadˈima.",
+      "rmsDbfs": -19.14,
+      "peakDbfs": -6.41
+    },
+    "achora": {
+      "file": "achora.mp3",
+      "duration": 0.811,
+      "bytes": 7148,
+      "sha256": "f83e30f6e7329e7df340784089ff6ac668472ffdc1d86faf22defb5c0eeab0bc",
+      "text": "אָחוֹרָה",
+      "phonemes": "ʔaχˈoʁa.",
+      "rmsDbfs": -19.7,
+      "peakDbfs": -3.81
+    },
+    "smol": {
+      "file": "smol.mp3",
+      "duration": 0.611,
+      "bytes": 5476,
+      "sha256": "005d1d2eade6e95805da040b3fd2cc655b44a6c8804d9388560173e0a5c8d58c",
+      "text": "שְׂמֹאל",
+      "phonemes": "smˈol.",
+      "rmsDbfs": -19.73,
+      "peakDbfs": -4.63
+    },
+    "yamin": {
+      "file": "yamin.mp3",
+      "duration": 0.719,
+      "bytes": 6312,
+      "sha256": "5b5d71d2a6c4d9664df0e00e11e9deb590a51daf3edca8b07e26b00a59df8767",
+      "text": "יָמִין",
+      "phonemes": "jamˈin.",
+      "rmsDbfs": -18.98,
+      "peakDbfs": -5.72
+    },
+    "atzor": {
+      "file": "atzor.mp3",
+      "duration": 0.783,
+      "bytes": 6730,
+      "sha256": "ef06ac96c88c0af22055a374f59b1a1c9715afeaacaf143a5e45296e1aa2e278",
+      "text": "עֲצוֹר",
+      "phonemes": "ʔatsˈoʁ.",
+      "rmsDbfs": -20.09,
+      "peakDbfs": -2.4
+    },
+    "zuz": {
+      "file": "zuz.mp3",
+      "duration": 0.68,
+      "bytes": 6103,
+      "sha256": "424e228b554d8348fc3c9fca2cad93538fc15a0c52af57a1f661e081c8b5b9d8",
+      "text": "זוּז",
+      "phonemes": "zˈuz.",
+      "rmsDbfs": -19.78,
+      "peakDbfs": -3.39
+    },
+    "kum": {
+      "file": "kum.mp3",
+      "duration": 0.597,
+      "bytes": 5267,
+      "sha256": "567170c28387bf5b720854826056a95a0ea7978b447ce555e2e3f6efebb9a132",
+      "text": "קוּם",
+      "phonemes": "kˈum.",
+      "rmsDbfs": -19.11,
+      "peakDbfs": -5.4
+    },
+    "od-paam": {
+      "file": "od-paam.mp3",
+      "duration": 0.781,
+      "bytes": 6730,
+      "sha256": "29d817aa72b6cec67f4fb15dc4ec09f5edfffabbd84aee7d306e5806afaa8d17",
+      "text": "עוֹד פַּעַם",
+      "phonemes": "ʔˈod pˈaʔam.",
+      "rmsDbfs": -19.28,
+      "peakDbfs": -2.49
+    },
+    "kida": {
+      "file": "kida.mp3",
+      "duration": 0.599,
+      "bytes": 5267,
+      "sha256": "20bb514004a00bf250ad051cdde2edf5987239dbb54268928aee0d3675bbf566",
+      "text": "קִידָה",
+      "phonemes": "kidˈa.",
+      "rmsDbfs": -19.77,
+      "peakDbfs": -3.09
+    },
+    "shura": {
+      "file": "shura.mp3",
+      "duration": 0.646,
+      "bytes": 5685,
+      "sha256": "49a924c20558c424c37833039fa176f6442016a29567a0e6a96219543554809d",
+      "text": "שׁוּרָה",
+      "phonemes": "ʃuʁˈa.",
+      "rmsDbfs": -19.54,
+      "peakDbfs": -3.7
+    },
+    "yalla": {
+      "file": "yalla.mp3",
+      "duration": 0.558,
+      "bytes": 5058,
+      "sha256": "1553062c3b86ae3aa3cd4ce62de17c481a26b21a03e1b9b4d46b259aa52642b8",
+      "text": "יַאלְלָה",
+      "phonemes": "jˈala.",
+      "rmsDbfs": -19.93,
+      "peakDbfs": -2.27
+    },
+    "shev": {
+      "file": "shev.mp3",
+      "duration": 0.731,
+      "bytes": 6312,
+      "sha256": "a208cf7e57d6e8269d44d215eb33153827b3664b73da47ecd27cb28193691c7d",
+      "text": "שֵׁב",
+      "phonemes": "ʃˈev.",
+      "rmsDbfs": -20.22,
+      "peakDbfs": -2.92
+    },
+    "chake": {
+      "file": "chake.mp3",
+      "duration": 0.667,
+      "bytes": 5894,
+      "sha256": "cc4eb137ee99a924f167a5433c30c9da79216ecc83045f959da480cd43a60960",
+      "text": "חַכֵּה",
+      "phonemes": "χakˈe.",
+      "rmsDbfs": -21.07,
+      "peakDbfs": -2.48
+    },
+    "takshivu": {
+      "file": "takshivu.mp3",
+      "duration": 0.898,
+      "bytes": 7775,
+      "sha256": "97ea82d852e1e91f741adf0597904f636f9db4c7244df467844120c0546a8a1f",
+      "text": "תַּקְשִׁיבוּ",
+      "phonemes": "takʃˈivu.",
+      "rmsDbfs": -19.99,
+      "peakDbfs": -5.41
+    },
+    "tistaklu": {
+      "file": "tistaklu.mp3",
+      "duration": 0.864,
+      "bytes": 7566,
+      "sha256": "8dea900a12a9225038906b7b60111994dbebe374341e5d530d88205f17c66ec6",
+      "text": "תִּסְתַּכְּלוּ",
+      "phonemes": "tistaklˈu.",
+      "rmsDbfs": -19.92,
+      "peakDbfs": -2.59
+    },
+    "leat": {
+      "file": "leat.mp3",
+      "duration": 0.804,
+      "bytes": 6939,
+      "sha256": "ce3514e813d05e97f1470017ee78d851dff2fcbf56545a664941139401e7c859",
+      "text": "לְאַט",
+      "phonemes": "leʔˈat.",
+      "rmsDbfs": -20.46,
+      "peakDbfs": -4.47
+    },
+    "maher": {
+      "file": "maher.mp3",
+      "duration": 0.662,
+      "bytes": 5894,
+      "sha256": "2a1585b8b8fa8136ac9c2e018a08b4216f3d4db7d3fb2c8257d3cf7a448c347b",
+      "text": "מַהֵר",
+      "phonemes": "mahˈeʁ.",
+      "rmsDbfs": -19.59,
+      "peakDbfs": -5.75
+    },
+    "lemala": {
+      "file": "lemala.mp3",
+      "duration": 0.763,
+      "bytes": 6730,
+      "sha256": "3cf91f9a0ef1a95ab655e8ad85ab4f4671d58315b4f9d2e336d2cc21a13b3dfd",
+      "text": "לְמַעְלָה",
+      "phonemes": "lemˈala.",
+      "rmsDbfs": -20.31,
+      "peakDbfs": -3.58
+    },
+    "lemata": {
+      "file": "lemata.mp3",
+      "duration": 0.742,
+      "bytes": 6521,
+      "sha256": "cd5789dbece4319ab79e389799eb9987bd8afb9b5e4cbb0af78333ae45e3f441",
+      "text": "לְמַטָּה",
+      "phonemes": "lemˈata.",
+      "rmsDbfs": -20.12,
+      "peakDbfs": -2.91
+    },
+    "beyachad": {
+      "file": "beyachad.mp3",
+      "duration": 0.872,
+      "bytes": 7566,
+      "sha256": "1a959826577b687437eb330570818543d19cd0760e7b77487fd5cf5dcaee324f",
+      "text": "בְּיַחַד",
+      "phonemes": "bejˈaχad.",
+      "rmsDbfs": -21.59,
+      "peakDbfs": -2.47
+    },
+    "bezugot": {
+      "file": "bezugot.mp3",
+      "duration": 0.932,
+      "bytes": 7984,
+      "sha256": "9dcc09d9ab324eda7bd646d3d43e69773b24728fcb911d41e45fb33853da26c6",
+      "text": "בְּזוּגוֹת",
+      "phonemes": "bezuɡˈot.",
+      "rmsDbfs": -19.98,
+      "peakDbfs": -2.45
+    },
+    "tistovevu": {
+      "file": "tistovevu.mp3",
+      "duration": 0.948,
+      "bytes": 8193,
+      "sha256": "3b4f94e95073c027e8922610bc0e2570c1fc3d0799b7f24016a5f3796608b89d",
+      "text": "תִּסְתּוֹבְבוּ",
+      "phonemes": "tistovevˈu.",
+      "rmsDbfs": -19.29,
+      "peakDbfs": -3.03
+    },
+    "muchanim": {
+      "file": "muchanim.mp3",
+      "duration": 0.903,
+      "bytes": 7775,
+      "sha256": "4e29900cb402baedd580bd397236a8ef8760e5e80d9656aa82e4db7624e2a6d1",
+      "text": "מוּכָנִים?",
+      "phonemes": "muχanˈim?",
+      "rmsDbfs": -18.89,
+      "peakDbfs": -4.88
+    },
+    "linshom": {
+      "file": "linshom.mp3",
+      "duration": 0.835,
+      "bytes": 7148,
+      "sha256": "9adb878b5e3f8e6c519b88fb9138487d9ec88d3fd07c20e4de20516edf0ced46",
+      "text": "לִנְשֹׁם",
+      "phonemes": "linʃˈom.",
+      "rmsDbfs": -19.05,
+      "peakDbfs": -4.56
+    },
+    "sheket": {
+      "file": "sheket.mp3",
+      "duration": 0.815,
+      "bytes": 7148,
+      "sha256": "909a3b8c6d9ccd585a928af14387e03502bba9e39725dbdc659ad6de6e1e8f44",
+      "text": "שֶׁקֶט",
+      "phonemes": "ʃˈeket.",
+      "rmsDbfs": -20.55,
+      "peakDbfs": -2.74
+    },
+    "hafsaka": {
+      "file": "hafsaka.mp3",
+      "duration": 0.821,
+      "bytes": 7148,
+      "sha256": "60687d1078cd89a2156e1446d5a4caa253772207fd24f75e06dee2f38a1b83fd",
+      "text": "הַפְסָקָה",
+      "phonemes": "hafsakˈa.",
+      "rmsDbfs": -20.2,
+      "peakDbfs": -2.18
+    },
+    "one-f": {
+      "file": "one-f.mp3",
+      "duration": 0.803,
+      "bytes": 6939,
+      "sha256": "7f2a64b09494d0cce3bda3b27b02a39886d1b1b3ee1947ce72a7939e55ff136a",
+      "text": "אַחַת",
+      "phonemes": "ʔaχˈat.",
+      "rmsDbfs": -22.39,
+      "peakDbfs": -2.49
+    },
+    "one-m": {
+      "file": "one-m.mp3",
+      "duration": 0.722,
+      "bytes": 6312,
+      "sha256": "449016c454f9355fc8fd6dae4397c85001c42e963aeab7db9b5e37c2744c3957",
+      "text": "אֶחָד",
+      "phonemes": "ʔeχˈad.",
+      "rmsDbfs": -21.16,
+      "peakDbfs": -2.58
+    },
+    "two-f": {
+      "file": "two-f.mp3",
+      "duration": 0.778,
+      "bytes": 6730,
+      "sha256": "8a46d0857e1cc5fdb425c6c23c40d407b7c6f229e917d1e671263f4e11249429",
+      "text": "שְׁתַּיִם",
+      "phonemes": "ʃtˈajim.",
+      "rmsDbfs": -21.71,
+      "peakDbfs": -2.67
+    },
+    "two-m": {
+      "file": "two-m.mp3",
+      "duration": 0.72,
+      "bytes": 6312,
+      "sha256": "782209a34016bb38dfb6ab316258d97e049955875769e74db716923530e587df",
+      "text": "שְׁנַיִם",
+      "phonemes": "ʃnˈajim.",
+      "rmsDbfs": -20.33,
+      "peakDbfs": -4.7
+    },
+    "two-f-before": {
+      "file": "two-f-before.mp3",
+      "duration": 0.666,
+      "bytes": 5894,
+      "sha256": "d00178d3b9a6dd6402282b0c9d0933c7908bbf6c5be6761f537914442cb57c0d",
+      "text": "שְׁתֵּי",
+      "phonemes": "ʃtˈej.",
+      "rmsDbfs": -20.34,
+      "peakDbfs": -3.43
+    },
+    "two-m-before": {
+      "file": "two-m-before.mp3",
+      "duration": 0.669,
+      "bytes": 5894,
+      "sha256": "f25a8fe28403f31d1e0e5215fd55de09a44c79b55f8c91518a3ec06328117ff4",
+      "text": "שְׁנֵי",
+      "phonemes": "ʃnˈej.",
+      "rmsDbfs": -19.72,
+      "peakDbfs": -3.25
+    },
+    "three-f": {
+      "file": "three-f.mp3",
+      "duration": 0.848,
+      "bytes": 7357,
+      "sha256": "6e6f58660b6c153e8bba4d9a30029822bd7d668b9214f0db2094239d3f360614",
+      "text": "שָׁלוֹשׁ",
+      "phonemes": "ʃalˈoʃ.",
+      "rmsDbfs": -19.78,
+      "peakDbfs": -4.19
+    },
+    "three-m": {
+      "file": "three-m.mp3",
+      "duration": 0.798,
+      "bytes": 6939,
+      "sha256": "8d19cbdc79e02da6475294fd2550266b0ee902fe712b7dc160dbb82d882f4bc6",
+      "text": "שְׁלוֹשָׁה",
+      "phonemes": "ʃloʃˈa.",
+      "rmsDbfs": -21.5,
+      "peakDbfs": -2.34
+    },
+    "four-f": {
+      "file": "four-f.mp3",
+      "duration": 0.62,
+      "bytes": 5476,
+      "sha256": "45487b66e7e4aec21d4c039962c37f0a057f008f1aa215df5bb5ab9fba42b8db",
+      "text": "אַרְבַּע",
+      "phonemes": "ʔˈaʁba.",
+      "rmsDbfs": -19.32,
+      "peakDbfs": -2.77
+    },
+    "four-m": {
+      "file": "four-m.mp3",
+      "duration": 0.733,
+      "bytes": 6521,
+      "sha256": "549127c4e59ac0320f2f7479765f8e90f8b26153530618c1fab84e409f050f2a",
+      "text": "אַרְבָּעָה",
+      "phonemes": "ʔaʁbaʔˈa.",
+      "rmsDbfs": -19.64,
+      "peakDbfs": -3.32
+    },
+    "five-f": {
+      "file": "five-f.mp3",
+      "duration": 0.913,
+      "bytes": 7775,
+      "sha256": "328c66368b762c191e6bbc53311ba39b385ae41e057ee5de169f01300017da4b",
+      "text": "חָמֵשׁ",
+      "phonemes": "χamˈeʃ.",
+      "rmsDbfs": -19.3,
+      "peakDbfs": -3.72
+    },
+    "five-m": {
+      "file": "five-m.mp3",
+      "duration": 0.82,
+      "bytes": 7148,
+      "sha256": "8c01b2815e3813fa6ee4b50f7776d3d6fe846a3a4113143e48023b6d2468ffea",
+      "text": "חֲמִשָּׁה",
+      "phonemes": "χamiʃˈa.",
+      "rmsDbfs": -19.51,
+      "peakDbfs": -2.47
+    },
+    "six-f": {
+      "file": "six-f.mp3",
+      "duration": 0.888,
+      "bytes": 7566,
+      "sha256": "5eb3d6a493c80416d13a328aa447ec6b810ccec8aa4e07fa380771ea56f28e3b",
+      "text": "שֵׁשׁ",
+      "phonemes": "ʃˈeʃ.",
+      "rmsDbfs": -20.44,
+      "peakDbfs": -2.94
+    },
+    "six-m": {
+      "file": "six-m.mp3",
+      "duration": 0.669,
+      "bytes": 5894,
+      "sha256": "f3166e28e8861cd68bb91b32d5b5331bb845b1793de2c3e17a4c30525e520548",
+      "text": "שִׁשָּׁה",
+      "phonemes": "ʃiʃˈa.",
+      "rmsDbfs": -21.88,
+      "peakDbfs": -2.3
+    },
+    "seven-f": {
+      "file": "seven-f.mp3",
+      "duration": 0.702,
+      "bytes": 6103,
+      "sha256": "41ccc60537bb3c985a8c7499b147fb8b7638c60a557a8166771bc8675258c094",
+      "text": "שֶׁבַע",
+      "phonemes": "ʃˈeva.",
+      "rmsDbfs": -19.46,
+      "peakDbfs": -3.9
+    },
+    "seven-m": {
+      "file": "seven-m.mp3",
+      "duration": 0.741,
+      "bytes": 6521,
+      "sha256": "fe3a337ef020d80886fdead248e83ae6ac3df6399460848ab44765c3193cb6aa",
+      "text": "שִׁבְעָה",
+      "phonemes": "ʃivʔˈa.",
+      "rmsDbfs": -19.24,
+      "peakDbfs": -4.28
+    },
+    "eight-f": {
+      "file": "eight-f.mp3",
+      "duration": 0.649,
+      "bytes": 5685,
+      "sha256": "0dccead03ed83200cdf657e839904ba4f12fda50c10dd1e0f671e45d3f225e91",
+      "text": "שְׁמוֹנֶה",
+      "phonemes": "ʃmˈone.",
+      "rmsDbfs": -19.22,
+      "peakDbfs": -5.73
+    },
+    "eight-m": {
+      "file": "eight-m.mp3",
+      "duration": 0.745,
+      "bytes": 6521,
+      "sha256": "ef6e4b9594e987deffe5812eb6f98b8ab9ca90f83382c3d3b1551681839e7d0e",
+      "text": "שְׁמוֹנָה",
+      "phonemes": "ʃmonˈa.",
+      "rmsDbfs": -19.71,
+      "peakDbfs": -4.4
+    },
+    "nine-f": {
+      "file": "nine-f.mp3",
+      "duration": 0.571,
+      "bytes": 5058,
+      "sha256": "25b44ff2b66355f251b27260f794a04374a1486e3253779caa7f741ef15131ab",
+      "text": "תֵּשַׁע",
+      "phonemes": "tˈeʃa.",
+      "rmsDbfs": -19.91,
+      "peakDbfs": -4.38
+    },
+    "nine-m": {
+      "file": "nine-m.mp3",
+      "duration": 0.705,
+      "bytes": 6103,
+      "sha256": "75a8efdacce8e74df5f028a606bc39e704e78831543f811648bb93a1f87581b8",
+      "text": "תִּשְׁעָה",
+      "phonemes": "tiʃʔˈa.",
+      "rmsDbfs": -21.14,
+      "peakDbfs": -2.6
+    },
+    "ten-f": {
+      "file": "ten-f.mp3",
+      "duration": 0.724,
+      "bytes": 6312,
+      "sha256": "04528f8bf30f51dca085c17872b6012967782b0bdbf987c2dd733f977dd7d1cd",
+      "text": "עֶשֶׂר",
+      "phonemes": "ʔˈeseʁ.",
+      "rmsDbfs": -19.8,
+      "peakDbfs": -2.7
+    },
+    "ten-m": {
+      "file": "ten-m.mp3",
+      "duration": 0.797,
+      "bytes": 6939,
+      "sha256": "90829931dc321c912a6c0cb349ce91875b0a47b8b5353a1aab602d92a5ec37fc",
+      "text": "עֲשָׂרָה",
+      "phonemes": "ʔasaʁˈa.",
+      "rmsDbfs": -19.45,
+      "peakDbfs": -3.04
+    },
+    "rosh": {
+      "file": "rosh.mp3",
+      "duration": 0.657,
+      "bytes": 5894,
+      "sha256": "9406210ad1d3ec132f845704e47832c29addadd526845e8e70d48bf25a564ecd",
+      "text": "רֹאשׁ",
+      "phonemes": "ʁˈoʃ.",
+      "rmsDbfs": -19.83,
+      "peakDbfs": -3.34
+    },
+    "panim": {
+      "file": "panim.mp3",
+      "duration": 0.67,
+      "bytes": 5894,
+      "sha256": "eb4f89a885ec5ac2cc1f48e7f4cf787db3c1bdd209b9dd0cbb127a9d39d9f8ed",
+      "text": "פָּנִים",
+      "phonemes": "panˈim.",
+      "rmsDbfs": -19.36,
+      "peakDbfs": -5.95
+    },
+    "ayin": {
+      "file": "ayin.mp3",
+      "duration": 0.544,
+      "bytes": 4849,
+      "sha256": "52c476506241dc0ed7e1257c32cc12ab7985da4d29538bedf46623a5851aaee3",
+      "text": "עַיִן",
+      "phonemes": "ʔˈajin.",
+      "rmsDbfs": -20.75,
+      "peakDbfs": -2.3
+    },
+    "ozen": {
+      "file": "ozen.mp3",
+      "duration": 0.643,
+      "bytes": 5685,
+      "sha256": "cd19e88f612c98be404fe71975fcee5f1b30f087795b81d446febbb19589db43",
+      "text": "אֹזֶן",
+      "phonemes": "ʔˈozen.",
+      "rmsDbfs": -18.88,
+      "peakDbfs": -2.74
+    },
+    "af": {
+      "file": "af.mp3",
+      "duration": 0.573,
+      "bytes": 5058,
+      "sha256": "f1e5b882b07e222fa93a79665bf1c8ff433fb9aa6312e18f2c4f2b9167601c1d",
+      "text": "אַף",
+      "phonemes": "ʔˈaf.",
+      "rmsDbfs": -20.95,
+      "peakDbfs": -2.53
+    },
+    "pe": {
+      "file": "pe.mp3",
+      "duration": 0.427,
+      "bytes": 4013,
+      "sha256": "454cb2fefce27653a22584f48fc6b09c32f72fcce35230ddff3ecbd27a4664cb",
+      "text": "פֶּה",
+      "phonemes": "pˈe.",
+      "rmsDbfs": -18.48,
+      "peakDbfs": -2.52
+    },
+    "lashon": {
+      "file": "lashon.mp3",
+      "duration": 0.775,
+      "bytes": 6730,
+      "sha256": "457282d1429ddee4c8f861046f86ba92ca2a8d14a8fbdf782918b77c2e0e6795",
+      "text": "לָשׁוֹן",
+      "phonemes": "laʃˈon.",
+      "rmsDbfs": -20.43,
+      "peakDbfs": -5.61
+    },
+    "shen": {
+      "file": "shen.mp3",
+      "duration": 0.57,
+      "bytes": 5058,
+      "sha256": "05db3531859c024c3197866f1b3fb7ccdc5c77cc336bc518a74c81db7884d33e",
+      "text": "שֵׁן",
+      "phonemes": "ʃˈen.",
+      "rmsDbfs": -20.13,
+      "peakDbfs": -2.97
+    },
+    "sear": {
+      "file": "sear.mp3",
+      "duration": 0.717,
+      "bytes": 6312,
+      "sha256": "ebb83274ea312c867213b536b7c34beae0cf069961461d67fb2ee316d0ec8511",
+      "text": "שֵׂעָר",
+      "phonemes": "seʔˈaʁ.",
+      "rmsDbfs": -20.62,
+      "peakDbfs": -2.59
+    },
+    "tsavar": {
+      "file": "tsavar.mp3",
+      "duration": 0.773,
+      "bytes": 6730,
+      "sha256": "46a7e8bc45453884e983b7aae8f0503fab36771e0fcbc3a37127dbfe6eb5573b",
+      "text": "צַוָּאר",
+      "phonemes": "tsavˈaʁ.",
+      "rmsDbfs": -20.13,
+      "peakDbfs": -3.29
+    },
+    "katef": {
+      "file": "katef.mp3",
+      "duration": 0.889,
+      "bytes": 7775,
+      "sha256": "303fdf28f21b4f55046aba07ba73434c9e560a299f2dbabe49cf68a5bb622214",
+      "text": "כָּתֵף",
+      "phonemes": "katˈef.",
+      "rmsDbfs": -19.44,
+      "peakDbfs": -2.82
+    },
+    "zroa": {
+      "file": "zroa.mp3",
+      "duration": 0.64,
+      "bytes": 5685,
+      "sha256": "250eb3b06bdcbdfbc86181adb95a6fa1d125f1c37054eb8cbd3bc7c539804104",
+      "text": "זְרוֹעַ",
+      "phonemes": "zʁˈoa.",
+      "rmsDbfs": -19.84,
+      "peakDbfs": -3.56
+    },
+    "ama": {
+      "file": "ama.mp3",
+      "duration": 0.615,
+      "bytes": 5476,
+      "sha256": "e3bea3e770c799b544b2340f9e660167f7bc70f7e5002b7925324507db07d80e",
+      "text": "אַמָּה",
+      "phonemes": "ʔamˈa.",
+      "rmsDbfs": -19.17,
+      "peakDbfs": -4.69
+    },
+    "mifrak": {
+      "file": "mifrak.mp3",
+      "duration": 0.788,
+      "bytes": 6939,
+      "sha256": "87f5af8db1ec2a61489d0eae5bf4376ec7f9395d843e5f4232d02e947c0abe5f",
+      "text": "מִפְרָק",
+      "phonemes": "mifʁˈak.",
+      "rmsDbfs": -21.35,
+      "peakDbfs": -2.33
+    },
+    "yad": {
+      "file": "yad.mp3",
+      "duration": 0.603,
+      "bytes": 5476,
+      "sha256": "a544f7fca1bd920632ab28084b3518284f200b3967c53cf9068b89d16e281bc0",
+      "text": "יָד",
+      "phonemes": "jˈad.",
+      "rmsDbfs": -18.93,
+      "peakDbfs": -2.41
+    },
+    "kaf-yad": {
+      "file": "kaf-yad.mp3",
+      "duration": 0.899,
+      "bytes": 7775,
+      "sha256": "897bb383aeefa9295a8dd4c2b0839250277a04d8969d992fe0743af9f319c2be",
+      "text": "כַּף יָד",
+      "phonemes": "kˈaf jˈad.",
+      "rmsDbfs": -22.93,
+      "peakDbfs": -2.48
+    },
+    "etsba": {
+      "file": "etsba.mp3",
+      "duration": 0.702,
+      "bytes": 6103,
+      "sha256": "13b510b18fe2dcb08a0c98d40797f51fc5bd5bfb773b59294d897a75eeffbee3",
+      "text": "אֶצְבַּע",
+      "phonemes": "ʔˈetsba.",
+      "rmsDbfs": -20.59,
+      "peakDbfs": -2.63
+    },
+    "agudal": {
+      "file": "agudal.mp3",
+      "duration": 0.913,
+      "bytes": 7775,
+      "sha256": "69104396b9111e3d37fb43d13ec182268046dd192b79c9493dd89c7a44440002",
+      "text": "אֲגוּדָל",
+      "phonemes": "ʔaɡudˈal.",
+      "rmsDbfs": -19.44,
+      "peakDbfs": -3.36
+    },
+    "chaze": {
+      "file": "chaze.mp3",
+      "duration": 0.746,
+      "bytes": 6521,
+      "sha256": "ab657c86c61b2426d3e8b465ffc3da432191c4c9d4480c7cce4166abf8827357",
+      "text": "חָזֶה",
+      "phonemes": "χazˈe.",
+      "rmsDbfs": -19.26,
+      "peakDbfs": -4.3
+    },
+    "gav": {
+      "file": "gav.mp3",
+      "duration": 0.574,
+      "bytes": 5058,
+      "sha256": "5284546b7a63cef39e10ca2bac77caab89b1f3ce4206869496f74bea80bd62f0",
+      "text": "גַּב",
+      "phonemes": "ɡˈav.",
+      "rmsDbfs": -20.46,
+      "peakDbfs": -2.7
+    },
+    "beten": {
+      "file": "beten.mp3",
+      "duration": 0.65,
+      "bytes": 5685,
+      "sha256": "e17a189a7453800bc5b68e835850b2368442985305b0fa408671e11278b63808",
+      "text": "בֶּטֶן",
+      "phonemes": "bˈeten.",
+      "rmsDbfs": -19.2,
+      "peakDbfs": -2.52
+    },
+    "regel": {
+      "file": "regel.mp3",
+      "duration": 0.696,
+      "bytes": 6103,
+      "sha256": "c864b60e99aa68d15fe86f04c786fba4d59943045adc26a0158e485455ffbea0",
+      "text": "רֶגֶל",
+      "phonemes": "ʁˈeɡel.",
+      "rmsDbfs": -20.31,
+      "peakDbfs": -2.9
+    },
+    "yarech": {
+      "file": "yarech.mp3",
+      "duration": 0.808,
+      "bytes": 6939,
+      "sha256": "4aecea2f6debd4017849b206afb2ca04e78b567c618fc3ca107ce935b920723a",
+      "text": "יָרֵךְ",
+      "phonemes": "jaʁˈeχ.",
+      "rmsDbfs": -19.91,
+      "peakDbfs": -2.55
+    },
+    "karsol": {
+      "file": "karsol.mp3",
+      "duration": 0.764,
+      "bytes": 6730,
+      "sha256": "2b48f0354e9a543bab3c6a8f73c7f88244585868efed8f551ebfc7d2921cd82b",
+      "text": "קַרְסֹל",
+      "phonemes": "kaʁsˈol.",
+      "rmsDbfs": -18.97,
+      "peakDbfs": -3.59
+    },
+    "kaf-regel": {
+      "file": "kaf-regel.mp3",
+      "duration": 0.965,
+      "bytes": 8193,
+      "sha256": "24b64d925077bf16e61121e7b0367c1b742ed032662143462a479c5f6ea14038",
+      "text": "כַּף רֶגֶל",
+      "phonemes": "kˈaf ʁˈeɡel.",
+      "rmsDbfs": -22.78,
+      "peakDbfs": -2.44
+    },
+    "akev": {
+      "file": "akev.mp3",
+      "duration": 0.723,
+      "bytes": 6312,
+      "sha256": "f7adf04368ec7565891f4a884b09d456504448d1f37dc7eb14e4a1bdb25f58ab",
+      "text": "עָקֵב",
+      "phonemes": "ʔakˈev.",
+      "rmsDbfs": -20.86,
+      "peakDbfs": -2.24
+    },
+    "egrof": {
+      "file": "egrof.mp3",
+      "duration": 0.923,
+      "bytes": 7984,
+      "sha256": "c5a0c341f5f7d4cbe8769ec68c83536674487ce9c97a89ccd61ff1872bb22343",
+      "text": "אֶגְרוֹף",
+      "phonemes": "ʔeɡʁˈof.",
+      "rmsDbfs": -19.94,
+      "peakDbfs": -5.46
+    },
+    "beita": {
+      "file": "beita.mp3",
+      "duration": 0.711,
+      "bytes": 6312,
+      "sha256": "b1f31676b8d33222564551099ef101cac8431b95e018dec128514f124678071e",
+      "text": "בְּעִיטָה",
+      "phonemes": "beʔitˈa.",
+      "rmsDbfs": -18.85,
+      "peakDbfs": -2.58
+    },
+    "marpek": {
+      "file": "marpek.mp3",
+      "duration": 0.859,
+      "bytes": 7357,
+      "sha256": "8c3a43de2d808ce03a6360301c11e253feb203484c01e8ff97af0c01070d73f2",
+      "text": "מַרְפֵּק",
+      "phonemes": "maʁpˈek.",
+      "rmsDbfs": -19.9,
+      "peakDbfs": -3.26
+    },
+    "berech": {
+      "file": "berech.mp3",
+      "duration": 0.753,
+      "bytes": 6521,
+      "sha256": "eef8fec8f3b43919b24a9000c0baae6cb3f6fc86a97c6a7d679a3bc20600cb86",
+      "text": "בֶּרֶךְ",
+      "phonemes": "bˈeʁeχ.",
+      "rmsDbfs": -19.14,
+      "peakDbfs": -3.28
+    },
+    "hagana": {
+      "file": "hagana.mp3",
+      "duration": 0.785,
+      "bytes": 6939,
+      "sha256": "462abf787aa019cc80b347be7217ad402d6024922a2873a47ceab9cc10a66d21",
+      "text": "הֲגָנָה",
+      "phonemes": "haɡanˈa.",
+      "rmsDbfs": -19.39,
+      "peakDbfs": -4.55
+    },
+    "retzev": {
+      "file": "retzev.mp3",
+      "duration": 0.863,
+      "bytes": 7566,
+      "sha256": "b540ce3fceb4d0757d7d6724bb2635446d7a988c1595a076053897f9329552cd",
+      "text": "רֶצֶף",
+      "phonemes": "ʁˈetsef.",
+      "rmsDbfs": -21.72,
+      "peakDbfs": -2.47
+    },
+    "tefisa": {
+      "file": "tefisa.mp3",
+      "duration": 0.671,
+      "bytes": 5894,
+      "sha256": "1755de4129208fb2abb9b3abeb17e45a815803c0a732037590a7ff220b07bd0f",
+      "text": "תְּפִיסָה",
+      "phonemes": "tfisˈa.",
+      "rmsDbfs": -21.32,
+      "peakDbfs": -2.34
+    },
+    "gilgul": {
+      "file": "gilgul.mp3",
+      "duration": 0.771,
+      "bytes": 6730,
+      "sha256": "04ad68d5e44a795568af957d859a2a814f27f1a76af35ea53e1630b5faac3a24",
+      "text": "גִּלְגּוּל",
+      "phonemes": "ɡilɡˈul.",
+      "rmsDbfs": -18.95,
+      "peakDbfs": -3.38
+    },
+    "tnua": {
+      "file": "tnua.mp3",
+      "duration": 0.554,
+      "bytes": 5058,
+      "sha256": "d85374bc08698e01917369b272df4aa7f775a993e2321218f4506cac2433d311",
+      "text": "תְּנוּעָה",
+      "phonemes": "tnuʔˈa.",
+      "rmsDbfs": -19.03,
+      "peakDbfs": -5.6
+    },
+    "ketsev": {
+      "file": "ketsev.mp3",
+      "duration": 0.734,
+      "bytes": 6521,
+      "sha256": "41b2edfbc7bb99581bdb59f7ba3ec3cb26f778b52f1b2022d83dfe8b0c3bca0b",
+      "text": "קֶצֶב",
+      "phonemes": "kˈetsev.",
+      "rmsDbfs": -20.37,
+      "peakDbfs": -2.51
+    },
+    "shivui-mishkal": {
+      "file": "shivui-mishkal.mp3",
+      "duration": 1.26,
+      "bytes": 10700,
+      "sha256": "556f903b775b435770b648e293001e2669d51d118f0cefc7a7c75bbfbdbcd0cd",
+      "text": "שִׁוּוּי מִשְׁקָל",
+      "phonemes": "ʃivˈuj miʃkˈal.",
+      "rmsDbfs": -19.08,
+      "peakDbfs": -4.21
+    },
+    "shlita": {
+      "file": "shlita.mp3",
+      "duration": 0.743,
+      "bytes": 6521,
+      "sha256": "70ce22413ca6b6e2e95ee9006b516d3091dea674a460f79091e13cdb77d7d595",
+      "text": "שְׁלִיטָה",
+      "phonemes": "ʃlitˈa.",
+      "rmsDbfs": -22.36,
+      "peakDbfs": -2.42
+    },
+    "neshek": {
+      "file": "neshek.mp3",
+      "duration": 0.879,
+      "bytes": 7566,
+      "sha256": "8806754682d9e1883e2bbecf050268a01c060bd0d9453a8ed7e8173bc33b557a",
+      "text": "נֶשֶׁק",
+      "phonemes": "nˈeʃek.",
+      "rmsDbfs": -19.68,
+      "peakDbfs": -2.32
+    },
+    "sakin": {
+      "file": "sakin.mp3",
+      "duration": 0.864,
+      "bytes": 7566,
+      "sha256": "f26f8fda6dfd28b0309edfd9f6062a8b2ccbec2c48b8fd9ea106714033c20c4b",
+      "text": "סַכִּין",
+      "phonemes": "sakˈin.",
+      "rmsDbfs": -19.26,
+      "peakDbfs": -3.83
+    },
+    "makel": {
+      "file": "makel.mp3",
+      "duration": 0.801,
+      "bytes": 6939,
+      "sha256": "5f61a2731d103de8a65e9f9585f985a187362c7f45b4b3331787145fc63eddf9",
+      "text": "מַקֵּל",
+      "phonemes": "makˈel.",
+      "rmsDbfs": -20.04,
+      "peakDbfs": -2.65
+    },
+    "ekdach": {
+      "file": "ekdach.mp3",
+      "duration": 0.829,
+      "bytes": 7148,
+      "sha256": "e4f642fd3f575f4b90fe8bd742353ba30f78778ea141c0fdb2ab5342b0e3fff0",
+      "text": "אֶקְדָּח",
+      "phonemes": "ʔekdˈaχ.",
+      "rmsDbfs": -21.99,
+      "peakDbfs": -2.63
+    },
+    "degem": {
+      "file": "degem.mp3",
+      "duration": 0.603,
+      "bytes": 5476,
+      "sha256": "982ad3a59284025af372e385e62cf265f2da19e413ece96ecee3a4850ac97dfd",
+      "text": "דֶּגֶם",
+      "phonemes": "dˈeɡem.",
+      "rmsDbfs": -18.68,
+      "peakDbfs": -2.4
+    },
+    "gumi": {
+      "file": "gumi.mp3",
+      "duration": 0.591,
+      "bytes": 5267,
+      "sha256": "fb1b2675cc6d3fa0e9d42e32966524d8a391dcaf0f0d988b9243709dcdfafae1",
+      "text": "גּוּמִי",
+      "phonemes": "ɡˈumi.",
+      "rmsDbfs": -19.09,
+      "peakDbfs": -5.4
+    },
+    "plastik": {
+      "file": "plastik.mp3",
+      "duration": 0.885,
+      "bytes": 7566,
+      "sha256": "2fd56a6358f01af800694235d4bba3c695a5c5e8da706608b8440394d31adbf9",
+      "text": "פְּלַסְטִיק",
+      "phonemes": "plˈastik.",
+      "rmsDbfs": -22.37,
+      "peakDbfs": -2.27
+    },
+    "tmuna": {
+      "file": "tmuna.mp3",
+      "duration": 0.634,
+      "bytes": 5685,
+      "sha256": "05c61cb1044830f0dd0564bde66cbc586ea3a79f266dc72958fc76e8e489d019",
+      "text": "תְּמוּנָה",
+      "phonemes": "tmunˈa.",
+      "rmsDbfs": -19.19,
+      "peakDbfs": -6.01
+    },
+    "madrich": {
+      "file": "madrich.mp3",
+      "duration": 0.825,
+      "bytes": 7148,
+      "sha256": "5aca483e4d69f84818c0aa2ac79582349cdb52dc391efb7791995dc3436f4955",
+      "text": "מַדְרִיךְ",
+      "phonemes": "madʁˈiχ.",
+      "rmsDbfs": -19.6,
+      "peakDbfs": -5.92
+    },
+    "madricha": {
+      "file": "madricha.mp3",
+      "duration": 0.906,
+      "bytes": 7775,
+      "sha256": "b7b7bf1ce6d52955386ceb59e10c3caa581e1f17dc45aa2fdf93aaa5030c4901",
+      "text": "מַדְרִיכָה",
+      "phonemes": "madʁiχˈa.",
+      "rmsDbfs": -18.75,
+      "peakDbfs": -3.51
+    },
+    "talmid": {
+      "file": "talmid.mp3",
+      "duration": 0.787,
+      "bytes": 6939,
+      "sha256": "dd926342145cf3be69d394b31253c1c4c193d16ea702febef6fdc533b5daa130",
+      "text": "תַּלְמִיד",
+      "phonemes": "talmˈid.",
+      "rmsDbfs": -19.28,
+      "peakDbfs": -5.37
+    },
+    "talmida": {
+      "file": "talmida.mp3",
+      "duration": 0.802,
+      "bytes": 6939,
+      "sha256": "def38589291744e91fdda752b7f773dbf198efc32969a901d28462b403f76416",
+      "text": "תַּלְמִידָה",
+      "phonemes": "talmidˈa.",
+      "rmsDbfs": -18.47,
+      "peakDbfs": -3.88
+    },
+    "chaver": {
+      "file": "chaver.mp3",
+      "duration": 0.852,
+      "bytes": 7357,
+      "sha256": "3f7fa8e6905ebdb3e25dd4d0d0dcc914cf8a9c3966aab70e9aa2c108ae08bd75",
+      "text": "חָבֵר",
+      "phonemes": "χavˈeʁ.",
+      "rmsDbfs": -19.39,
+      "peakDbfs": -2.5
+    },
+    "chavera": {
+      "file": "chavera.mp3",
+      "duration": 0.807,
+      "bytes": 6939,
+      "sha256": "f3074c3bcf1d69dd35f3481eb02f2d14f8e19663af0061ce96156c3d2d1443fb",
+      "text": "חֲבֵרָה",
+      "phonemes": "χaveʁˈa.",
+      "rmsDbfs": -19.27,
+      "peakDbfs": -2.62
+    },
+    "imun": {
+      "file": "imun.mp3",
+      "duration": 0.662,
+      "bytes": 5894,
+      "sha256": "14779b795c20d2b7c88a216516eaa3380743035aec3855a515f4c9cf231e8d1b",
+      "text": "אִמּוּן",
+      "phonemes": "ʔimˈun.",
+      "rmsDbfs": -18.94,
+      "peakDbfs": -7.47
+    },
+    "targil": {
+      "file": "targil.mp3",
+      "duration": 0.697,
+      "bytes": 6103,
+      "sha256": "01d2349590abeb068b5d4701d5189345fdb865df031c448cd90c44d5efe3a1ad",
+      "text": "תַּרְגִּיל",
+      "phonemes": "taʁɡˈil.",
+      "rmsDbfs": -18.93,
+      "peakDbfs": -4.45
+    },
+    "shiur": {
+      "file": "shiur.mp3",
+      "duration": 0.812,
+      "bytes": 7148,
+      "sha256": "e6cb9646ef3871396d6cf2dd70132d902cb6dfd0016850063f01f65f9c0d06df",
+      "text": "שִׁעוּר",
+      "phonemes": "ʃiʔˈuʁ.",
+      "rmsDbfs": -19.15,
+      "peakDbfs": -6.77
+    },
+    "chimum": {
+      "file": "chimum.mp3",
+      "duration": 0.673,
+      "bytes": 5894,
+      "sha256": "d4f8f1a4f3f53d8ba97deba17b19b60bf37825cfa4b42213ab153f599b515333",
+      "text": "חִמּוּם",
+      "phonemes": "χimˈum.",
+      "rmsDbfs": -19.25,
+      "peakDbfs": -7.49
+    },
+    "kvutsa": {
+      "file": "kvutsa.mp3",
+      "duration": 0.665,
+      "bytes": 5894,
+      "sha256": "24da52c2cfb1518b69ae0fa9fc72b07d2b4b2c85e5ef37e7c25fc62874924465",
+      "text": "קְבוּצָה",
+      "phonemes": "kvutsˈa.",
+      "rmsDbfs": -22.16,
+      "peakDbfs": -2.38
+    },
+    "mishtatef": {
+      "file": "mishtatef.mp3",
+      "duration": 1.032,
+      "bytes": 8820,
+      "sha256": "196cfcbc1597da3d786d32bc17db433430f7f5bd8ba20d0bcac5f87bc8c3eef8",
+      "text": "מִשְׁתַּתֵּף",
+      "phonemes": "miʃtatˈef.",
+      "rmsDbfs": -20.07,
+      "peakDbfs": -2.43
+    },
+    "bat-zug": {
+      "file": "bat-zug.mp3",
+      "duration": 0.74,
+      "bytes": 6521,
+      "sha256": "80d0337c1350860e56add3e7fbab87229581fb6ca0eed21b47c19595e1eb976d",
+      "text": "בַּת זוּג",
+      "phonemes": "bˈat zˈuɡ.",
+      "rmsDbfs": -22.12,
+      "peakDbfs": -2.59
+    },
+    "ben-zug": {
+      "file": "ben-zug.mp3",
+      "duration": 0.843,
+      "bytes": 7357,
+      "sha256": "1cfdf5071f9ddb159fb1137c0141bbe1e4f717fed81800f76cc0b3df4e4fc5f4",
+      "text": "בֶּן זוּג",
+      "phonemes": "bˈen zˈuɡ.",
+      "rmsDbfs": -18.89,
+      "peakDbfs": -2.21
+    },
+    "mizran": {
+      "file": "mizran.mp3",
+      "duration": 0.729,
+      "bytes": 6312,
+      "sha256": "367b6ce21c7d0ace794d1336ae5d68673331a2dca984a5a6313f330bf6221466",
+      "text": "מִזְרָן",
+      "phonemes": "mizʁˈan.",
+      "rmsDbfs": -19.8,
+      "peakDbfs": -3.52
+    },
+    "ulam": {
+      "file": "ulam.mp3",
+      "duration": 0.617,
+      "bytes": 5476,
+      "sha256": "53e37e6bec2ccb7d9f5243cbc94a17a5175e2cd82ff6a7bfb5111ebc1cf1fab9",
+      "text": "אוּלָם",
+      "phonemes": "ʔulˈam.",
+      "rmsDbfs": -19.93,
+      "peakDbfs": -2.43
+    },
+    "chagora": {
+      "file": "chagora.mp3",
+      "duration": 0.911,
+      "bytes": 7775,
+      "sha256": "96b2fe6b18ab95fb3f4ecb15205c03c4f59c8126f0bb981033e7399f2996cd3a",
+      "text": "חֲגוֹרָה",
+      "phonemes": "χaɡoʁˈa.",
+      "rmsDbfs": -19.1,
+      "peakDbfs": -3.17
+    },
+    "darga": {
+      "file": "darga.mp3",
+      "duration": 0.619,
+      "bytes": 5476,
+      "sha256": "5202ff99bf03f9c6ac7ec6fba5a293f400db5426c057e3af054464872b0d5fce",
+      "text": "דַּרְגָּה",
+      "phonemes": "daʁɡˈa.",
+      "rmsDbfs": -18.95,
+      "peakDbfs": -4.1
+    },
+    "hatzaga": {
+      "file": "hatzaga.mp3",
+      "duration": 0.887,
+      "bytes": 7566,
+      "sha256": "0b760d0d20dace8a84a0440ba106b105f7ee19ee0bdfe5a82d584872a52e0940",
+      "text": "הַצָּגָה",
+      "phonemes": "hatsaɡˈa.",
+      "rmsDbfs": -19.56,
+      "peakDbfs": -3.69
+    },
+    "hadgama": {
+      "file": "hadgama.mp3",
+      "duration": 0.863,
+      "bytes": 7566,
+      "sha256": "90f1a19e7d0bde5b99247e2e1723f7d09d0a1fd0ea31238c47cfb978372c7db1",
+      "text": "הַדְגָּמָה",
+      "phonemes": "hadɡamˈa.",
+      "rmsDbfs": -19.16,
+      "peakDbfs": -4.32
+    },
+    "shalom": {
+      "file": "shalom.mp3",
+      "duration": 0.714,
+      "bytes": 6312,
+      "sha256": "f3b68c3c1e12f4d7c6fb0d2640c95d1910fd5c85a586dc2d356eebdb44eb4fc3",
+      "text": "שָׁלוֹם",
+      "phonemes": "ʃalˈom.",
+      "rmsDbfs": -19.71,
+      "peakDbfs": -4.43
+    },
+    "toda": {
+      "file": "toda.mp3",
+      "duration": 0.561,
+      "bytes": 5058,
+      "sha256": "f23a9e6d3e636780d2a333997acb8e4e1250c298377bfd9b57e58b37e47c1479",
+      "text": "תּוֹדָה",
+      "phonemes": "todˈa.",
+      "rmsDbfs": -20.47,
+      "peakDbfs": -2.41
+    },
+    "toda-raba": {
+      "file": "toda-raba.mp3",
+      "duration": 1.018,
+      "bytes": 8611,
+      "sha256": "3ee14f745f2155ec7905d365fd177b1a1bb4c2c3b8dcec30b35963fb017f2d96",
+      "text": "תּוֹדָה רַבָּה",
+      "phonemes": "todˈa ʁabˈa.",
+      "rmsDbfs": -20.85,
+      "peakDbfs": -2.44
+    },
+    "bevakasha": {
+      "file": "bevakasha.mp3",
+      "duration": 0.982,
+      "bytes": 8402,
+      "sha256": "58449a50412b1e10310da0565d47b14004e80f8ee138c926e3ac0cb7ff3c0240",
+      "text": "בְּבַקָּשָׁה",
+      "phonemes": "bevakaʃˈa.",
+      "rmsDbfs": -19.35,
+      "peakDbfs": -2.95
+    },
+    "slicha": {
+      "file": "slicha.mp3",
+      "duration": 0.73,
+      "bytes": 6312,
+      "sha256": "f803c71444db353f82557f79baa159b872cc23e43c11bcc0d254400adb0d2c75",
+      "text": "סְלִיחָה",
+      "phonemes": "sliχˈa.",
+      "rmsDbfs": -20.32,
+      "peakDbfs": -2.34
+    },
+    "ken": {
+      "file": "ken.mp3",
+      "duration": 0.565,
+      "bytes": 5058,
+      "sha256": "e0a47a14d57db796797197cdca8eace4284f91d1732a6d4a37a05a6d77cf256d",
+      "text": "כֵּן",
+      "phonemes": "kˈen.",
+      "rmsDbfs": -19.49,
+      "peakDbfs": -3.68
+    },
+    "lo": {
+      "file": "lo.mp3",
+      "duration": 0.486,
+      "bytes": 4431,
+      "sha256": "fe53ac2f30a1cb4171026037db5a3bd4bb0039a2068988f21c384f101c7da19f",
+      "text": "לֹא",
+      "phonemes": "lˈo.",
+      "rmsDbfs": -19.48,
+      "peakDbfs": -2.48
+    },
+    "ma-shlomcha": {
+      "file": "ma-shlomcha.mp3",
+      "duration": 0.943,
+      "bytes": 8193,
+      "sha256": "5e89b58c18f4a3659723895cad05e074a712fefd10f9ddf3c479165cfbb59f15",
+      "text": "מַה שְׁלוֹמְךָ?",
+      "phonemes": "mˈa ʃlomχˈa?",
+      "rmsDbfs": -21.0,
+      "peakDbfs": -2.45
+    },
+    "ma-shlomech": {
+      "file": "ma-shlomech.mp3",
+      "duration": 0.973,
+      "bytes": 8402,
+      "sha256": "242e716a803d87580d097477310efe5c3e7e1e6016b2edc96fa3d489c318eead",
+      "text": "מַה שְׁלוֹמֵךְ?",
+      "phonemes": "mˈa ʃlomˈeχ?",
+      "rmsDbfs": -20.71,
+      "peakDbfs": -2.64
+    },
+    "beseder": {
+      "file": "beseder.mp3",
+      "duration": 0.802,
+      "bytes": 6939,
+      "sha256": "dfe8df1a65b91f3f715ce51fa308c7d0dac5a3b0dcd4d220d4f88018d7bf2c34",
+      "text": "בְּסֵדֶר",
+      "phonemes": "besˈedeʁ.",
+      "rmsDbfs": -20.08,
+      "peakDbfs": -3.9
+    },
+    "naim-meod": {
+      "file": "naim-meod.mp3",
+      "duration": 0.904,
+      "bytes": 7775,
+      "sha256": "59beeff7f74ecc0c6f609702d33aabf56def41662e2d0d432c047c6a3eb3febe",
+      "text": "נָעִים מְאוֹד",
+      "phonemes": "naʔˈim meʔˈod.",
+      "rmsDbfs": -18.78,
+      "peakDbfs": -5.73
+    },
+    "boker-tov": {
+      "file": "boker-tov.mp3",
+      "duration": 1.091,
+      "bytes": 9238,
+      "sha256": "9eb953e38d7821c445920e12011e908b4c81605d3f7a8bcaf69266e604f9c6a6",
+      "text": "בֹּקֶר טוֹב",
+      "phonemes": "bˈokeʁ tˈov.",
+      "rmsDbfs": -20.58,
+      "peakDbfs": -2.42
+    },
+    "erev-tov": {
+      "file": "erev-tov.mp3",
+      "duration": 0.908,
+      "bytes": 7775,
+      "sha256": "ca23ded49c3cff5cab16db2e0156770acfa5f44fb71bd076372ad4b283445a54",
+      "text": "עֶרֶב טוֹב",
+      "phonemes": "ʔˈeʁev tˈov.",
+      "rmsDbfs": -19.1,
+      "peakDbfs": -2.7
+    },
+    "laila-tov": {
+      "file": "laila-tov.mp3",
+      "duration": 1.003,
+      "bytes": 8611,
+      "sha256": "14daad5ba1ee09aa948c718c4bb4a58dbe161829665ca5bc1e60760807671668",
+      "text": "לַיְלָה טוֹב",
+      "phonemes": "lˈajla tˈov.",
+      "rmsDbfs": -22.15,
+      "peakDbfs": -2.36
+    },
+    "lehitraot": {
+      "file": "lehitraot.mp3",
+      "duration": 0.999,
+      "bytes": 8611,
+      "sha256": "a8950985461629941b10550c38be9e35f02c223a60da3c37d93047031ab2da93",
+      "text": "לְהִתְרָאוֹת",
+      "phonemes": "lehitʁaʔˈot.",
+      "rmsDbfs": -18.55,
+      "peakDbfs": -3.32
+    },
+    "besimcha": {
+      "file": "besimcha.mp3",
+      "duration": 0.842,
+      "bytes": 7357,
+      "sha256": "4239eb1b5a4051d10a91e49ddd24b047369fdbd340963f56157f2329abc9c956",
+      "text": "בְּשִׂמְחָה",
+      "phonemes": "besimχˈa.",
+      "rmsDbfs": -18.67,
+      "peakDbfs": -3.96
+    },
+    "lo-mevin": {
+      "file": "lo-mevin.mp3",
+      "duration": 1.133,
+      "bytes": 9656,
+      "sha256": "578bde3691a619768b2792510da6e9470337e301ba8600978c35ca872add8fde",
+      "text": "אֲנִי לֹא מֵבִין",
+      "phonemes": "ʔanˈi lˈo mevˈin.",
+      "rmsDbfs": -18.9,
+      "peakDbfs": -3.35
+    },
+    "lo-mevina": {
+      "file": "lo-mevina.mp3",
+      "duration": 1.196,
+      "bytes": 10074,
+      "sha256": "de6540dd91551162b1a60fd59aebd362ba0b9a8c47542cf8ce324f9b7da3e926",
+      "text": "אֲנִי לֹא מְבִינָה",
+      "phonemes": "ʔanˈi lˈo mevinˈa.",
+      "rmsDbfs": -18.92,
+      "peakDbfs": -3.2
+    },
+    "od-paam-leat": {
+      "file": "od-paam-leat.mp3",
+      "duration": 1.24,
+      "bytes": 10492,
+      "sha256": "439212c85fddb17bc1f1be595096582a7949163b4e160a39e204b348d4c5eef7",
+      "text": "עוֹד פַּעַם לְאַט",
+      "phonemes": "ʔˈod pˈaʔam leʔˈat.",
+      "rmsDbfs": -19.59,
+      "peakDbfs": -2.7
+    },
+    "ma-ze": {
+      "file": "ma-ze.mp3",
+      "duration": 0.593,
+      "bytes": 5267,
+      "sha256": "2a953618d86ceb2c3a1b832a297daf84d030e52cb85722aca17cd48473974040",
+      "text": "מַה זֶּה?",
+      "phonemes": "mˈa zˈe?",
+      "rmsDbfs": -19.5,
+      "peakDbfs": -4.65
+    },
+    "eifo": {
+      "file": "eifo.mp3",
+      "duration": 0.622,
+      "bytes": 5476,
+      "sha256": "f9a8e57aaf4598f5b19772a665fd90114005780ffc220d4199e2d4f0f6f4c1ff",
+      "text": "אֵיפֹה?",
+      "phonemes": "ʔˈefo?",
+      "rmsDbfs": -18.89,
+      "peakDbfs": -5.24
+    },
+    "ani-rofe": {
+      "file": "ani-rofe.mp3",
+      "duration": 0.931,
+      "bytes": 7984,
+      "sha256": "7d304de833638138a7bfb5be662849bbd877ec2f0d4a56f1ccdcc7baf36e44dd",
+      "text": "אֲנִי רוֹפֵא",
+      "phonemes": "ʔanˈi ʁofˈe.",
+      "rmsDbfs": -18.44,
+      "peakDbfs": -4.97
+    },
+    "ani-rofa": {
+      "file": "ani-rofa.mp3",
+      "duration": 0.947,
+      "bytes": 8193,
+      "sha256": "91d3df2e71f50b975f2047132912573756c8cb8721eafe4283e020947f11dd38",
+      "text": "אֲנִי רוֹפְאָה",
+      "phonemes": "ʔanˈi ʁofʔˈa.",
+      "rmsDbfs": -18.42,
+      "peakDbfs": -4.25
+    },
+    "ani-mi-estonia": {
+      "file": "ani-mi-estonia.mp3",
+      "duration": 1.124,
+      "bytes": 9656,
+      "sha256": "4572247b45da60dfd7dec7b6d5dca73f15c553df484a94936535fa9f06b00b58",
+      "text": "אֲנִי מֵאֶסְטוֹנְיָה",
+      "phonemes": "ʔanˈi meʔestˈonja.",
+      "rmsDbfs": -18.54,
+      "peakDbfs": -3.52
+    },
+    "ani-lomed": {
+      "file": "ani-lomed.mp3",
+      "duration": 1.431,
+      "bytes": 11954,
+      "sha256": "ff6bd93cefbb775a364dbaa84e9f155a47a4c5ebf36129b45d64183df8392d80",
+      "text": "אֲנִי לוֹמֵד עִבְרִית",
+      "phonemes": "ʔanˈi lomˈed ʔivʁˈit.",
+      "rmsDbfs": -19.21,
+      "peakDbfs": -3.21
+    },
+    "medaber-anglit": {
+      "file": "medaber-anglit.mp3",
+      "duration": 1.514,
+      "bytes": 12581,
+      "sha256": "516bd424074d6a877c6db2fdcdd674c2fc4a43445c3bcdb0b7560f68ef73eb95",
+      "text": "אַתָּה מְדַבֵּר אַנְגְּלִית?",
+      "phonemes": "ʔatˈa medabˈeʁ ʔanɡlˈit?",
+      "rmsDbfs": -18.87,
+      "peakDbfs": -3.37
+    },
+    "ech-omrim": {
+      "file": "ech-omrim.mp3",
+      "duration": 0.854,
+      "bytes": 7357,
+      "sha256": "ccb02fdc74e825b0eb8d85345ef613f8b6f6bcd2599d3c16413f1cd06b554438",
+      "text": "אֵיךְ אוֹמְרִים…?",
+      "phonemes": "ʔˈeχ ʔomʁˈim...?",
+      "rmsDbfs": -18.84,
+      "peakDbfs": -7.27
+    },
+    "ma-ze-omer": {
+      "file": "ma-ze-omer.mp3",
+      "duration": 0.998,
+      "bytes": 8611,
+      "sha256": "b0991db4a176a8fb4d34f9abdb09bb6b3f97108bc7fe391c6bab62c8db0676f0",
+      "text": "מַה זֶּה אוֹמֵר?",
+      "phonemes": "mˈa zˈe ʔomˈeʁ?",
+      "rmsDbfs": -19.34,
+      "peakDbfs": -3.02
+    },
+    "efshar": {
+      "file": "efshar.mp3",
+      "duration": 0.862,
+      "bytes": 7357,
+      "sha256": "b4ed673e2cf1af3d357edcac2f88fd6b21c5dd038c38de5961f3e45dde92e410",
+      "text": "אֶפְשָׁר?",
+      "phonemes": "ʔefʃˈaʁ?",
+      "rmsDbfs": -20.73,
+      "peakDbfs": -3.49
+    },
+    "mayim": {
+      "file": "mayim.mp3",
+      "duration": 0.651,
+      "bytes": 5685,
+      "sha256": "eae931a25acaab13978391fcc6831994861ae00c081e8be48cb32a12ea2cd420",
+      "text": "מַיִם",
+      "phonemes": "mˈajim.",
+      "rmsDbfs": -20.41,
+      "peakDbfs": -5.43
+    },
+    "kafe": {
+      "file": "kafe.mp3",
+      "duration": 0.731,
+      "bytes": 6312,
+      "sha256": "5ff9cf0f4bae6ab94003f491310875925573dddf3c3201832b4296e945186613",
+      "text": "קָפֶה",
+      "phonemes": "kafˈe.",
+      "rmsDbfs": -19.57,
+      "peakDbfs": -2.96
+    },
+    "kama-ze-ole": {
+      "file": "kama-ze-ole.mp3",
+      "duration": 1.039,
+      "bytes": 8820,
+      "sha256": "13b682513dfc0f1986010e538f30b439228af052f7e9e61867a5f8c57549fa31",
+      "text": "כַּמָּה זֶה עוֹלֶה?",
+      "phonemes": "kˈama zˈe ʔolˈe?",
+      "rmsDbfs": -19.32,
+      "peakDbfs": -4.67
+    },
+    "eifo-sherutim": {
+      "file": "eifo-sherutim.mp3",
+      "duration": 1.203,
+      "bytes": 10283,
+      "sha256": "9a336dab1a5dac264fab4832b6b9fa2b1e80cf59235050607066c38c89035eba",
+      "text": "אֵיפֹה הַשֵּׁרוּתִים?",
+      "phonemes": "ʔˈefo haʃeʁutˈim?",
+      "rmsDbfs": -20.52,
+      "peakDbfs": -2.29
+    },
+    "matai": {
+      "file": "matai.mp3",
+      "duration": 0.733,
+      "bytes": 6521,
+      "sha256": "90d5c270a46daef914a2159cf7b9832062f9103adf525de3571ed49dce94d5a9",
+      "text": "מָתַי?",
+      "phonemes": "matˈaj?",
+      "rmsDbfs": -20.49,
+      "peakDbfs": -2.63
+    },
+    "achshav": {
+      "file": "achshav.mp3",
+      "duration": 0.808,
+      "bytes": 6939,
+      "sha256": "bd7420f36bc084ff558d6d6dd1312bc95ffec7a01626de03205f2ab6df08120c",
+      "text": "עַכְשָׁו",
+      "phonemes": "ʔaχʃˈav.",
+      "rmsDbfs": -20.01,
+      "peakDbfs": -3.15
+    },
+    "hayom": {
+      "file": "hayom.mp3",
+      "duration": 0.72,
+      "bytes": 6312,
+      "sha256": "ed03001e448956fd149bbef7eed2826b5a12e9290b6a5be0251e2c5e0bd24d99",
+      "text": "הַיּוֹם",
+      "phonemes": "hajˈom.",
+      "rmsDbfs": -19.48,
+      "peakDbfs": -5.06
+    },
+    "machar": {
+      "file": "machar.mp3",
+      "duration": 0.703,
+      "bytes": 6103,
+      "sha256": "af04d372387e4dba99e569ce56a40bc78241df060665411a01f5ecd245dd4639",
+      "text": "מָחָר",
+      "phonemes": "maχˈaʁ.",
+      "rmsDbfs": -20.05,
+      "peakDbfs": -3.06
+    },
+    "rega": {
+      "file": "rega.mp3",
+      "duration": 0.592,
+      "bytes": 5267,
+      "sha256": "47c5705cf5b80cfaaa0a5fcdd10ebe7d1660d0fc0524dc1367fabeb8ee16fab7",
+      "text": "רֶגַע",
+      "phonemes": "ʁˈeɡa.",
+      "rmsDbfs": -19.96,
+      "peakDbfs": -3.29
+    }
+  }
+}

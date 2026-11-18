@@ -19,7 +19,7 @@ const shift = (date, amount) => new Date((ordinal(date) + amount) * DAY).toISOSt
 export function fresh() {
   return {
     app: 'krav-ivrit', version: 1, cards: {}, history: [],
-    settings: { newLimit: 5, showHebrew: false, speed: 1, disabledPacks: [], systemVoiceConfirmed: false },
+    settings: { newLimit: 5, showHebrew: false, speed: 1, disabledPacks: [], audioSource: 'clips', systemVoiceConfirmed: false },
   };
 }
 
@@ -148,6 +148,7 @@ export function restore(raw) {
   if (!natural(settings.newLimit) || settings.newLimit > 50 ||
       typeof settings.showHebrew !== 'boolean' || ![0.75, 1].includes(settings.speed) ||
       (settings.systemVoiceConfirmed !== undefined && typeof settings.systemVoiceConfirmed !== 'boolean') ||
+      (settings.audioSource !== undefined && !['clips', 'system'].includes(settings.audioSource)) ||
       !Array.isArray(settings.disabledPacks) || !settings.disabledPacks.every(id => Object.hasOwn(PACKS, id))) {
     throw new Error('The backup contains invalid settings.');
   }
@@ -181,7 +182,7 @@ export function restore(raw) {
     }
     return { day: date, at, ms, kind, reviews, newItems, answered, correct, scored, textMode };
   });
-  const { newLimit, showHebrew, speed, disabledPacks, systemVoiceConfirmed = false } = settings;
+  const { newLimit, showHebrew, speed, disabledPacks, systemVoiceConfirmed = false, audioSource = 'clips' } = settings;
   return { app: 'krav-ivrit', version: 1, cards, history,
-    settings: { newLimit, showHebrew, speed, disabledPacks: [...new Set(disabledPacks)], systemVoiceConfirmed } };
+    settings: { newLimit, showHebrew, speed, disabledPacks: [...new Set(disabledPacks)], audioSource, systemVoiceConfirmed } };
 }

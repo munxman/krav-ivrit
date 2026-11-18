@@ -1,5 +1,17 @@
 # Krav Ivrit test checklist
 
+## Built-in Hebrew audio checked on 18 November 2026
+
+- [x] Generated 152 MP3 files, one per term, totaling 1,043,857 bytes. Checked every filename, manifest byte size and SHA-256. All files decoded with finite, non-silent samples and unclipped peaks.
+- [x] Independently transcribed an actual five-clip sample with local Whisper. It recognized kadima, yamin, both spoken eight forms and ani rofe. Reviewed phonemes distinguish the masculine and feminine vowels.
+- [x] Played actual MP3s in Chromium and WebKit, with browser speech synthesis unused. Settings and all eight packs reached playing, advancing currentTime and ended events. The same media element played later commands automatically at increasing drill speeds.
+- [x] Cached all 152 recordings and verified offline playback. Chromium used browser offline mode. WebKit used an unavailable server because its automation offline mode also failed ordinary cached fetches with an internal browser error. Cached media played with no server asset requests.
+- [x] Checked exact cached byte-range bodies and 206 headers for prefix, open-ended and suffix ranges, plus 416 for invalid ranges.
+- [x] Triggered a native autoplay rejection without a gesture, then recovered with a trusted Play tap. A real HTTP 503 media failure also recovered. Written monthly practice stayed marked as text after retry.
+- [x] Upgraded from v3 through update.html to the fully downloaded v4 pack, retained prior progress and played the real shalom recording. Today, History and Settings continued to work during practice.
+
+The media files and real browser playback were tested. The learner's physical iPhone output still needs confirmation. Audio provenance and reproduction instructions are in [audio/README.md](audio/README.md).
+
 ## Navigation and audio fix checked on 18 November 2026
 
 - [x] Reproduced the previous version disabling Today, History and Settings during practice. The fixed version opens all three before two minutes and on the first tap after an expired session, saving completed recall answers and drill scores.

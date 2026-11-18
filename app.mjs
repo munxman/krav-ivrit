@@ -28,7 +28,8 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({
 const view = document.querySelector('#view');
 const storageStatus = document.querySelector('#storage-status');
 const backupFile = document.querySelector('#backup-file');
-const synth = window.speechSynthesis;
+let synth = null;
+try { synth = window.speechSynthesis; } catch { /* Text practice remains available. */ }
 const MAX_SESSION = 10 * MINUTE;
 const DRILL_TIME = 2 * MINUTE;
 const PASS = 16;
@@ -40,6 +41,7 @@ let session;
 let summary;
 let voice = null;
 let audioError = false;
+let audioTest = '';
 let utterance = null;
 let speechTimeout;
 let settingMessage = '';
@@ -94,7 +96,9 @@ window.addEventListener('storage', event => {
 });
 
 function updateVoice() {
-  const voices = (synth?.getVoices() ?? []).filter(candidate => {
+  let available = [];
+  try { available = synth?.getVoices() ?? []; } catch { /* The system voice test can still work. */ }
+  const voices = available.filter(candidate => {
     const language = candidate.lang.toLowerCase().replaceAll('_', '-');
     return language === 'he-il' || language === 'he';
   });
@@ -107,42 +111,61 @@ function updateVoice() {
 }
 
 function canSpeak() {
-  return Boolean(voice && !audioError && (voice.localService || navigator.onLine));
+  return Boolean(synth && typeof window.SpeechSynthesisUtterance === 'function' && !audioError &&
+    (state.settings.systemVoiceConfirmed || (voice && (voice.localService || navigator.onLine))));
 }
 
 function audioNotice() {
   if (canSpeak()) return '';
-  const message = audioError ? 'Hebrew audio could not play. Use the written pronunciation below.'
+  const message = audioError ? 'Hebrew audio did not play. Open Settings to retry the audio test. Written pronunciation is available.'
     : voice ? 'The Hebrew voice needs a connection. Text practice is available offline.'
-    : 'This browser hasn’t listed a Hebrew voice. Practice continues with written pronunciation.';
+    : 'Open Settings → Test Hebrew audio to try your installed Hebrew voice. Written pronunciation is available.';
   return `<p class="notice" role="status">${message}</p>`;
 }
 
 function stopSpeech() {
   clearTimeout(speechTimeout);
+  audioTest = '';
   const previous = utterance;
   utterance = null;
-  if (previous) synth.cancel();
+  if (previous) {
+    try { synth?.cancel(); } catch { /* A speech failure must not prevent navigation. */ }
+  }
 }
 
-function speak(term, multiplier = 1) {
-  if (!canSpeak()) return;
+function speak(term, multiplier = 1, test = false) {
+  if (!test && !canSpeak()) return;
   stopSpeech();
-  const current = new SpeechSynthesisUtterance(term.hebrew);
-  current.voice = voice;
-  current.lang = 'he-IL';
-  current.rate = Math.round(state.settings.speed * multiplier * 100) / 100;
+  let current = null;
   const failed = () => {
     if (utterance !== current) return;
     stopSpeech();
     audioError = true;
+    if (state.settings.systemVoiceConfirmed) {
+      save(latest => ({ ...latest, settings: { ...latest.settings, systemVoiceConfirmed: false } }));
+    }
     if (session?.kind === 'monthly') session.textMode = true;
     render();
   };
+  try {
+    if (!synth) throw new Error('Speech is unavailable');
+    current = new SpeechSynthesisUtterance(term.hebrew);
+    utterance = current;
+    current.voice = test || state.settings.systemVoiceConfirmed ? null : voice;
+    current.lang = 'he-IL';
+    current.rate = Math.round(state.settings.speed * multiplier * 100) / 100;
+  } catch {
+    failed();
+    return;
+  }
   current.onend = () => {
     if (utterance !== current) return;
     clearTimeout(speechTimeout);
     utterance = null;
+    if (test && screen === 'settings') {
+      audioTest = 'confirm';
+      render();
+    }
   };
   current.onstart = () => {
     if (utterance !== current) return;
@@ -150,9 +173,12 @@ function speak(term, multiplier = 1) {
     speechTimeout = setTimeout(failed, 30_000);
   };
   current.onerror = failed;
-  utterance = current;
+  if (test) audioTest = 'playing';
   speechTimeout = setTimeout(failed, 10_000);
-  try { synth.speak(current); } catch { failed(); }
+  try {
+    if (synth.paused) synth.resume();
+    synth.speak(current);
+  } catch { failed(); }
 }
 
 synth?.addEventListener?.('voiceschanged', updateVoice);
@@ -278,16 +304,21 @@ function settingsPage() {
         <option value="1" ${prefs.speed === 1 ? 'selected' : ''}>1×</option></select>
       </label>
       ${audioNotice()}
-      ${canSpeak() ? `<p class="audio-status">Hebrew voice ready${voice.name ? ` · ${esc(voice.name)}` : ''}</p>` : ''}
+      ${canSpeak() ? `<p class="audio-status">Hebrew audio enabled${state.settings.systemVoiceConfirmed ? ' · iPhone/system voice' : voice?.name ? ` · ${esc(voice.name)}` : ''}</p>` : ''}
       <div class="button-group">${button('Test Hebrew audio', 'test-audio', 'secondary', 'speaker')}</div>
+      ${audioTest === 'playing' ? '<p class="audio-status" role="status">Playing “shalom” (hello)…</p>' : ''}
+      ${audioTest === 'confirm' ? `<div class="feedback" role="status">
+        <p>Did you hear “shalom” (hello) spoken in Hebrew?</p>
+        <div class="button-group">${button('I heard Hebrew', 'audio-confirm', 'primary')}${button('No sound or wrong language', 'audio-reject')}</div>
+      </div>` : ''}
       <details class="reading-guide">
         <summary>Enable Hebrew audio on iPhone</summary>
         <ol>
           <li>Open iPhone Settings → Accessibility → Read &amp; Speak → Voices. On older iOS versions, look for Spoken Content.</li>
           <li>Choose Hebrew, select a voice and download it if a download button appears.</li>
-          <li>Return here and tap Test Hebrew audio. If needed, close and reopen the app, then try again with the media volume turned up.</li>
+          <li>Return here, turn up the media volume and tap Test Hebrew audio. Tap I heard Hebrew if the sample plays correctly.</li>
         </ol>
-        <p>Safari may expose only some installed voices. Written pronunciation is available while Hebrew audio is unavailable.</p>
+        <p>The test asks iPhone to choose its installed Hebrew voice even when Safari leaves it out of the voice list. If the sample is silent, check the media volume and whether audio is routed to headphones or another device, then test again.</p>
         <p><a href="https://support.apple.com/en-ie/guide/iphone/iph96b214f0/ios" target="_blank" rel="noopener noreferrer">Apple’s voice settings guide</a></p>
       </details>
       ${pronunciationGuide}
@@ -339,13 +370,10 @@ function focusHeading() {
 function render() {
   if (!terms.length) return;
   renderStats();
-  for (const item of document.querySelectorAll('nav button, .brand')) {
-    item.disabled = screen === 'session';
-    if (item.matches('nav button')) {
-      if (screen === item.dataset.action || (screen === 'pack' && item.dataset.action === 'home')) {
-        item.setAttribute('aria-current', 'page');
-      } else item.removeAttribute('aria-current');
-    }
+  for (const item of document.querySelectorAll('nav button')) {
+    if (screen === item.dataset.action || (screen === 'pack' && item.dataset.action === 'home')) {
+      item.setAttribute('aria-current', 'page');
+    } else item.removeAttribute('aria-current');
   }
   if (screen === 'session') view.innerHTML = sessionPage();
   else if (screen === 'summary') view.innerHTML = summaryPage();
@@ -513,10 +541,6 @@ function renderClock() {
   const timer = view.querySelector('#timer');
   if (!timer) return;
   timer.textContent = `${time(until - now)} ${drilling ? 'drill' : 'left'}`;
-  const finishButton = view.querySelector('#finish');
-  const canFinish = elapsed >= DRILL_TIME || session.kind === 'monthly';
-  finishButton.disabled = !canFinish;
-  finishButton.textContent = canFinish ? 'End session' : `Finish after ${time(DRILL_TIME - elapsed)}`;
   const progress = Math.max(0, Math.min(100, session.kind === 'monthly' ? session.answered * 5
     : Math.floor((drilling ? 1 - (until - now) / DRILL_TIME : elapsed / MAX_SESSION) * 100)));
   view.querySelector('#progress-track').setAttribute('aria-valuenow', progress);
@@ -655,6 +679,7 @@ backupFile.addEventListener('change', async () => {
   try {
     if (file.size > 5_000_000) throw new Error('This backup is too large.');
     const imported = restore(JSON.parse(await file.text()));
+    imported.settings.systemVoiceConfirmed = false;
     if (session || !window.confirm('Replace your Krav Ivrit progress and settings with this backup?')) return;
     settingMessage = save(() => imported, true) ? 'Backup restored.' : 'Backup opened for this tab.';
   } catch (error) {
@@ -692,14 +717,16 @@ document.addEventListener('click', event => {
   const control = event.target.closest('button[data-action]');
   if (!control || control.disabled || !terms.length) return;
   const { action, pack, term } = control.dataset;
-  if (session && advanceClock()) return;
   if (['home', 'history', 'settings', 'pack'].includes(action)) {
-    if (session) return;
+    if (session) finish({ draw: false });
     stopSpeech();
     if (action === 'pack') packId = pack;
     settingMessage = '';
     go(action);
-  } else if (action === 'start') start('practice');
+    return;
+  }
+  if (session && advanceClock()) return;
+  if (action === 'start') start('practice');
   else if (action === 'monthly') start('monthly');
   else if (action === 'finish') finish();
   else if (action === 'play') playCurrent();
@@ -708,7 +735,17 @@ document.addEventListener('click', event => {
   else if (action === 'test-audio') {
     audioError = false;
     updateVoice();
-    if (canSpeak()) speak(terms.find(item => item.id === 'shalom') || terms[0]);
+    speak(terms.find(item => item.id === 'shalom') || terms[0], 1, true);
+    render();
+  } else if (action === 'audio-confirm' && audioTest === 'confirm') {
+    audioTest = '';
+    audioError = false;
+    save(latest => ({ ...latest, settings: { ...latest.settings, systemVoiceConfirmed: true } }));
+    render();
+  } else if (action === 'audio-reject' && audioTest === 'confirm') {
+    stopSpeech();
+    audioError = true;
+    save(latest => ({ ...latest, settings: { ...latest.settings, systemVoiceConfirmed: false } }));
     render();
   } else if (action === 'choose') choose(term);
   else if (action === 'unknown') choose(null);

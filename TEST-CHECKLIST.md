@@ -1,5 +1,16 @@
 # Krav Ivrit test checklist
 
+## Navigation and audio fix checked on 18 November 2026
+
+- [x] Reproduced the previous version disabling Today, History and Settings during practice. The fixed version opens all three before two minutes and on the first tap after an expired session, saving completed recall answers and drill scores.
+- [x] With an empty voice list, Test Hebrew audio calls speech directly with `lang=he-IL` and no selected voice. The successful speech callback displays a confirmation question. Playback is enabled through this route only after I heard Hebrew is selected.
+- [x] Confirmed voice preference survives reload. No sound or wrong language, playback errors, timeouts and utterance construction failures keep text practice and prevent listening credit for a monthly check that reveals text. Earlier scored results remain intact.
+- [x] Simulated native voice enumeration and cancellation exceptions. Navigation continues to work. Verified that a paused speech engine resumes before the test.
+- [x] Older progress without the new optional setting restores correctly. Import preserves cards and history and clears the receiving device's voice confirmation.
+- [x] Upgraded the actual v2 service worker to v3 in an isolated browser, reloaded offline and verified saved progress. The regression run reported no browser runtime errors.
+
+These speech checks used simulated browser voices. The direct system-voice route still needs audible verification on the learner's iPhone.
+
 ## Pronunciation update checked on 18 November 2026
 
 - [x] All 152 terms have a nonempty `pronunciation.et` with stress marked once per word. Compared against the previous commit and confirmed that all existing IDs and other vocabulary fields match.

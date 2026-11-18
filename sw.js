@@ -1,7 +1,7 @@
 const scope = new URL(self.registration.scope);
 const cachePrefix = `krav-ivrit:${scope.href}:`;
 // Increase after changing any of the packaged files below.
-const cacheName = `${cachePrefix}v2`;
+const cacheName = `${cachePrefix}v3`;
 const shell = new URL('index.html', scope);
 const files = new Set([
   'index.html',

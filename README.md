@@ -6,7 +6,7 @@ Krav Ivrit is a personal Hebrew study app for class vocabulary and everyday conv
 
 ## Study and save progress
 
-- Start a daily session to review due cards, learn up to five new items within your remaining daily budget, and finish with a timed commands drill. You can finish after two minutes. The session automatically ends at ten minutes.
+- Start a daily session to review due cards, learn up to five new items within your remaining daily budget, and finish with a timed commands drill. Two minutes is enough for a short start. You can end a session or use Today, History and Settings at any time. Leaving practice saves completed answers. The session automatically ends at ten minutes.
 - Answer one prompt at a time. On recall cards, say or type the transliteration, reveal the answer, and grade yourself from Again to Easy. The grade sets the next review date. Listening cards use a choice of meanings.
 - The monthly check scores 20 Hebrew listening prompts. Pass with 16 correct answers or more. Without a Hebrew voice, the 20 prompts are available as text practice and are recorded as text practice.
 - In Settings, adjust the daily new-item limit, turn packs and Hebrew script on or off, or change speech speed. Use **Export JSON** to keep a JSON copy of progress and settings. Use **Import JSON** to restore it on another device. Reset clears cards, streak and session history after confirmation.
@@ -16,7 +16,9 @@ Krav Ivrit is a personal Hebrew study app for class vocabulary and everyday conv
 
 Pronunciation hints appear in the study packs and after revealing a card's answer. They also appear in text practice when audio is unavailable. The hints use Estonian vowels and consonants, with hyphens between syllables and CAPITALS marking the stressed syllable of each word. Read `j` like English y, `š` like English sh, and `ts` like the end of cats. Hebrew kh/ch is approximated by a throaty `h`, like the ch in Bach. These spellings approximate Hebrew sounds.
 
-On iPhone, open **Settings → Accessibility → Read & Speak → Voices → Hebrew** and select or download a voice. Older iOS versions use **Spoken Content** in place of Read & Speak. Return to Krav Ivrit and tap **Settings → Test Hebrew audio**. Safari can expose only some installed voices, so the written pronunciation remains available when it cannot provide Hebrew speech. The app accepts Hebrew voices listed as `he-IL` or `he`. [Apple's voice settings guide](https://support.apple.com/en-ie/guide/iphone/iph96b214f0/ios), [older iOS voice settings](https://support.apple.com/en-us/111798)
+On iPhone, open **Settings → Accessibility → Read & Speak → Voices → Hebrew** and select or download a voice. Older iOS versions use **Spoken Content** in place of Read & Speak. Return to Krav Ivrit and tap **Settings → Test Hebrew audio**. The test asks the phone for Hebrew speech directly, including when Safari omits the voice from its list. After the sample, select **I heard Hebrew** if it played correctly, or **No sound or wrong language** to keep written practice. If it is silent, check the media volume and audio output, including connected headphones, then try again. [Apple's voice settings guide](https://support.apple.com/en-ie/guide/iphone/iph96b214f0/ios), [older iOS voice settings](https://support.apple.com/en-us/111798)
+
+The app remembers a successful system-voice confirmation in this browser. Importing a backup requires a new audio test on the receiving device. Regular playback also supports Hebrew voices listed as `he-IL` or `he`. A speech failure switches the current monthly check to text practice.
 
 To receive an app update, open Krav Ivrit online, allow the updated packs to download, and reload. If an installed copy still shows the older version, close and reopen it. Browser-saved progress uses the same Krav Ivrit storage key across updates.
 

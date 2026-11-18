@@ -1,5 +1,16 @@
 # Krav Ivrit test checklist
 
+## Pronunciation update checked on 18 November 2026
+
+- [x] All 152 terms have a nonempty `pronunciation.et` with stress marked once per word. Compared against the previous commit and confirmed that all existing IDs and other vocabulary fields match.
+- [x] Viewed all eight packs at a 390 px mobile viewport. Every term displayed its Estonian pronunciation hint and the page had no horizontal overflow.
+- [x] With simulated Hebrew voices, listening cards and all 20 monthly prompts concealed written answers. Recall cards concealed pronunciation and Hebrew script until Reveal answer. Text practice and revealed answers displayed the pronunciation.
+- [x] Tested `he-IL` and language-only `he` voices, 0.75× playback, voice-list refresh on return to the page, and a started 5.2-second utterance that continued without premature text fallback.
+- [x] Verified the iPhone help opens in Settings and links to Apple's voice settings guide.
+- [x] Installed the original v1 service worker in an isolated browser, seeded saved progress, and upgraded to v2 while a recall card was active. Graded the card using the running original app, then reloaded offline. The updated UI and pronunciation packs loaded and all saved progress remained intact. No browser runtime errors occurred.
+
+The audio checks used simulated voices in Chromium. Audible output and installation on a physical iPhone remain unverified.
+
 ## Local checks
 
 - [x] Checked the vocabulary schema, unique IDs, eight pack IDs, and README coverage of every native-speaker review flag for 152 entries.

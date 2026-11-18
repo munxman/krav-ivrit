@@ -10,6 +10,9 @@
     "example": {
       "translit": "Tza'ad kadima.",
       "english": "A step forward."
+    },
+    "pronunciation": {
+      "et": "ka-DI-ma"
     }
   },
   {
@@ -23,6 +26,9 @@
     "example": {
       "translit": "Tza'ad achora.",
       "english": "A step backward."
+    },
+    "pronunciation": {
+      "et": "a-HO-ra"
     }
   },
   {
@@ -36,6 +42,9 @@
     "example": {
       "translit": "Smol, bevakasha.",
       "english": "Left, please."
+    },
+    "pronunciation": {
+      "et": "SMOL"
     }
   },
   {
@@ -49,6 +58,9 @@
     "example": {
       "translit": "Yamin, bevakasha.",
       "english": "Right, please."
+    },
+    "pronunciation": {
+      "et": "ja-MIN"
     }
   },
   {
@@ -62,6 +74,9 @@
     "example": {
       "translit": "Atzor rega.",
       "english": "Stop for a moment."
+    },
+    "pronunciation": {
+      "et": "a-TSOR"
     }
   },
   {
@@ -75,6 +90,9 @@
     "example": {
       "translit": "Zuz ktsat.",
       "english": "Move a little."
+    },
+    "pronunciation": {
+      "et": "ZUZ"
     }
   },
   {
@@ -88,6 +106,9 @@
     "example": {
       "translit": "Kum, bevakasha.",
       "english": "Get up, please."
+    },
+    "pronunciation": {
+      "et": "KUM"
     }
   },
   {
@@ -101,6 +122,9 @@
     "example": {
       "translit": "Od pa'am, bevakasha.",
       "english": "One more time, please."
+    },
+    "pronunciation": {
+      "et": "OD PA-am"
     }
   },
   {
@@ -115,7 +139,10 @@
       "translit": "Kida lifnei ha-shi'ur.",
       "english": "A bow before class."
     },
-    "verify": true
+    "verify": true,
+    "pronunciation": {
+      "et": "ki-DA"
+    }
   },
   {
     "id": "shura",
@@ -129,7 +156,10 @@
       "translit": "Histadru be-shura, bevakasha.",
       "english": "Line up, please."
     },
-    "verify": true
+    "verify": true,
+    "pronunciation": {
+      "et": "šu-RA"
+    }
   },
   {
     "id": "yalla",
@@ -142,6 +172,9 @@
     "example": {
       "translit": "Yalla, matchilim.",
       "english": "Come on, we're starting."
+    },
+    "pronunciation": {
+      "et": "JA-la"
     }
   },
   {
@@ -155,6 +188,9 @@
     "example": {
       "translit": "Shev po, bevakasha.",
       "english": "Sit here, please."
+    },
+    "pronunciation": {
+      "et": "ŠEV"
     }
   },
   {
@@ -168,6 +204,9 @@
     "example": {
       "translit": "Chake rega.",
       "english": "Wait a moment."
+    },
+    "pronunciation": {
+      "et": "ha-KE"
     }
   },
   {
@@ -181,6 +220,9 @@
     "example": {
       "translit": "Takshivu le-madrich.",
       "english": "Listen to the instructor."
+    },
+    "pronunciation": {
+      "et": "tak-ŠI-vu"
     }
   },
   {
@@ -194,6 +236,9 @@
     "example": {
       "translit": "Tistaklu al ze.",
       "english": "Look at this."
+    },
+    "pronunciation": {
+      "et": "tis-tak-LU"
     }
   },
   {
@@ -207,6 +252,9 @@
     "example": {
       "translit": "Le'at, bevakasha.",
       "english": "Slowly, please."
+    },
+    "pronunciation": {
+      "et": "le-AT"
     }
   },
   {
@@ -220,6 +268,9 @@
     "example": {
       "translit": "Yoter maher.",
       "english": "Faster."
+    },
+    "pronunciation": {
+      "et": "ma-HER"
     }
   },
   {
@@ -233,6 +284,9 @@
     "example": {
       "translit": "Tistaklu lema'la.",
       "english": "Look up."
+    },
+    "pronunciation": {
+      "et": "le-MA-la"
     }
   },
   {
@@ -246,6 +300,9 @@
     "example": {
       "translit": "Tistaklu lemata.",
       "english": "Look down."
+    },
+    "pronunciation": {
+      "et": "le-MA-ta"
     }
   },
   {
@@ -259,6 +316,9 @@
     "example": {
       "translit": "Kulam beyachad.",
       "english": "Everyone together."
+    },
+    "pronunciation": {
+      "et": "be-JA-had"
     }
   },
   {
@@ -272,6 +332,9 @@
     "example": {
       "translit": "Ovdim bezugot.",
       "english": "Work in pairs."
+    },
+    "pronunciation": {
+      "et": "be-zu-GOT"
     }
   },
   {
@@ -285,6 +348,9 @@
     "example": {
       "translit": "Tistovevu, bevakasha.",
       "english": "Turn around, please."
+    },
+    "pronunciation": {
+      "et": "tis-to-ve-VU"
     }
   },
   {
@@ -298,6 +364,9 @@
     "example": {
       "translit": "Kulam muchanim?",
       "english": "Is everyone ready?"
+    },
+    "pronunciation": {
+      "et": "mu-ha-NIM?"
     }
   },
   {
@@ -311,6 +380,9 @@
     "example": {
       "translit": "Linshom le'at.",
       "english": "Breathe slowly."
+    },
+    "pronunciation": {
+      "et": "lin-ŠOM"
     }
   },
   {
@@ -324,6 +396,9 @@
     "example": {
       "translit": "Sheket, bevakasha.",
       "english": "Quiet, please."
+    },
+    "pronunciation": {
+      "et": "ŠE-ket"
     }
   },
   {
@@ -337,6 +412,9 @@
     "example": {
       "translit": "Hafsaka ktsara.",
       "english": "A short break."
+    },
+    "pronunciation": {
+      "et": "haf-sa-KA"
     }
   },
   {
@@ -350,6 +428,9 @@
     "example": {
       "translit": "Daka achat.",
       "english": "One minute."
+    },
+    "pronunciation": {
+      "et": "a-HAT"
     }
   },
   {
@@ -363,6 +444,9 @@
     "example": {
       "translit": "Yom echad.",
       "english": "One day."
+    },
+    "pronunciation": {
+      "et": "e-HAD"
     }
   },
   {
@@ -376,6 +460,9 @@
     "example": {
       "translit": "Achat, shtayim, shalosh.",
       "english": "One, two, three."
+    },
+    "pronunciation": {
+      "et": "ŠTA-jim"
     }
   },
   {
@@ -389,6 +476,9 @@
     "example": {
       "translit": "Anachnu shnayim.",
       "english": "There are two of us."
+    },
+    "pronunciation": {
+      "et": "ŠNA-jim"
     }
   },
   {
@@ -402,6 +492,9 @@
     "example": {
       "translit": "Shtei dakot.",
       "english": "Two minutes."
+    },
+    "pronunciation": {
+      "et": "ŠTEJ"
     }
   },
   {
@@ -415,6 +508,9 @@
     "example": {
       "translit": "Shnei yamim.",
       "english": "Two days."
+    },
+    "pronunciation": {
+      "et": "ŠNEJ"
     }
   },
   {
@@ -428,6 +524,9 @@
     "example": {
       "translit": "Shalosh dakot.",
       "english": "Three minutes."
+    },
+    "pronunciation": {
+      "et": "ša-LOŠ"
     }
   },
   {
@@ -441,6 +540,9 @@
     "example": {
       "translit": "Shlosha yamim.",
       "english": "Three days."
+    },
+    "pronunciation": {
+      "et": "šlo-ŠA"
     }
   },
   {
@@ -454,6 +556,9 @@
     "example": {
       "translit": "Arba dakot.",
       "english": "Four minutes."
+    },
+    "pronunciation": {
+      "et": "AR-ba"
     }
   },
   {
@@ -467,6 +572,9 @@
     "example": {
       "translit": "Arba'a yamim.",
       "english": "Four days."
+    },
+    "pronunciation": {
+      "et": "ar-ba-A"
     }
   },
   {
@@ -480,6 +588,9 @@
     "example": {
       "translit": "Chamesh dakot.",
       "english": "Five minutes."
+    },
+    "pronunciation": {
+      "et": "ha-MEŠ"
     }
   },
   {
@@ -493,6 +604,9 @@
     "example": {
       "translit": "Chamisha yamim.",
       "english": "Five days."
+    },
+    "pronunciation": {
+      "et": "ha-mi-ŠA"
     }
   },
   {
@@ -506,6 +620,9 @@
     "example": {
       "translit": "Shesh dakot.",
       "english": "Six minutes."
+    },
+    "pronunciation": {
+      "et": "ŠEŠ"
     }
   },
   {
@@ -519,6 +636,9 @@
     "example": {
       "translit": "Shisha yamim.",
       "english": "Six days."
+    },
+    "pronunciation": {
+      "et": "ši-ŠA"
     }
   },
   {
@@ -532,6 +652,9 @@
     "example": {
       "translit": "Sheva dakot.",
       "english": "Seven minutes."
+    },
+    "pronunciation": {
+      "et": "ŠE-va"
     }
   },
   {
@@ -545,6 +668,9 @@
     "example": {
       "translit": "Shiv'a yamim.",
       "english": "Seven days."
+    },
+    "pronunciation": {
+      "et": "šiv-A"
     }
   },
   {
@@ -558,6 +684,9 @@
     "example": {
       "translit": "Shmone dakot.",
       "english": "Eight minutes."
+    },
+    "pronunciation": {
+      "et": "ŠMO-ne"
     }
   },
   {
@@ -571,6 +700,9 @@
     "example": {
       "translit": "Shmona yamim.",
       "english": "Eight days."
+    },
+    "pronunciation": {
+      "et": "šmo-NA"
     }
   },
   {
@@ -584,6 +716,9 @@
     "example": {
       "translit": "Tesha dakot.",
       "english": "Nine minutes."
+    },
+    "pronunciation": {
+      "et": "TE-ša"
     }
   },
   {
@@ -597,6 +732,9 @@
     "example": {
       "translit": "Tish'a yamim.",
       "english": "Nine days."
+    },
+    "pronunciation": {
+      "et": "tiš-A"
     }
   },
   {
@@ -610,6 +748,9 @@
     "example": {
       "translit": "Eser dakot.",
       "english": "Ten minutes."
+    },
+    "pronunciation": {
+      "et": "E-ser"
     }
   },
   {
@@ -623,6 +764,9 @@
     "example": {
       "translit": "Asara yamim.",
       "english": "Ten days."
+    },
+    "pronunciation": {
+      "et": "a-sa-RA"
     }
   },
   {
@@ -636,6 +780,9 @@
     "example": {
       "translit": "Ha-rosh sheli ko'ev.",
       "english": "My head hurts."
+    },
+    "pronunciation": {
+      "et": "ROŠ"
     }
   },
   {
@@ -649,6 +796,9 @@
     "example": {
       "translit": "Panim mucharot.",
       "english": "A familiar face."
+    },
+    "pronunciation": {
+      "et": "pa-NIM"
     }
   },
   {
@@ -662,6 +812,9 @@
     "example": {
       "translit": "Ayin achat.",
       "english": "One eye."
+    },
+    "pronunciation": {
+      "et": "A-jin"
     }
   },
   {
@@ -675,6 +828,9 @@
     "example": {
       "translit": "Ozen smolit.",
       "english": "Left ear."
+    },
+    "pronunciation": {
+      "et": "O-zen"
     }
   },
   {
@@ -688,6 +844,9 @@
     "example": {
       "translit": "Ha-af sheli satum.",
       "english": "My nose is blocked."
+    },
+    "pronunciation": {
+      "et": "AF"
     }
   },
   {
@@ -701,6 +860,9 @@
     "example": {
       "translit": "Pe patu'ach.",
       "english": "An open mouth."
+    },
+    "pronunciation": {
+      "et": "PE"
     }
   },
   {
@@ -714,6 +876,9 @@
     "example": {
       "translit": "Ze al ktse ha-lashon.",
       "english": "It's on the tip of my tongue."
+    },
+    "pronunciation": {
+      "et": "la-ŠON"
     }
   },
   {
@@ -727,6 +892,9 @@
     "example": {
       "translit": "Shen achat.",
       "english": "One tooth."
+    },
+    "pronunciation": {
+      "et": "ŠEN"
     }
   },
   {
@@ -740,6 +908,9 @@
     "example": {
       "translit": "Se'ar katsar.",
       "english": "Short hair."
+    },
+    "pronunciation": {
+      "et": "se-AR"
     }
   },
   {
@@ -753,6 +924,9 @@
     "example": {
       "translit": "Ha-tsavar sheli ko'ev.",
       "english": "My neck hurts."
+    },
+    "pronunciation": {
+      "et": "tsa-VAR"
     }
   },
   {
@@ -766,6 +940,9 @@
     "example": {
       "translit": "Katef yemanit.",
       "english": "Right shoulder."
+    },
+    "pronunciation": {
+      "et": "ka-TEF"
     }
   },
   {
@@ -779,6 +956,9 @@
     "example": {
       "translit": "Zro'a smolit.",
       "english": "Left arm."
+    },
+    "pronunciation": {
+      "et": "ZRO-a"
     }
   },
   {
@@ -792,6 +972,9 @@
     "example": {
       "translit": "Ha-ama ha-yemanit.",
       "english": "The right forearm."
+    },
+    "pronunciation": {
+      "et": "a-MA"
     }
   },
   {
@@ -805,6 +988,9 @@
     "example": {
       "translit": "Ke'ev ba-mifrak.",
       "english": "Pain in the joint."
+    },
+    "pronunciation": {
+      "et": "mif-RAK"
     }
   },
   {
@@ -818,6 +1004,9 @@
     "example": {
       "translit": "Yad smolit.",
       "english": "Left hand."
+    },
+    "pronunciation": {
+      "et": "JAD"
     }
   },
   {
@@ -831,6 +1020,9 @@
     "example": {
       "translit": "Kaf ha-yad sheli.",
       "english": "The palm of my hand."
+    },
+    "pronunciation": {
+      "et": "KAF JAD"
     }
   },
   {
@@ -844,6 +1036,9 @@
     "example": {
       "translit": "Etsba achat.",
       "english": "One finger."
+    },
+    "pronunciation": {
+      "et": "ETS-ba"
     }
   },
   {
@@ -857,6 +1052,9 @@
     "example": {
       "translit": "Ha-agudal sheli.",
       "english": "My thumb."
+    },
+    "pronunciation": {
+      "et": "a-gu-DAL"
     }
   },
   {
@@ -870,6 +1068,9 @@
     "example": {
       "translit": "Ke'ev ba-chaze.",
       "english": "Chest pain."
+    },
+    "pronunciation": {
+      "et": "ha-ZE"
     }
   },
   {
@@ -883,6 +1084,9 @@
     "example": {
       "translit": "Ha-gav sheli ko'ev.",
       "english": "My back hurts."
+    },
+    "pronunciation": {
+      "et": "GAV"
     }
   },
   {
@@ -896,6 +1100,9 @@
     "example": {
       "translit": "Ha-beten sheli ko'evet.",
       "english": "My belly hurts."
+    },
+    "pronunciation": {
+      "et": "BE-ten"
     }
   },
   {
@@ -909,6 +1116,9 @@
     "example": {
       "translit": "Regel smolit.",
       "english": "Left leg."
+    },
+    "pronunciation": {
+      "et": "RE-gel"
     }
   },
   {
@@ -922,6 +1132,9 @@
     "example": {
       "translit": "Ha-yarech ha-smolit.",
       "english": "The left thigh."
+    },
+    "pronunciation": {
+      "et": "ja-REH"
     }
   },
   {
@@ -935,6 +1148,9 @@
     "example": {
       "translit": "Ha-karsol sheli ko'ev.",
       "english": "My ankle hurts."
+    },
+    "pronunciation": {
+      "et": "kar-SOL"
     }
   },
   {
@@ -948,6 +1164,9 @@
     "example": {
       "translit": "Kaf ha-regel sheli.",
       "english": "My foot."
+    },
+    "pronunciation": {
+      "et": "KAF RE-gel"
     }
   },
   {
@@ -961,6 +1180,9 @@
     "example": {
       "translit": "Ha-akev sheli.",
       "english": "My heel."
+    },
+    "pronunciation": {
+      "et": "a-KEV"
     }
   },
   {
@@ -975,7 +1197,10 @@
       "translit": "Egrof hu mila be-Ivrit.",
       "english": "Egrof is a Hebrew word."
     },
-    "verify": true
+    "verify": true,
+    "pronunciation": {
+      "et": "eg-ROF"
+    }
   },
   {
     "id": "beita",
@@ -988,6 +1213,9 @@
     "example": {
       "translit": "Mila chadasha: be'ita.",
       "english": "A new word: kick."
+    },
+    "pronunciation": {
+      "et": "be-i-TA"
     }
   },
   {
@@ -1001,6 +1229,9 @@
     "example": {
       "translit": "Marpek yemani.",
       "english": "Right elbow."
+    },
+    "pronunciation": {
+      "et": "mar-PEK"
     }
   },
   {
@@ -1014,6 +1245,9 @@
     "example": {
       "translit": "Berech smolit.",
       "english": "Left knee."
+    },
+    "pronunciation": {
+      "et": "BE-reh"
     }
   },
   {
@@ -1027,6 +1261,9 @@
     "example": {
       "translit": "Ma ze hagana?",
       "english": "What does hagana mean?"
+    },
+    "pronunciation": {
+      "et": "ha-ga-NA"
     }
   },
   {
@@ -1041,7 +1278,10 @@
       "translit": "Retzev shel milim.",
       "english": "A sequence of words."
     },
-    "verify": true
+    "verify": true,
+    "pronunciation": {
+      "et": "RE-tsev"
+    }
   },
   {
     "id": "tefisa",
@@ -1055,7 +1295,10 @@
       "translit": "Shamati et ha-mila tefisa.",
       "english": "I heard the word tefisa."
     },
-    "verify": true
+    "verify": true,
+    "pronunciation": {
+      "et": "tfi-SA"
+    }
   },
   {
     "id": "gilgul",
@@ -1068,6 +1311,9 @@
     "example": {
       "translit": "Ma ze gilgul?",
       "english": "What does gilgul mean?"
+    },
+    "pronunciation": {
+      "et": "gil-GUL"
     }
   },
   {
@@ -1081,6 +1327,9 @@
     "example": {
       "translit": "Tnu'a itit.",
       "english": "Slow movement."
+    },
+    "pronunciation": {
+      "et": "tnu-A"
     }
   },
   {
@@ -1094,6 +1343,9 @@
     "example": {
       "translit": "Be-ketsev iti.",
       "english": "At a slow pace."
+    },
+    "pronunciation": {
+      "et": "KE-tsev"
     }
   },
   {
@@ -1107,6 +1359,9 @@
     "example": {
       "translit": "Targil shivui mishkal.",
       "english": "A balance exercise."
+    },
+    "pronunciation": {
+      "et": "ši-VUJ miš-KAL"
     }
   },
   {
@@ -1120,6 +1375,9 @@
     "example": {
       "translit": "Shlita ba-ketsev.",
       "english": "Control over the pace."
+    },
+    "pronunciation": {
+      "et": "šli-TA"
     }
   },
   {
@@ -1133,6 +1391,9 @@
     "example": {
       "translit": "Ha-mila neshek.",
       "english": "The word neshek."
+    },
+    "pronunciation": {
+      "et": "NE-šek"
     }
   },
   {
@@ -1146,6 +1407,9 @@
     "example": {
       "translit": "Sakin matbach.",
       "english": "A kitchen knife."
+    },
+    "pronunciation": {
+      "et": "sa-KIN"
     }
   },
   {
@@ -1159,6 +1423,9 @@
     "example": {
       "translit": "Makel halicha.",
       "english": "A walking stick."
+    },
+    "pronunciation": {
+      "et": "ma-KEL"
     }
   },
   {
@@ -1172,6 +1439,9 @@
     "example": {
       "translit": "T'muna shel ekdach.",
       "english": "A picture of a pistol."
+    },
+    "pronunciation": {
+      "et": "ek-DAH"
     }
   },
   {
@@ -1185,6 +1455,9 @@
     "example": {
       "translit": "Degem mi-plastik.",
       "english": "A plastic model."
+    },
+    "pronunciation": {
+      "et": "DE-gem"
     }
   },
   {
@@ -1198,6 +1471,9 @@
     "example": {
       "translit": "Kadur gumi.",
       "english": "A rubber ball."
+    },
+    "pronunciation": {
+      "et": "GU-mi"
     }
   },
   {
@@ -1211,6 +1487,9 @@
     "example": {
       "translit": "Bakbuk plastik.",
       "english": "A plastic bottle."
+    },
+    "pronunciation": {
+      "et": "PLAS-tik"
     }
   },
   {
@@ -1224,6 +1503,9 @@
     "example": {
       "translit": "T'muna ba-sefer.",
       "english": "A picture in the book."
+    },
+    "pronunciation": {
+      "et": "tmu-NA"
     }
   },
   {
@@ -1237,6 +1519,9 @@
     "example": {
       "translit": "Ha-madrich po.",
       "english": "The instructor is here."
+    },
+    "pronunciation": {
+      "et": "mad-RIH"
     }
   },
   {
@@ -1250,6 +1535,9 @@
     "example": {
       "translit": "Ha-madricha po.",
       "english": "The instructor is here."
+    },
+    "pronunciation": {
+      "et": "mad-ri-HA"
     }
   },
   {
@@ -1263,6 +1551,9 @@
     "example": {
       "translit": "Ani talmid chadash.",
       "english": "I'm a new student."
+    },
+    "pronunciation": {
+      "et": "tal-MID"
     }
   },
   {
@@ -1276,6 +1567,9 @@
     "example": {
       "translit": "Ani talmida chadasha.",
       "english": "I'm a new student."
+    },
+    "pronunciation": {
+      "et": "tal-mi-DA"
     }
   },
   {
@@ -1289,6 +1583,9 @@
     "example": {
       "translit": "Chaver me-ha-imun.",
       "english": "A friend from training."
+    },
+    "pronunciation": {
+      "et": "ha-VER"
     }
   },
   {
@@ -1302,6 +1599,9 @@
     "example": {
       "translit": "Chavera me-ha-imun.",
       "english": "A friend from training."
+    },
+    "pronunciation": {
+      "et": "ha-ve-RA"
     }
   },
   {
@@ -1315,6 +1615,9 @@
     "example": {
       "translit": "Imun ba-erev.",
       "english": "An evening training session."
+    },
+    "pronunciation": {
+      "et": "i-MUN"
     }
   },
   {
@@ -1328,6 +1631,9 @@
     "example": {
       "translit": "Targil pashut.",
       "english": "A simple exercise."
+    },
+    "pronunciation": {
+      "et": "tar-GIL"
     }
   },
   {
@@ -1341,6 +1647,9 @@
     "example": {
       "translit": "Matai ha-shi'ur?",
       "english": "When is the lesson?"
+    },
+    "pronunciation": {
+      "et": "ši-UR"
     }
   },
   {
@@ -1354,6 +1663,9 @@
     "example": {
       "translit": "Chimum katsar.",
       "english": "A short warm-up."
+    },
+    "pronunciation": {
+      "et": "hi-MUM"
     }
   },
   {
@@ -1367,6 +1679,9 @@
     "example": {
       "translit": "Kvutsa ktana.",
       "english": "A small group."
+    },
+    "pronunciation": {
+      "et": "kvu-TSA"
     }
   },
   {
@@ -1380,6 +1695,9 @@
     "example": {
       "translit": "Mishtatef chadash.",
       "english": "A new participant."
+    },
+    "pronunciation": {
+      "et": "miš-ta-TEF"
     }
   },
   {
@@ -1394,7 +1712,10 @@
       "translit": "Bat zug la-targil.",
       "english": "A female partner for the exercise."
     },
-    "verify": true
+    "verify": true,
+    "pronunciation": {
+      "et": "BAT ZUG"
+    }
   },
   {
     "id": "ben-zug",
@@ -1408,7 +1729,10 @@
       "translit": "Ben zug la-targil.",
       "english": "A male partner for the exercise."
     },
-    "verify": true
+    "verify": true,
+    "pronunciation": {
+      "et": "BEN ZUG"
+    }
   },
   {
     "id": "mizran",
@@ -1421,6 +1745,9 @@
     "example": {
       "translit": "Mizran imun.",
       "english": "A training mat."
+    },
+    "pronunciation": {
+      "et": "miz-RAN"
     }
   },
   {
@@ -1434,6 +1761,9 @@
     "example": {
       "translit": "Ulam sport.",
       "english": "A sports hall."
+    },
+    "pronunciation": {
+      "et": "u-LAM"
     }
   },
   {
@@ -1447,6 +1777,9 @@
     "example": {
       "translit": "Chagora yeruka.",
       "english": "A green belt."
+    },
+    "pronunciation": {
+      "et": "ha-go-RA"
     }
   },
   {
@@ -1460,6 +1793,9 @@
     "example": {
       "translit": "Eizo darga yesh lecha?",
       "english": "What rank are you?"
+    },
+    "pronunciation": {
+      "et": "dar-GA"
     }
   },
   {
@@ -1473,6 +1809,9 @@
     "example": {
       "translit": "Hatzaga ktsara.",
       "english": "A short presentation."
+    },
+    "pronunciation": {
+      "et": "ha-tsa-GA"
     }
   },
   {
@@ -1486,6 +1825,9 @@
     "example": {
       "translit": "Hadgama ktsara.",
       "english": "A short demonstration."
+    },
+    "pronunciation": {
+      "et": "had-ga-MA"
     }
   },
   {
@@ -1499,6 +1841,9 @@
     "example": {
       "translit": "Shalom, ma nishma?",
       "english": "Hello, how's it going?"
+    },
+    "pronunciation": {
+      "et": "ša-LOM"
     }
   },
   {
@@ -1512,6 +1857,9 @@
     "example": {
       "translit": "Toda al ha-ezra.",
       "english": "Thank you for the help."
+    },
+    "pronunciation": {
+      "et": "to-DA"
     }
   },
   {
@@ -1525,6 +1873,9 @@
     "example": {
       "translit": "Toda raba al ha-shi'ur.",
       "english": "Thank you very much for the lesson."
+    },
+    "pronunciation": {
+      "et": "to-DA ra-BA"
     }
   },
   {
@@ -1538,6 +1889,9 @@
     "example": {
       "translit": "Mayim, bevakasha.",
       "english": "Water, please."
+    },
+    "pronunciation": {
+      "et": "be-va-ka-ŠA"
     }
   },
   {
@@ -1551,6 +1905,9 @@
     "example": {
       "translit": "Slicha, eifo ha-ulam?",
       "english": "Excuse me, where is the hall?"
+    },
+    "pronunciation": {
+      "et": "sli-HA"
     }
   },
   {
@@ -1564,6 +1921,9 @@
     "example": {
       "translit": "Ken, be-seder.",
       "english": "Yes, okay."
+    },
+    "pronunciation": {
+      "et": "KEN"
     }
   },
   {
@@ -1577,6 +1937,9 @@
     "example": {
       "translit": "Lo, toda.",
       "english": "No, thank you."
+    },
+    "pronunciation": {
+      "et": "LO"
     }
   },
   {
@@ -1590,6 +1953,9 @@
     "example": {
       "translit": "Shalom, ma shlomcha?",
       "english": "Hello, how are you?"
+    },
+    "pronunciation": {
+      "et": "MA šlom-HA?"
     }
   },
   {
@@ -1603,6 +1969,9 @@
     "example": {
       "translit": "Shalom, ma shlomech?",
       "english": "Hello, how are you?"
+    },
+    "pronunciation": {
+      "et": "MA šlo-MEH?"
     }
   },
   {
@@ -1616,6 +1985,9 @@
     "example": {
       "translit": "Ani be-seder.",
       "english": "I'm fine."
+    },
+    "pronunciation": {
+      "et": "be-SE-der"
     }
   },
   {
@@ -1629,6 +2001,9 @@
     "example": {
       "translit": "Shalom, na'im me'od.",
       "english": "Hello, nice to meet you."
+    },
+    "pronunciation": {
+      "et": "na-IM me-OD"
     }
   },
   {
@@ -1642,6 +2017,9 @@
     "example": {
       "translit": "Boker tov le-kulam.",
       "english": "Good morning, everyone."
+    },
+    "pronunciation": {
+      "et": "BO-ker TOV"
     }
   },
   {
@@ -1655,6 +2033,9 @@
     "example": {
       "translit": "Erev tov le-kulam.",
       "english": "Good evening, everyone."
+    },
+    "pronunciation": {
+      "et": "E-rev TOV"
     }
   },
   {
@@ -1668,6 +2049,9 @@
     "example": {
       "translit": "Laila tov, ve-nitra'e machar.",
       "english": "Good night, and see you tomorrow."
+    },
+    "pronunciation": {
+      "et": "LAJ-la TOV"
     }
   },
   {
@@ -1681,6 +2065,9 @@
     "example": {
       "translit": "Toda, lehitra'ot.",
       "english": "Thanks, goodbye."
+    },
+    "pronunciation": {
+      "et": "le-hit-ra-OT"
     }
   },
   {
@@ -1694,6 +2081,9 @@
     "example": {
       "translit": "Ken, be-simcha.",
       "english": "Yes, with pleasure."
+    },
+    "pronunciation": {
+      "et": "be-sim-HA"
     }
   },
   {
@@ -1707,6 +2097,9 @@
     "example": {
       "translit": "Slicha, ani lo mevin.",
       "english": "Sorry, I don't understand."
+    },
+    "pronunciation": {
+      "et": "a-NI LO me-VIN"
     }
   },
   {
@@ -1720,6 +2113,9 @@
     "example": {
       "translit": "Slicha, ani lo mevina.",
       "english": "Sorry, I don't understand."
+    },
+    "pronunciation": {
+      "et": "a-NI LO me-vi-NA"
     }
   },
   {
@@ -1733,6 +2129,9 @@
     "example": {
       "translit": "Od pa'am le'at, bevakasha.",
       "english": "Once more, slowly, please."
+    },
+    "pronunciation": {
+      "et": "OD PA-am le-AT"
     }
   },
   {
@@ -1746,6 +2145,9 @@
     "example": {
       "translit": "Slicha, ma ze?",
       "english": "Excuse me, what is this?"
+    },
+    "pronunciation": {
+      "et": "MA ZE?"
     }
   },
   {
@@ -1759,6 +2161,9 @@
     "example": {
       "translit": "Eifo ha-ulam?",
       "english": "Where is the hall?"
+    },
+    "pronunciation": {
+      "et": "E-fo?"
     }
   },
   {
@@ -1772,6 +2177,9 @@
     "example": {
       "translit": "Ani rofe mishpacha.",
       "english": "I'm a family doctor."
+    },
+    "pronunciation": {
+      "et": "a-NI ro-FE"
     }
   },
   {
@@ -1785,6 +2193,9 @@
     "example": {
       "translit": "Ani rofa mishpacha.",
       "english": "I'm a family doctor."
+    },
+    "pronunciation": {
+      "et": "a-NI ro-FA"
     }
   },
   {
@@ -1798,6 +2209,9 @@
     "example": {
       "translit": "Shalom, ani mi-Estonia.",
       "english": "Hello, I'm from Estonia."
+    },
+    "pronunciation": {
+      "et": "a-NI me-es-TON-ja"
     }
   },
   {
@@ -1811,6 +2225,9 @@
     "example": {
       "translit": "Ani lomed Ivrit kol yom.",
       "english": "I'm learning Hebrew every day."
+    },
+    "pronunciation": {
+      "et": "a-NI lo-MED iv-RIT"
     }
   },
   {
@@ -1824,6 +2241,9 @@
     "example": {
       "translit": "Slicha, ata medaber Anglit?",
       "english": "Excuse me, do you speak English?"
+    },
+    "pronunciation": {
+      "et": "a-TA me-da-BER ang-LIT?"
     }
   },
   {
@@ -1837,6 +2257,9 @@
     "example": {
       "translit": "Ech omrim “aitäh” be-Ivrit?",
       "english": "How do you say “thank you” in Hebrew?"
+    },
+    "pronunciation": {
+      "et": "EH om-RIM...?"
     }
   },
   {
@@ -1850,6 +2273,9 @@
     "example": {
       "translit": "Slicha, ma ze omer?",
       "english": "Sorry, what does that mean?"
+    },
+    "pronunciation": {
+      "et": "MA ZE o-MER?"
     }
   },
   {
@@ -1863,6 +2289,9 @@
     "example": {
       "translit": "Efshar mayim, bevakasha?",
       "english": "May I have some water, please?"
+    },
+    "pronunciation": {
+      "et": "ef-ŠAR?"
     }
   },
   {
@@ -1876,6 +2305,9 @@
     "example": {
       "translit": "Mayim karim.",
       "english": "Cold water."
+    },
+    "pronunciation": {
+      "et": "MA-jim"
     }
   },
   {
@@ -1889,6 +2321,9 @@
     "example": {
       "translit": "Kafe im chalav.",
       "english": "Coffee with milk."
+    },
+    "pronunciation": {
+      "et": "ka-FE"
     }
   },
   {
@@ -1902,6 +2337,9 @@
     "example": {
       "translit": "Slicha, kama ze ole?",
       "english": "Excuse me, how much does it cost?"
+    },
+    "pronunciation": {
+      "et": "KA-ma ZE o-LE?"
     }
   },
   {
@@ -1915,6 +2353,9 @@
     "example": {
       "translit": "Slicha, eifo ha-sherutim?",
       "english": "Excuse me, where is the bathroom?"
+    },
+    "pronunciation": {
+      "et": "E-fo ha-še-ru-TIM?"
     }
   },
   {
@@ -1928,6 +2369,9 @@
     "example": {
       "translit": "Matai ha-imun?",
       "english": "When is training?"
+    },
+    "pronunciation": {
+      "et": "ma-TAJ?"
     }
   },
   {
@@ -1941,6 +2385,9 @@
     "example": {
       "translit": "Ani po achshav.",
       "english": "I'm here now."
+    },
+    "pronunciation": {
+      "et": "ah-ŠAV"
     }
   },
   {
@@ -1954,6 +2401,9 @@
     "example": {
       "translit": "Yesh imun hayom.",
       "english": "There is training today."
+    },
+    "pronunciation": {
+      "et": "ha-JOM"
     }
   },
   {
@@ -1967,6 +2417,9 @@
     "example": {
       "translit": "Nitra'e machar.",
       "english": "See you tomorrow."
+    },
+    "pronunciation": {
+      "et": "ma-HAR"
     }
   },
   {
@@ -1980,6 +2433,9 @@
     "example": {
       "translit": "Rega echad, bevakasha.",
       "english": "One moment, please."
+    },
+    "pronunciation": {
+      "et": "RE-ga"
     }
   }
 ]

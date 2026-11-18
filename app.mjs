@@ -94,8 +94,10 @@ window.addEventListener('storage', event => {
 });
 
 function updateVoice() {
-  const voices = (synth?.getVoices() ?? []).filter(candidate =>
-    candidate.lang.toLowerCase().replaceAll('_', '-') === 'he-il');
+  const voices = (synth?.getVoices() ?? []).filter(candidate => {
+    const language = candidate.lang.toLowerCase().replaceAll('_', '-');
+    return language === 'he-il' || language === 'he';
+  });
   const next = voices.find(candidate => candidate.localService) || voices[0] || null;
   if (next?.voiceURI === voice?.voiceURI) return;
   voice = next;
@@ -110,9 +112,9 @@ function canSpeak() {
 
 function audioNotice() {
   if (canSpeak()) return '';
-  const message = audioError ? 'Hebrew audio could not play. Use the Latin transliteration below.'
+  const message = audioError ? 'Hebrew audio could not play. Use the written pronunciation below.'
     : voice ? 'The Hebrew voice needs a connection. Text practice is available offline.'
-    : 'No Hebrew (he-IL) voice is available. Practice continues with Latin transliteration.';
+    : 'This browser hasn’t listed a Hebrew voice. Practice continues with written pronunciation.';
   return `<p class="notice" role="status">${message}</p>`;
 }
 
@@ -142,13 +144,22 @@ function speak(term, multiplier = 1) {
     clearTimeout(speechTimeout);
     utterance = null;
   };
+  current.onstart = () => {
+    if (utterance !== current) return;
+    clearTimeout(speechTimeout);
+    speechTimeout = setTimeout(failed, 30_000);
+  };
   current.onerror = failed;
   utterance = current;
-  speechTimeout = setTimeout(failed, 4500);
+  speechTimeout = setTimeout(failed, 10_000);
   try { synth.speak(current); } catch { failed(); }
 }
 
 synth?.addEventListener?.('voiceschanged', updateVoice);
+window.addEventListener('focus', updateVoice);
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) updateVoice();
+});
 updateVoice();
 for (const event of ['online', 'offline']) {
   window.addEventListener(event, () => {
@@ -162,6 +173,13 @@ for (const event of ['online', 'offline']) {
 
 const hebrew = term => state.settings.showHebrew
   ? `<span class="hebrew" lang="he" dir="rtl">${esc(term.hebrew)}</span>` : '';
+const pronunciation = term => term.pronunciation?.et
+  ? `<p class="pronunciation"><span class="pronunciation-label">Say it</span> <span lang="et">${esc(term.pronunciation.et)}</span></p>` : '';
+const pronunciationGuide = `<details class="reading-guide">
+  <summary>How to read the pronunciation</summary>
+  <p>The hints approximate Hebrew using Estonian spelling. Hyphens separate syllables. CAPITALS mark the stressed syllable in each word.</p>
+  <p>Read a, e, i, o and u as in Estonian. The letter j sounds like English y, š sounds like English sh, and ts sounds like the end of cats. Hebrew kh/ch is written h here; make it throaty, like the ch in Bach.</p>
+</details>`;
 const label = (count, noun) => `${count} ${noun}${count === 1 ? '' : 's'}`;
 const seconds = ms => Math.max(0, Math.ceil(ms / 1000));
 const time = ms => `${Math.floor(seconds(ms) / 60)}:${String(seconds(ms) % 60).padStart(2, '0')}`;
@@ -231,9 +249,11 @@ function packPage() {
   return `<div class="narrow">
     ${button('Study packs', 'home', 'quiet', 'back')}
     <div class="page-heading"><h1>${PACKS[packId]}</h1><p>${label(packTerms.length, 'term')}</p></div>
+    ${pronunciationGuide}
     ${audioNotice()}
     <ul class="panel term-list">${packTerms.map(term => `<li class="term-row">
       <div><strong>${esc(term.translit)}</strong>${hebrew(term)}
+      ${pronunciation(term)}
       <p>${esc(term.english)} · ${esc(term.estonian)}${term.verify ? ' · Check usage' : ''}</p></div>
       ${canSpeak() ? `<button type="button" class="secondary" data-action="term-audio" data-term="${esc(term.id)}" aria-label="Play ${esc(term.translit)}">${icon('speaker')}</button>` : ''}
     </li>`).join('')}</ul>
@@ -258,7 +278,19 @@ function settingsPage() {
         <option value="1" ${prefs.speed === 1 ? 'selected' : ''}>1×</option></select>
       </label>
       ${audioNotice()}
-      <div class="button-group">${button(canSpeak() ? 'Test Hebrew audio' : 'Check for Hebrew voice', 'test-audio', 'secondary', 'speaker')}</div>
+      ${canSpeak() ? `<p class="audio-status">Hebrew voice ready${voice.name ? ` · ${esc(voice.name)}` : ''}</p>` : ''}
+      <div class="button-group">${button('Test Hebrew audio', 'test-audio', 'secondary', 'speaker')}</div>
+      <details class="reading-guide">
+        <summary>Enable Hebrew audio on iPhone</summary>
+        <ol>
+          <li>Open iPhone Settings → Accessibility → Read &amp; Speak → Voices. On older iOS versions, look for Spoken Content.</li>
+          <li>Choose Hebrew, select a voice and download it if a download button appears.</li>
+          <li>Return here and tap Test Hebrew audio. If needed, close and reopen the app, then try again with the media volume turned up.</li>
+        </ol>
+        <p>Safari may expose only some installed voices. Written pronunciation is available while Hebrew audio is unavailable.</p>
+        <p><a href="https://support.apple.com/en-ie/guide/iphone/iph96b214f0/ios" target="_blank" rel="noopener noreferrer">Apple’s voice settings guide</a></p>
+      </details>
+      ${pronunciationGuide}
     </section>
     <section class="panel settings-card">
       <h2>Study packs</h2>
@@ -418,6 +450,7 @@ function feedbackBlock(term, outcome) {
   const result = outcome === undefined ? '' : `<p class="result" data-correct="${outcome}">${outcome ? 'Correct' : 'Answer'}</p>`;
   return `<div class="feedback" role="status">${result}
     <strong>${esc(term.translit)}</strong>${hebrew(term)}
+    ${pronunciation(term)}
     <p>${esc(term.english)} · ${esc(term.estonian)}</p>
     ${term.notes ? `<p>${esc(term.notes)}${term.verify ? ' · Check classroom usage' : ''}</p>` : ''}
     <p><i>${esc(term.example.translit)}</i> · ${esc(term.example.english)}</p>
@@ -435,7 +468,7 @@ function sessionPage() {
   if (phase === 'done') {
     content = '<h1>Practice complete</h1><p>Your cards are saved. You can finish when the two-minute timer ends.</p>';
   } else if (isDrill && feedback) {
-    content = `<h1>${feedback.correct ? 'Correct' : 'Answer'}</h1><p>${esc(card.term.translit)} · ${esc(card.term.english)}</p>`;
+    content = `<h1>${feedback.correct ? 'Correct' : 'Answer'}</h1><p>${esc(card.term.translit)} · ${esc(card.term.english)}</p>${pronunciation(card.term)}`;
   } else if (feedback) {
     content = `<h1>${card.mode === 'recall' ? 'How well did you know it?' : 'Review the answer'}</h1>
       ${card.mode === 'recall' && card.typed.trim() ? `<p>You typed <strong>${esc(card.typed.trim())}</strong></p>` : ''}
@@ -453,6 +486,7 @@ function sessionPage() {
   } else {
     const prompt = card.mode === 'act' ? 'What’s the command?' : 'What did you hear?';
     content = `${audioNotice()}<h1>${canSpeak() ? prompt : esc(card.term.translit)}</h1>
+      ${canSpeak() ? '' : pronunciation(card.term)}
       ${canSpeak() ? `<button class="secondary listen" type="button" data-action="play">${icon('speaker')} Play Hebrew</button>`
         : `<p>Choose the matching meaning.${hebrew(card.term)}</p>`}
       <div class="choices">${card.choices.map(choice => `<button class="choice" type="button"
@@ -585,6 +619,7 @@ window.addEventListener('pagehide', () => {
   stopSpeech();
 });
 window.addEventListener('pageshow', event => {
+  updateVoice();
   if (event.persisted) render();
 });
 

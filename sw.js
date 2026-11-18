@@ -1,7 +1,7 @@
 const scope = new URL(self.registration.scope);
 const cachePrefix = `krav-ivrit:${scope.href}:`;
 // Increase after changing any of the packaged files below.
-const cacheName = `${cachePrefix}v1`;
+const cacheName = `${cachePrefix}v2`;
 const shell = new URL('index.html', scope);
 const files = new Set([
   'index.html',
@@ -19,7 +19,8 @@ const files = new Set([
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(cacheName).then(cache => {
-    return cache.addAll(Array.from(files, url => new Request(url, { cache: 'reload' })));
+    return cache.addAll(Array.from(files, url => new Request(url, { cache: 'reload' })))
+      .then(() => self.skipWaiting());
   }));
 });
 
